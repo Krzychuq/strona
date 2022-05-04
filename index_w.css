@@ -75,6 +75,7 @@ font-family: arial;
 font-size: 1em;
 font-weight: bold;
 background:#66FCF1;
+cursor: pointer;
 }
 
 .buttonl:hover{
@@ -84,7 +85,7 @@ background:#66FCF1;
 .dropdown{
   display: inline;
   position:relative;
- 
+  
 
 }
 .dropLista{
@@ -97,9 +98,7 @@ background:#66FCF1;
   box-shadow: 0px 10px 10px 0px
 
 }
-.dropdown:hover .dropLista {
-  display: block;
-}
+
 .dropLista a {
   display: block;
   color: white;

@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About me</title>
-    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="index_w.css">
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <script src="jquery-3.6.0.js"></script>
+    
+    <script>
+       $(document).ready(function(){
+              $(".buttonl").on("click", function(){
+                     $(".dropLista").fadeToggle("slow");
+              });
+       });
+       
+       </script>
+</head>
     <body>
        
             <div>
@@ -39,14 +50,15 @@
                       <div class="dropdown">          
                     <button class="buttonl"><i class="material-icons" style="font-size:17px;">assignment</i>Lista</a></button>
 
-                <div class="dropLista">
+              
+                    <div class="dropLista">
                     <a>1</a>
                     <a>2</a>
                     <a>3</a>
+              
 
 
-
-                </div>
+                    </div>
                       </div>    
                             
                         
@@ -59,12 +71,19 @@
 
             </div>
 
-        
-        
+        <button>olo</button>
+
+        <div id="div1" style="background-color: brown; width: 20px; height: 10px;"></div>
+ 
         
     
 
 
 
     </body>
+
+    
+
+
 </html> 
+

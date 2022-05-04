@@ -75,6 +75,7 @@ a:hover{
   font-size: 1em;
   font-weight: bold;
   background:#66FCF1;
+  cursor: pointer;
 }
 
 .buttonl:hover{
@@ -97,9 +98,7 @@ a:hover{
     box-shadow: 0px 10px 10px 0px
 
 }
-.dropdown:hover .dropLista {
-    display: block;
-  }
+
   .dropLista a {
     display: block;
     color: white;

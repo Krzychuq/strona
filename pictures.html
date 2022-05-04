@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Pictures</title>
@@ -8,7 +7,15 @@
 <link rel="stylesheet" href="pictures.css">
 <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".buttonl").on("click", function(){
+                  $(".dropLista").fadeToggle("slow");
+            });
+        });
+    
+    </script>
 </head>
 
 
