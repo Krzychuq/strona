@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #1F2833;
+  font-family: arial;
+  font-size: 1em;
+}
+
+
+.nav {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 1,5em;
+  display: flex;
+  flex-direction: row;
+  
+  }
+
+.linkA  {
+  color:black;
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+  background-color: #66FCF1; 
+  
+}
+
+a:hover{
+  background-color: #45A29E;
+}
+
+
+
+
+.flexi{
+  flex: 1 1 ;
+  
+}
+
+.flexf{
+  flex: 1 1 ;
+
+}
+
+.flexh{
+  flex: 2 2 auto;
+
+}
+
+.flexa{
+  flex: 2 2 auto;
+
+}
+.flexp{
+  flex: 2 2 auto;
+
+}
+
+
+.buttonl {
+flex: 2 2 auto;
+height: 50px;
+padding: 15px 60px;
+border: none;
+color: black;
+text-align: center;
+display: inline-block;
+font-family: arial;
+font-size: 1em;
+font-weight: bold;
+background:#66FCF1;
+}
+
+.buttonl:hover{
+  background:#45A29E;
+}
+
+.dropdown{
+  display: inline;
+  position:relative;
+ 
+
+}
+.dropLista{
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background: #45A29E;
+  opacity: 0.8;
+  box-shadow: 0px 10px 10px 0px
+
+}
+.dropdown:hover .dropLista {
+  display: block;
+}
+.dropLista a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropLista a:hover {
+  color: black;
+  background-color: #10b6cf;
+}
+
+
+
