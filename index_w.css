@@ -111,4 +111,12 @@ cursor: pointer;
 }
 
 
+.contener{
+  background-color: #e6e6e6;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+
+
+}
 
