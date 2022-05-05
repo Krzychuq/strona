@@ -39,12 +39,12 @@ a:hover{
 
 
 .flexi{
-  flex: 1 1 ;
+  flex: 1 1 auto;
   
 }
 
 .flexf{
-  flex: 1 1 ;
+  flex: 1 1 auto;
 
 }
 
