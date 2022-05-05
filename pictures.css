@@ -144,7 +144,7 @@ body {
         font-size: 15px;
     }
 
-    @media screen and (max-width:1070px){
+    @media screen and (max-width:1000px){
         
         .flexi{
             font-size: 0.8em;
