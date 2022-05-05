@@ -5,75 +5,55 @@
     <title>About me</title>
     <link rel="stylesheet" href="index_w.css">
     <link rel="icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
     <script src="jquery-3.6.0.js"></script>
-    
-  <script>
-
-                     $(document).ready(function(){
-                            $(".buttonl").on("click", function(){
-                                   $(".dropLista").fadeToggle("3000");
-                            });
-                                   
-
-       
-              
-       $( ".tryb" ).on("click", function() { 
-              $("html").toggleClass("zmiana");
-
-       });
-       });
-
-  </script>
 </head>
-    <body>
-       
-       <div>
-              <div class="nav">
-                  
-                  <div class="flexi">
-                          <a class="linkA" href="https://www.instagram.com/krzychu_jowy/" target="_blank" title="instagram" style="height: 50px; ">
-                          <i class="fa-brands fa-instagram"></i></a>
-                  </div>
-                      <div class="flexf">
-                          <a class="linkA" href="https://www.facebook.com/Krzychuq12/" target="blank" title="facebook" style="height: 50px; " >
-                          <i class="fa-brands fa-facebook"></i></a>
-                      </div>
-                  <div class="flexh">
-                          <a class="linkA" href="index.html" style="height: 50px; ">
-                              <i class="fa-solid fa-house-chimney"></i> Główna</a>
-                  </div>
-                      <div class="flexp">
-                          <a class="linkA" href="pictures.html" style="height: 50px; ">
-                              <i class="fa-solid fa-camera"></i> Zdjęcia</a>
-                      </div>
-                  <div class="flexa">
-                      <a class="linkA" href="aboutme.html" style="height: 50px; ">
-                          <i class="fa-solid fa-circle-info"></i> FAQ</a>
-                  </div>
-                  
-                        <div class="dropdown">          
-                      <button class="buttonl"><i class="fa-solid fa-wrench"></i> Opcje</a></button>
-          
-                              <div class="dropLista">
-                                 <div><span class="tryb"><i class="fa-solid fa-sun"></i> Jasny tryb</span></div>
-                                  <span style="cursor: pointer;"><i class="fa-solid fa-camera-retro"></i> Zdjęcia</span>
-                              </div>
-                        </div>        
+       <body>
+              <div>
+                     <div class="nav">
+                            <div class="flexi">
+                                   <a class="linkA" href="https://www.instagram.com/krzychu_jowy/" target="_blank" title="instagram" style="height: 50px; ">
+                                   <i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="flexf">
+                                   <a class="linkA" href="https://www.facebook.com/Krzychuq12/" target="blank" title="facebook" style="height: 50px; " >
+                                   <i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                            <div class="flexh">
+                                   <a class="linkA" href="index.html" style="height: 50px; ">
+                                   <i class="fa-solid fa-house-chimney"></i> Główna</a>
+                            </div>
+                            <div class="flexp">
+                            <a class="linkA" href="pictures.html" style="height: 50px; ">
+                                   <i class="fa-solid fa-camera"></i> Zdjęcia</a>
+                            </div>
+                            <div class="flexa">
+                                   <a class="linkA" href="aboutme.html" style="height: 50px; ">
+                                   <i class="fa-solid fa-circle-info"></i> FAQ</a>
+                            </div>
+                            
+                            <div class="dropdown">          
+                                   <button class="buttonl"><i class="fa-solid fa-wrench"></i> Opcje</a></button>
+                                          <div class="dropLista">
+                                          <span class="tryb"><i class="fa-solid fa-sun"></i> Jasny tryb</span>
+                                          </div>
+                            </div>        
+                     </div>
               </div>
-          </div>
+       </body>
+<script>
+       $(document).ready(function(){
+              $(".buttonl").on("click", function(){
+                     $(".dropLista").fadeToggle("3000");
+              });  
 
+              $( ".tryb" ).on("click", function() { 
+                     $("html").toggleClass("zmiana");
+
+              });
+       });
        
-        
-    
-
-
-
-    </body>
-
-    
-
-
+</script>
 </html> 
 
