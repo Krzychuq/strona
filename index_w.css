@@ -130,8 +130,10 @@ cursor: pointer;
             /* dark mode */
 .tryb{
   cursor: pointer;
-
 }
+  
+
+
 .zmiana body {
   background-color:lightcoral;
 
@@ -154,11 +156,14 @@ cursor: pointer;
 
 .zmiana .dropLista{
   background-color:cornsilk;
-  
 }
 .zmiana .dropLista span {
+  display: block;
   color:black;
-
+  font-family: Helvetica;
+  font-weight: lighter;
+  padding: 5px;
+  text-decoration: none;
 }
 
 .zmiana .dropLista span:hover {

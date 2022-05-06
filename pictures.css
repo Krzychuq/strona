@@ -17,83 +17,60 @@ body {
     font-weight: bold;
     display: flex;
     flex-direction: row;
-       
-}
-
-
     
-    
-.zdjecia_column {
-    flex: 50%;
-    padding: 1px 100px;   
-    position: static;
-        
-}
-
-.zdjecia_row{
-    display: flex;
-    flex-wrap: wrap;
-    position: static;
-    gap: 10px 10px; 
-
-}
-
-    
-.linkA  {
+    }
+  
+  
+    .linkA  {
     color:black;
     text-decoration: none;
     display: block;
-    padding: 3px;
+    padding: 15px;
     background-color: #66FCF1; 
     
-}
-
+  }
   
-.flexi{
+  
+  
+  
+  
+  /* bloczki menu */
+  .flexi {
     flex: 1 1 auto;
+  }
+      .flexi a:hover{
+      background-color: #45A29E;
     
-    
-}
-    .flexi a:hover {
-    background-color: #45A29E;
-    }
-
-.flexf{
+      }
+  .flexf{
     flex: 1 1 auto;
-    
-     
-}
-.flexf a:hover {
-    background-color: #45A29E;
-    }
-
-.flexh{
+  }
+      .flexf a:hover{
+      background-color: #45A29E;
+      }
+  
+  .flexh{
     flex: 2 2 auto;
-      
-}
-.flexh a:hover {
-    background-color: #45A29E;
-    }
- 
-.flexa{
+  }
+      .flexh a:hover{
+      background-color: #45A29E;
+      }
+  .flexa{
     flex: 2 2 auto;
-    
-    
-}
-.flexa a:hover {
-    background-color: #45A29E;
-    }
-.flexp{
+  }
+      .flexa a:hover{
+      background-color: #45A29E;
+      }
+  .flexp{
     flex: 2 2 auto;
-      
-}
-.flexp a:hover {
-    background-color: #45A29E;
-    
-    }
-
-
-.buttonl {
+  }
+      .flexp a:hover{
+      background-color: #45A29E;
+      }
+  
+  /* Koniec bloczki menu */
+  
+  .buttonl {
   flex: 2 2 auto;
   height: 50px;
   padding: 15px 60px;
@@ -106,77 +83,145 @@ body {
   font-weight: bold;
   background:#66FCF1;
   cursor: pointer;
-}
-
+  }
+  
     .buttonl:hover{
-    background:#45A29E;
+      background:#45A29E;
     }
-
-.dropdown{
+  
+  /* Lista opcji */
+  .dropdown{
     display: inline;
     position:relative;
-   
+  }
+      .dropLista{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        background: #45A29E;
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px 0px
+  
+      }
+            .dropLista span {
+              display: block;
+                color: white;
+                font-family: Helvetica;
+                font-weight: lighter;
+                padding: 5px;
+                text-decoration: none;
+            }
+                .dropLista span:hover {
+                  color: black;
+                  background-color: #10b6cf;
+                }
+  /* koniec listy opcji */
 
-}
-.dropLista{
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    background: #45A29E;
-    opacity: 0.8;
-    box-shadow: 0px 10px 10px 0px
     
 
-}
-
-  .dropLista a {
+                /* dark mode */
+.tryb{
+    cursor: pointer;
+  }
+    
+  
+  
+  .zmiana body {
+    background-color:lightcoral;
+  
+  }
+  
+  .zmiana .buttonl{
+    background-color:cornsilk;
+    color:black;
+  }
+    .zmiana .buttonl:hover{
+      background:rgb(224, 208, 144);
+    }
+  
+  
+  .zmiana .linkA{
+    background-color:cornsilk;
+    color:black;
+  }
+  
+  
+  .zmiana .dropLista{
+    background-color:cornsilk;
+  }
+  .zmiana .dropLista span {
     display: block;
-    color: white;
+    color:black;
     font-family: Helvetica;
     font-weight: lighter;
     padding: 5px;
     text-decoration: none;
   }
-    .dropLista a:hover {
+  
+  .zmiana .dropLista span:hover {
     color: black;
-    background-color: #10b6cf;
+    background-color: rgb(224, 208, 144);
+  }
+  
+  .zmiana .flexi a:hover{
+    background-color: rgb(224, 208, 144);
+  
     }
-
-
-    @media screen and (max-width:1000px){
+    .zmiana .flexf a:hover{
+      background-color: rgb(224, 208, 144);
+    
+      }
+      .zmiana .flexh a:hover{
+        background-color: rgb(224, 208, 144);
+      
+        }
+        .zmiana .flexp a:hover{
+          background-color: rgb(224, 208, 144);
         
-        .flexi{
-            font-size: 0.8em;
-            
-        }
-        .flexf{
-            font-size: 0.8em;
-            
-        }
-        .flexa{
-            font-size: 0.8em;
-            
-        }
-        .flexp{
-            font-size: 0.8em;
-            
-        }
-        .flexh{
-            font-size: 0.8em;
-            
-        }
-        .buttonl{
-            font-size: 0.8em;
-        }
+          }
+          .zmiana .flexa a:hover{
+            background-color: rgb(224, 208, 144);
+          
+            }
+  
+  
+  
+            /* koniec dark mode */
+
+            @media screen and (max-width:1000px){
         
-        .zdjecia_column {
-            padding: 1px 30px;   
-            
+                .flexi{
+                    font-size: 0.8em;
+                    
+                }
+                .flexf{
+                    font-size: 0.8em;
+                    
+                }
+                .flexa{
+                    font-size: 0.8em;
+                    
+                }
+                .flexp{
+                    font-size: 0.8em;
+                    
+                }
+                .flexh{
+                    font-size: 0.8em;
+                    
+                }
+                .buttonl{
+                    font-size: 0.8em;
+                }
                 
-        }
-        
-    
-    
-    
-    }
+                .zdjecia_column {
+                    padding: 1px 30px;   
+                    
+                        
+                }
+                
+            
+            
+            
+            }
