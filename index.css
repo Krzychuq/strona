@@ -9,9 +9,28 @@ body {
   font-size: 1em;
 }
 
+.contener{
+  background-color: #e6e6e6;
+  position: static;
+  width: 100%;
+  height: 1000px;
 
 
+}
 
+
+.wideo{
+  display: flex;
+  flex:20px 20px;
+ 
+}
+.wideo1{
+  
+  position: relative;
+  width: 20%;
+  height: 50%;
+  border: none;
+}
 
 @media screen and (max-width:1000px){
         
