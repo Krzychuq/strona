@@ -6,6 +6,7 @@
     <meta name="robotscontent=noindex,nofollow"/>
     <title>FAQ</title>
     <link rel="stylesheet" href="faq.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+    <link rel="stylesheet" href="menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
     <script src="jquery-3.6.0.js"></script>
