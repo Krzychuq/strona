@@ -5,7 +5,7 @@
 
 body {
   background: #1F2833;
-  font-family: arial;
+  font-family: Arial;
   font-size: 1em;
 }
 
@@ -16,38 +16,95 @@ body {
   height: 1000px;
 }
 
-.wideo{
-  display: flex;
-  flex:20px 20px;
- 
-}
-.wideo1{
-  
-  position: relative;
-  width: 20%;
-  height: 50%;
-  border: none;
-}
-
+        /* .wideo{
+          display: flex;
+          flex:20px 20px;
+        
+        }
+        .wideo1{
+          
+          position: relative;
+          width: 20%;
+          height: 50%;
+          border: none;
+        } */
+/* okienko zaloguj */
 .dialog{
- font-family: Cochin;
+ font-family: Tahoma;
  
 
 }
 
 .username input[type=text]{
   width: 100%;
+  height: 50%;
   padding: 12px 20px;
-  margin: 8px 0;
   display: inline-block;
   }
-  .password input[type=text]{
-    width: 120%;
+  .password input[type=password]{
+    width: 100%;
+    height: 50%;
     padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
     }
+    .remember{
+      display: inline-block;
+      
+    }
+    .forget{
+      display: block;
+      }
+    .zaloguj_przycisk{
+      display: block;
+      text-align: center;
+      border: 2px ;
+      border-radius: 7px;
+      background-color:black;
+      color:white;  
+      cursor: pointer;
+      font-family: Helvetica;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+/* koniec okienko zaloguj */
 
+
+/* okienko sign */
+.username_sign input[type=text]{
+  width: 100%;
+  height: 50%;
+  padding: 12px 20px;
+  
+  display: inline-block;
+  }
+  .password_sign input[type=password]{
+    width: 100%;
+    height: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+  }
+  .confirm_pass_sign input[type=password]{
+    width: 100%;
+    height: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+  }
+  .sign_przycisk{
+    display: block;
+    text-align: center;
+    border: 2px ;
+    border-radius: 7px;
+    background-color:black;
+    color:white;  
+    cursor: pointer;
+    font-family: Helvetica;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+
+/* koniec okienko sign */
 
 
 @media screen and (max-width:1000px){
