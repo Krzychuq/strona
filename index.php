@@ -14,25 +14,18 @@
        <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
        <script src="jquery-3.6.0.js"></script>
        <script src="ui/jquery-ui.min.js"></script>
+       <script src="confetti.js"></script>
 </head>
 <body>
        <div><?php include_once("menu.php"); ?></div>
-       
        <div class="contener">
-              <div class="1blok">
-
-              </div>
-                     
-              <div class="2blok">
-
-              </div>
+       <div class="przycisk-confetti">
+              <button onclick="toggleConfetti();" class="przyciski" onmousedown="buttonClick()">Wciśnij mnie</button>
               
-              <div class="3blok">
-
               </div>
-
+              <canvas id="confetti-canvas">
        </div>
-
+          
        
 
 
@@ -80,11 +73,6 @@
                                           $('.ui-dialog-title').text('Zarejestruj się');
                                    }
                             });
-                      
-
-                            
-                            
-
                             });
               });
                      
