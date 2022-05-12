@@ -16,15 +16,7 @@
 
 
 <body>
-    
-
-
-    <div>
-        <?php include_once("menu.php"); ?>
-    </div>
-
-
-
+    <div><?php include_once("menu.php"); ?></div>
 <article>
     <div class="zdjecia_row">
         <div class="zdjecia_column">
@@ -43,47 +35,52 @@
     </div>
 </article>
 
-<div class="dialog" title="Zaloguj się">
-        <span>Podaj email</span>
-        <br>
-        <span>Podaj hasło</span>
-        <br>
-        <span>Zapamietaj mnie</span>
-        <br>
-        <span>Nie pamiętam hasła</span>
-        <br>
-        <span>Zaloguj się</span>
-    </div>
+
 
 </body>
 
-
-
-
-
 <script>
-       $(document).ready(function(){
-              $(".opcje").on("click", function(){
-                     $(".dropLista").fadeToggle("3000");
-              });  
+    $(document).ready(function(){
+            $(".opcje").on("click", function(){
+                $(".dropLista").fadeToggle("3000");
+            });  
 
-              $( ".tryb" ).on("click", function() {
-                     if($(this).attr('data-stan') == 0){
-                            $("html").addClass("jasny");
-                            $(this).attr('data-stan', 1);
-                            $(this).html('<i class="fa-solid fa-moon"></i> Ciemny tryb');
-                     }
-                     else{
-                            $("html").removeClass("jasny");
-                            $(this).attr('data-stan', 0);
-                            $(this).html('<i class="fa-solid fa-sun"></i> Jasny tryb');
-                     }
-              });
+            $( ".tryb" ).on("click", function() {
+                if($(this).attr('data-stan') == 0){
+                        $("html").addClass('jasny');
+                        $(this).attr('data-stan', 1);
+                        $(this).html('<i class="fa-solid fa-moon"></i> Ciemny tryb');
+                }
+
+                else{
+                        $("html").removeClass("jasny");
+                        $(this).attr('data-stan', 0);
+                        $(this).html('<i class="fa-solid fa-sun"></i> Jasny tryb');
+                }
+            }); 
+
             $('.login').on('click', function(){
-                $.post("login.php",function(data){
-                    $( ".dialog" ).dialog();
-                });   
+                $.ajax({
+                        cache: false,
+                        url: 'logowanie.php',
+                        dataType: 'html',
+                        success: function (data) {
+                                $('<div  title="Zaloguj się"/>').append(data).dialog({draggable: false});
+                                
+                        }
+                });
             });
+                $('body').on('click', '.okno_sign', function(){
+                    $.ajax({
+                        cache: false,
+                        url: 'zarejestruj.php',
+                        dataType: 'html',
+                        success: function (data) {
+                                $('.dialog').empty().append(data);
+                                $('.ui-dialog-title').text('Zarejestruj się');
+                        }
+                    });
+                });
     });
 </script>
 

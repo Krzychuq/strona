@@ -10,13 +10,12 @@
     }
   
   
-    .linkA  {
+  .linkA  {
     color:white;
     text-decoration: none;
     display: block;
     padding: 15px;
     background-color: black; 
-    
   }
   
   .login{
@@ -138,29 +137,29 @@
                                 }
   
                                 .jasny .opcje{
-                                  background: url("menu_tlo.jpg");
+                                  background:lightgrey;
                                   color:black;
                                 }
                                   .jasny .opcje:hover{
-                                    background: url("menu_tlo_hover.jpg");
+                                    background:dimgray;
                                     color: white;
                                   }
   
   
                                 .jasny .linkA{
-                                  background: url("menu_tlo.jpg");
+                                  background:lightgrey;
                                   color:black;
                                 }
                                 .jasny .login{
-                                  background: url("menu_tlo.jpg");
+                                  background:lightgrey;
                                   color: black;
                                 }
                                 .jasny .login:hover{
-                                  background: url("menu_tlo_hover.jpg");
+                                  background:dimgray;
                                   color: white;
                                 }
                                 .jasny .dropLista{
-                                  background: url("menu_tlo.jpg");
+                                  background:lightgrey;
                                 }
                                 .jasny .dropLista span {
                                   display: block;
@@ -173,30 +172,30 @@
   
                                 .jasny .dropLista span:hover {
                                   color: white;
-                                  background: url("menu_tlo_hover.jpg");
+                                  background:dimgray;
                                 }
   
                                 .jasny .flexi a:hover{
-                                  background: url("menu_tlo_hover.jpg");
+                                  background:dimgray;
                                   color: white;
   
                                   }
                                   .jasny .flexf a:hover{
-                                    background: url("menu_tlo_hover.jpg");
+                                    background:dimgray;
                                     color: white;
                                   
                                     }
                                     .jasny .flexh a:hover{
-                                      background: url("menu_tlo_hover.jpg");
+                                      background:dimgray;
                                       color: white;
                                     
                                       }
                                       .jasny .flexp a:hover{
-                                        background: url("menu_tlo_hover.jpg");
+                                        background:dimgray;
                                         color: white;
                                         }
                                         .jasny .flexa a:hover{
-                                          background: url("menu_tlo_hover.jpg");
+                                          background:dimgray;
                                           color: white;
                                         }
                                           

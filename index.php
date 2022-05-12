@@ -20,7 +20,7 @@
        
        <div class="contener">
               <div class="1blok">
-              
+
               </div>
                      
               <div class="2blok">
@@ -34,7 +34,7 @@
        </div>
 
        
-<span class="cos" hidden></span>
+
 
 </body>
        <script>
@@ -63,14 +63,26 @@
                                    url: 'logowanie.php',
                                    dataType: 'html',
                                    success: function (data) {
-                                          $('.cos').html(data);
-                                          $('.cos').dialog();
+                                          $('<div/>').append(data).dialog({draggable: false});
+                                          $('.ui-dialog-title').text('Zaloguj się');
+                                          
                                    }
                             });
                       
                      });
-                            $('body').delegate('.dialog_sign', 'onclick', function(){
-                            $('.dialog').dialog('close');
+                            $('body').on('click', '.okno_sign', function(){
+                            $.ajax({
+                                   cache: false,
+                                   url: 'zarejestruj.php',
+                                   dataType: 'html',
+                                   success: function (data) {
+                                          $('.dialog').empty().append(data);
+                                          $('.ui-dialog-title').text('Zarejestruj się');
+                                   }
+                            });
+                      
+
+                            
                             
 
                             });
