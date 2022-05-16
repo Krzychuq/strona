@@ -20,12 +20,12 @@
        <div><?php include_once("menu.php"); ?></div>
        <div class="contener">
        <div class="przycisk-confetti">
-              <button onclick="toggleConfetti();" class="przyciski" onmousedown="buttonClick()">Wciśnij mnie</button>
+              <button onclick="toggleConfetti();" class="przyciski" onmousedown="buttonClick()"><span class="ikon"></span></button>
               
               </div>
               <canvas id="confetti-canvas">
        </div>
-          
+       
        
 
 
