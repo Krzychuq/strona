@@ -8,6 +8,25 @@ body {
   font-family: Arial;
   font-size: 1em;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 .contener{
   background-image: linear-gradient(to top, #e6ece3 0%, #aee6fc 100%);
@@ -16,6 +35,28 @@ body {
   height: 700px;
   text-align: center;
 }
+.ikona2{
+  display: block;
+  background: url("box.png");
+  width: 48px;
+  height: 48px;
+}
+    .ikona2:hover{
+      display: block;
+      background: url("box_hover.png");
+      width: 48px;
+      height: 48px;
+
+    }
+.hehe{
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  font-family: sans-serif;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+  
 
 /* confetti */
 .przycisk-confetti{

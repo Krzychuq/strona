@@ -17,11 +17,12 @@
        <script src="confetti.js"></script>
 </head>
 <body>
+       
        <div><?php include_once("menu.php"); ?></div>
        <div class="contener">
        <div class="przycisk-confetti">
               <button onclick="toggleConfetti();" class="przyciski" onmousedown="buttonClick()"><span class="ikon"></span></button>
-              
+              <button class="hehe"><span class="ikona2"></span></button>
               </div>
               <canvas id="confetti-canvas">
        </div>
@@ -74,7 +75,22 @@
                                    }
                             });
                             });
+              
+              $('.hehe').on('click', function(){            
+              $.ajax({
+                     cache: false,
+                     url: 'box.php',
+                     dataType: 'html',
+                     success: function(data) {
+                            $("<div/>").append(data).dialog({draggable: false});
+                            $('.ui-dialog-title').text('Okienko');
+                            
+                     }
               });
+              });
+       });
+
+              
                      
        
        </script>

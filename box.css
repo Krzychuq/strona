@@ -1,0 +1,17 @@
+/* box */
+
+    .hehe-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 6px;
+      width: 80%;
+    }
+    .turtle{
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      display: block;
+    }
+  /* box */
