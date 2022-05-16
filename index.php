@@ -14,21 +14,31 @@
        <script src="https://kit.fontawesome.com/98a8f2243f.js" crossorigin="anonymous"></script>
        <script src="jquery-3.6.0.js"></script>
        <script src="ui/jquery-ui.min.js"></script>
-       <script src="confetti.js"></script>
+
 </head>
 <body>
        
        <div><?php include_once("menu.php"); ?></div>
        <div class="contener">
-       <div class="przycisk-confetti">
-              <button onclick="toggleConfetti();" class="przyciski" onmousedown="buttonClick()"><span class="ikon"></span></button>
-              <button class="hehe"><span class="ikona2"></span></button>
+              <div class="icons">
+                     <div class="przycisk-confetti">
+                            <button id="startConfetti" class="przyciski" title="Niespodzianka"><span class="ikon"></span></button>
+                                   <span style="margin-left:50px;"></span>
+                            <button class="hehe" title="Pudełko"><span class="ikona2"></span></button> 
+                     </div>
               </div>
-              <canvas id="confetti-canvas">
+              <div class="alu">
+                     <img src="alucard.png" alt="alucard" style="width: 200px; height:auto; margin-left:5px;">
+                     <p style="font: bold 1em segoe ui ; margin-top:70px; text-shadow: 1px 1px grey;">Ptakiem Hermesa nazywają mnie, zjadam swe skrzydła by poskromić się.<br>-Alucard</p>
+                     <img src="dogi.jpg" alt="dogi" style="width: 200px; height:auto;">
+                     <p style="font: bold 1em segoe ui ; margin-top:70px; text-shadow: 1px 1px grey;">Zabiere twą st00pke<br>-Pycha</p>
+              </div>
+              
        </div>
        
-       
+      
 
+       <script src="https://rawgit.com/benevolenttech/jquery.confetti.js/master/jquery.confetti.js"></script>
 
 </body>
        <script>
@@ -65,31 +75,31 @@
                       
                      });
                             $('body').on('click', '.okno_sign', function(){
-                            $.ajax({
-                                   cache: false,
-                                   url: 'zarejestruj.php',
-                                   dataType: 'html',
-                                   success: function (data) {
-                                          $('.dialog').empty().append(data);
-                                          $('.ui-dialog-title').text('Zarejestruj się');
-                                   }
-                            });
+                                   $.ajax({
+                                          cache: false,
+                                          url: 'zarejestruj.php',
+                                          dataType: 'html',
+                                          success: function (data) {
+                                                 $('.dialog').empty().append(data);
+                                                 $('.ui-dialog-title').text('Zarejestruj się');
+                                          }
+                                   });
                             });
               
               $('.hehe').on('click', function(){            
-              $.ajax({
-                     cache: false,
-                     url: 'box.php',
-                     dataType: 'html',
-                     success: function(data) {
-                            $("<div/>").append(data).dialog({draggable: false});
-                            $('.ui-dialog-title').text('Okienko');
-                            
-                     }
+                     $.ajax({
+                            cache: false,
+                            url: 'box.php',
+                            dataType: 'html',
+                            success: function(data) {
+                                   $("<div/>").append(data).dialog({draggable: false});
+                                   $('.ui-dialog-title').text('Okienko');
+                                   
+                            }
+                     });
               });
+              
               });
-       });
-
               
                      
        

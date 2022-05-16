@@ -15,7 +15,7 @@
     text-decoration: none;
     display: block;
     padding: 15px;
-    background-color: black; 
+    background-color: rgba(0, 0, 0, 0.514); 
   }
   
   .login{
@@ -23,7 +23,7 @@
     text-decoration: none;
     display: block;
     padding: 15px;
-    background-color: black; 
+    background-color: rgba(0, 0, 0, 0.514); 
     cursor: pointer;
 
   }
@@ -84,7 +84,7 @@
   padding: 15px 30px;
   border: none;
   color: white;
-  background:black;
+  background:rgba(0, 0, 0, 0.514);
   cursor: pointer;
   }
   
@@ -106,7 +106,7 @@
         position: absolute;
         width: 100%;
         overflow: auto;
-        background: black;
+        background: rgba(0, 0, 0, 0.514);
         opacity: 0.8;
         box-shadow: 0px 10px 10px 0px
   
