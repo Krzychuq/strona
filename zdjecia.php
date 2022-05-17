@@ -39,49 +39,6 @@
 
 </body>
 
-<script>
-    $(document).ready(function(){
-            $(".opcje").on("click", function(){
-                $(".dropLista").fadeToggle("3000");
-            });  
 
-            $( ".tryb" ).on("click", function() {
-                if($(this).attr('data-stan') == 0){
-                        $("html").addClass('jasny');
-                        $(this).attr('data-stan', 1);
-                        $(this).html('<i class="fa-solid fa-moon"></i> Ciemny tryb');
-                }
-
-                else{
-                        $("html").removeClass("jasny");
-                        $(this).attr('data-stan', 0);
-                        $(this).html('<i class="fa-solid fa-sun"></i> Jasny tryb');
-                }
-            }); 
-
-            $('.login').on('click', function(){
-                $.ajax({
-                        cache: false,
-                        url: 'logowanie.php',
-                        dataType: 'html',
-                        success: function (data) {
-                                $('<div  title="Zaloguj się"/>').append(data).dialog({draggable: false});
-                                
-                        }
-                });
-            });
-                $('body').on('click', '.okno_sign', function(){
-                    $.ajax({
-                        cache: false,
-                        url: 'zarejestruj.php',
-                        dataType: 'html',
-                        success: function (data) {
-                                $('.dialog').empty().append(data);
-                                $('.ui-dialog-title').text('Zarejestruj się');
-                        }
-                    });
-                });
-    });
-</script>
 
 </html>

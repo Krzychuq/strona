@@ -32,6 +32,8 @@ body {
   background-image: linear-gradient(to bottom, #faf6f6 0%, #c29fe9 100%);
   width: 100%;
   height: 1000px;
+  margin-top: 10px;
+  position:static;
 }
 /* przyciski */
 .ikona2{
@@ -101,41 +103,12 @@ body {
   width: 100%;
   gap:10px;
 }
-
+ul {
+  padding-inline-start: 0px;
+}
 
 
 @media screen and (max-width:1000px){
-        
-  .flexi{
-    font-size: 0.8em;
-      
-  }
-  .flex_gap1{
-    font-size: 0.8em;
-      
-  }
-  .flexf{
-      font-size: 0.8em;
-      
-  }
-  .flexa{
-      font-size: 0.8em;
-      
-  }
-  .flexp{
-      font-size: 0.8em;
-      
-  }
-  .flexh{
-      font-size: 0.8em;
-      
-  }
-  .opcje {
-    font-size: 0.8em;
-  }
-  .dropdown{
-      font-size: 0.8em;
-  }
   .alert_but{
     font-size: 12px;
   }

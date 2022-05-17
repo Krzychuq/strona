@@ -39,8 +39,14 @@
                 color:white;  
                 cursor: pointer;
                 font-family: Helvetica;
-                margin-left: 0px;
-                margin-right: 0px;
+                padding:2px 90px;
+                box-shadow: 0 2px 5px black;
             }
+                .zaloguj_przycisk:hover{
+                    box-shadow: 0 2px 10px black;
+                }
+                    .zaloguj_przycisk:active{
+                    transform: scale(0.9);
+                    }
 /* koniec okienko zaloguj */
 
