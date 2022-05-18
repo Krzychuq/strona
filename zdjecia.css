@@ -29,12 +29,20 @@ body {
     background: #555; 
   }
 
+  .zdjecia_column {
+    display: grid;
+    grid: auto / auto auto auto;
+    padding: 5px 120px;
+    gap: 15px 5px;
+  }
+
 ul {
     padding-inline-start: 0px;
 }
 @media screen and (max-width:1000px){
     .zdjecia_column {
-        padding: 1px 30px;   
+        padding: 1px 30px;  
+        gap: 10px 5px; 
     }
                 
     

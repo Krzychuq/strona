@@ -1,5 +1,5 @@
 /* okienko sign */
-.username_sign input[type=text]{
+.username_sign input[type=email]{
     width: 100%;
     height: 50%;
     padding: 12px 20px;

@@ -30,9 +30,10 @@
                             
                             <div class="dropdown">          
                                           <div class="opcje" title="Opcje"><i class="fa-solid fa-wrench"></i> Opcje</div>
-                                          <div class="dropLista">
-                                          <span class="tryb" data-stan="0"><i class="fa-solid fa-sun"></i> Jasny tryb</span>
-                                          </div>
+                                                 <div class="dropLista">
+                                                        <span class="tryb" data-stan="0"><i class="fa-solid fa-sun"></i> Jasny tryb</span>
+                                                        <a href="new.php" style="cursor: pointer"><i class="fa-solid fa-bars"></i> Nowe menu</a>
+                                                 </div>
                             </div>        
                      </div>
                      <script>

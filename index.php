@@ -13,6 +13,7 @@
        <script src="jquery-3.6.0.js"></script>
        <script src="ui/jquery-ui.min.js"></script>
        <link rel="stylesheet" href="ui/jquery-ui.css">
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>

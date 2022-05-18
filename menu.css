@@ -109,7 +109,7 @@
   
       }
             .dropLista span {
-              display: block;
+                display: block;
                 color: white;
                 font-family: Helvetica;
                 font-weight: lighter;
@@ -122,6 +122,21 @@
                   color: white;
                   background-color:grey;
                 }
+
+                .dropLista a {
+                    display: block;
+                    color: white;
+                    font-family: Helvetica;
+                    font-weight: lighter;
+                    padding: 5px;
+                    text-decoration: none;
+                    
+                }
+                    .dropLista a:hover {
+                      display: block;
+                      color: white;
+                      background-color:grey;
+                    }
   /* koniec listy opcji */
   
 
@@ -238,5 +253,10 @@
                 font-size: 12.8px;
                 padding: 15.5px 30px;
                 
+              }
+            }
+            @media screen and (max-width:723px){
+              .opcje{
+                padding: 8px 30px;
               }
             }

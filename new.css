@@ -1,50 +1,224 @@
 *{
   box-sizing: border-box;
-  font-family: Calibri;
+  margin: 0px;
+}
+
+
+.promocja-bar{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-family: Cambria;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  padding: 15px 0px;
 }
 
           /* MENU */
 .nav {
     width: 90%;
-    height: 200px;
+    height: auto;
     position: relative;
     margin-left: 60px;
     margin-right: 50px;
-    border: 1px solid black;
     overflow: hidden;
-
+    font-family: Calibri;
 }
 .rows{
   display: grid;
 }
   .row1{
+    margin-top: 10px;
     width: 100%;
   }
     .info{
       float: right;
-      width: 33%;
+      width: 40%;
+      margin-right: 40px;
+
     }
 
       .info_spany{
         padding: 5px 6px;
-        font-size: 14px; 
+        font-size: 16px;
       }
 
-  .row2{
-    text-align: right;
-  }
+  /* .row2{
+
+  } */
     .row2-1{
       float: right;
-      width: 20%;
+      width: 40%;
       padding: 5px 10px;
-      margin-right: 150px;
-      margin-top: 15px;
+      margin-right: 55px;
+      margin-top: 25px;
     }
   .searchbar{
-    padding: 10px 30px;
+    padding: 13px 40px;
   }
+
+  .nav_bottom{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-left: 200px;
+    margin-right: 40px;
+
+  }
+
+  .dropdown1{
+    cursor: pointer;
+  }
+    .dropdown2{
+      cursor: pointer;
+    }
+      .dropdown3{
+        cursor: pointer; 
+      }
+        .dropdown4{
+          cursor: pointer;
+        }
+        .dropdown5{
+          cursor: pointer;  
+        }
+      .dropdown6{
+        cursor: pointer; 
+      }
+  .dropdown7{
+    cursor: pointer;
+  }
+
+  .dropdown1:hover{
+    cursor: pointer;
+    color: darkolivegreen;
+    }
+      .dropdown2:hover{
+        cursor: pointer;
+        color: darkolivegreen;
+      }
+        .dropdown3:hover{
+          cursor: pointer;
+          color: darkolivegreen; 
+        }
+          .dropdown4:hover{
+            cursor: pointer;
+            color: darkolivegreen;
+          }
+          .dropdown5:hover{
+            cursor: pointer;
+            color: darkolivegreen;  
+          }
+      .dropdown6:hover{
+        cursor: pointer;
+        color: darkolivegreen;
+      }
+  .dropdown7:hover{
+    cursor: pointer;
+    color: darkolivegreen;
+  }
+
+
+  .lista1{
+    display: none;
+    position: absolute;
+    width: 10%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    box-shadow: 0px 10px 10px 0px
+
+  }
+  .lista1 span {
+    display: block;
+    color: white;
+    font-family: Helvetica;
+    font-weight: lighter;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+    .lista2{
+      display: none;
+      position: absolute;
+      width: 30%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.514);
+      opacity: 0.8;
+      box-shadow: 0px 10px 10px 0px
+
+    }
+      .lista3{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        background: rgba(0, 0, 0, 0.514);
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px 0px
+
+      }
+        .lista4{
+          display: none;
+          position: absolute;
+          width: 100%;
+          overflow: auto;
+          background: rgba(0, 0, 0, 0.514);
+          opacity: 0.8;
+          box-shadow: 0px 10px 10px 0px
+
+        }
+        .lista5{
+          display: none;
+          position: absolute;
+          width: 100%;
+          overflow: auto;
+          background: rgba(0, 0, 0, 0.514);
+          opacity: 0.8;
+          box-shadow: 0px 10px 10px 0px
+
+        }
+      .lista6{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        background: rgba(0, 0, 0, 0.514);
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px 0px
+
+      }
+    .lista7{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.514);
+    opacity: 0.8;
+    box-shadow: 0px 10px 10px 0px
+
+  }  
+
+
+.list1{
+  position: relative;
+  display: inline;
+}
+
+
+
+
+
+
 
 
             /* MENU */
 
-            
+.slajdy{
+  position: static;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+
+}
