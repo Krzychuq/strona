@@ -3,6 +3,9 @@
   margin: 0px;
 }
 
+li {
+  list-style-type:square;
+}
 
 .promocja-bar{
   background-color: black;
@@ -22,7 +25,7 @@
     position: relative;
     margin-left: 60px;
     margin-right: 50px;
-    overflow: hidden;
+    overflow: visible;
     font-family: Calibri;
 }
 .rows{
@@ -30,13 +33,18 @@
 }
   .row1{
     margin-top: 10px;
-    width: 100%;
+    width: 110%;
+    float: right;
+
+    
   }
+
+    #row1-przerwa {
+      margin-left: 120px;
+    }
     .info{
       float: right;
-      width: 40%;
-      margin-right: 40px;
-
+      width: 50%;
     }
 
       .info_spany{
@@ -49,9 +57,8 @@
   } */
     .row2-1{
       float: right;
-      width: 40%;
-      padding: 5px 10px;
-      margin-right: 55px;
+      width: 38%;
+      padding: 5px 0px;
       margin-top: 25px;
     }
   .searchbar{
@@ -64,161 +71,278 @@
     padding: 10px 10px;
     margin-left: 200px;
     margin-right: 40px;
+    display: flex;
+    flex-direction: row;
 
   }
 
   .dropdown1{
-    cursor: pointer;
+    display: inline-block;
+    position: relative;
   }
+    
     .dropdown2{
-      cursor: pointer;
+      display: inline-block;
+      position: relative;
     }
       .dropdown3{
-        cursor: pointer; 
+        display: inline-block;
+      position: relative;
       }
-        .dropdown4{
-          cursor: pointer;
-        }
-        .dropdown5{
-          cursor: pointer;  
-        }
-      .dropdown6{
-        cursor: pointer; 
+      .dropdown4{
+        display: inline-block;
+      position: relative;
       }
-  .dropdown7{
-    cursor: pointer;
-  }
-
-  .dropdown1:hover{
-    cursor: pointer;
-    color: darkolivegreen;
+    .dropdown5{
+      display: inline-block;
+      position: relative; 
     }
-      .dropdown2:hover{
-        cursor: pointer;
-        color: darkolivegreen;
-      }
-        .dropdown3:hover{
-          cursor: pointer;
-          color: darkolivegreen; 
-        }
-          .dropdown4:hover{
-            cursor: pointer;
-            color: darkolivegreen;
-          }
-          .dropdown5:hover{
-            cursor: pointer;
-            color: darkolivegreen;  
-          }
-      .dropdown6:hover{
-        cursor: pointer;
-        color: darkolivegreen;
-      }
-  .dropdown7:hover{
-    cursor: pointer;
-    color: darkolivegreen;
+  .dropdown6{
+    display: inline-block;
+    position: relative;
   }
+        .dropdown1:hover .droplista1{display: block;}
+          .dropdown2:hover .droplista2{display: block;}
+            .dropdown3:hover .droplista3{display: block;}
+            .dropdown4:hover .droplista4{display: block;}
+          .dropdown5:hover .droplista5{display: block;}
+        .dropdown6:hover .droplista6{display: block;}
 
 
-  .lista1{
+
+  .droplista1{
     display: none;
     position: absolute;
-    width: 10%;
+    width: 200%;
     overflow: hidden;
     background: rgba(0, 0, 0, 0);
-    opacity: 1;
-    box-shadow: 0px 10px 10px 0px
-
+    opacity: 0.9;
+    box-shadow: 0px 10px 10px 0px;
   }
-  .lista1 span {
-    display: block;
+
+  .droplista1 li {
     color: white;
     font-family: Helvetica;
     font-weight: lighter;
+    font-size: 15px;
     padding: 5px;
-    text-decoration: none;
-    
-}
-    .lista2{
-      display: none;
-      position: absolute;
-      width: 30%;
-      overflow: auto;
-      background: rgba(0, 0, 0, 0.514);
-      opacity: 0.8;
-      box-shadow: 0px 10px 10px 0px
+    background-color: black;
+  }
 
+
+  
+.droplista2{
+  display: none;
+  position: absolute;
+  width: 150%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  box-shadow: 0px 10px 10px 0px;
+
+}
+.droplista2 li {
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+
+.droplista3{
+  display: none;
+  position: absolute;
+  width: 200%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  box-shadow: 0px 10px 10px 0px;
+}
+.droplista3 li {
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+
+.droplista4{
+  display: none;
+  position: absolute;
+  width: 150%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  box-shadow: 0px 10px 10px 0px;
+}
+.droplista4 li {
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+
+.droplista5{
+  display: none;
+  position: absolute;
+  width: 150%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  box-shadow: 0px 10px 10px 0px;
+}
+.droplista5 li {
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+
+.droplista6{
+  display: none;
+  position: absolute;
+  width: 150%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.9;
+  box-shadow: 0px 10px 10px 0px;
+}
+.droplista6 li {
+  color: white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+
+  .opcja-1{
+    cursor: pointer;
+  }
+    .opcja-2{
+      cursor: pointer;
     }
-      .lista3{
-        display: none;
-        position: absolute;
-        width: 100%;
-        overflow: auto;
-        background: rgba(0, 0, 0, 0.514);
-        opacity: 0.8;
-        box-shadow: 0px 10px 10px 0px
-
+      .opcja-3{
+        cursor: pointer;
       }
-        .lista4{
-          display: none;
-          position: absolute;
-          width: 100%;
-          overflow: auto;
-          background: rgba(0, 0, 0, 0.514);
-          opacity: 0.8;
-          box-shadow: 0px 10px 10px 0px
-
-        }
-        .lista5{
-          display: none;
-          position: absolute;
-          width: 100%;
-          overflow: auto;
-          background: rgba(0, 0, 0, 0.514);
-          opacity: 0.8;
-          box-shadow: 0px 10px 10px 0px
-
-        }
-      .lista6{
-        display: none;
-        position: absolute;
-        width: 100%;
-        overflow: auto;
-        background: rgba(0, 0, 0, 0.514);
-        opacity: 0.8;
-        box-shadow: 0px 10px 10px 0px
-
-      }
-    .lista7{
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.514);
-    opacity: 0.8;
-    box-shadow: 0px 10px 10px 0px
-
-  }  
-
-
-.list1{
-  position: relative;
-  display: inline;
+    .opcja-4{
+      cursor: pointer;
+    }
+  .opcja-5{
+    cursor: pointer;
+  }
+.opcja-6{
+  cursor: pointer;
 }
+      .opcja-1:hover{
+        color: darkred;
+      }
+        .opcja-2:hover{
+          color: darkred;
+        }
+          .opcja-3:hover{
+            color: darkred;
+          }
+          .opcja-4:hover{
+            color: darkred;
+          }
+        .opcja-5:hover{
+          color: darkred;
+        }
+      .opcja-6:hover{
+        color: darkred;
+      }
 
-
-
-
-
-
-
-
+.a1{
+  text-decoration: none; 
+  color:black; 
+  cursor: pointer;
+}
+.a2{
+  text-decoration: none; 
+  color:black; 
+  cursor: pointer;
+}
             /* MENU */
 
 .slajdy{
-  position: static;
-  width: 100%;
-  height: 300px;
+  position: relative;
   display: flex;
-  flex-direction: row;
-
 }
+  .slajdy img{
+    display: block;
+    width: 100%;
+    max-height: 300px;
+  }
+
+
+  @media screen and (max-width: 1300px){
+    #row1-przerwa {
+      margin-left: 50px;
+    }
+    .nav_bottom{
+      margin-left: 30px;
+    }
+    .opcja-1{
+      width: 140%;
+    }
+      .opcja-2{
+        width: 140%;
+      }
+        .opcja-3{
+          width: 140%;
+        }
+      .opcja-4{
+        width: 140%;
+      }
+    .opcja-5{
+      width: 140%;
+    }
+  .opcja-6{
+    width: 140%;
+  }
+  }
+    @media screen and (max-width: 1250px){
+      .row2-1{
+        width: 45%;
+      }
+    }
+
+      @media screen and (max-width: 1200px){
+        #row1-przerwa {
+          margin-left: 0px;
+        }
+        .droplista3{
+          width: 300%;
+        }
+      }
+
+    @media screen and (max-width: 1100px){
+      .nav{
+        margin-left: 0px;
+      }
+    }
+
+  @media screen and (max-width: 1050px){
+    .nav_bottom{
+      display: none;
+      
+    }
+    #zl{
+      display: none;
+    }
+    .row1{
+     padding: 0px 20px;
+    }
+  }
