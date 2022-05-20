@@ -7,6 +7,8 @@ li {
   list-style-type:square;
 }
 
+
+
 .promocja-bar{
   background-color: black;
   color: white;
@@ -54,7 +56,8 @@ li {
       height:auto; 
       float:left; 
       padding:10px 20px; 
-      margin-left:40px; 
+      margin-left:auto;
+      margin-right: auto; 
       margin-top:10px;
     }
 
@@ -303,6 +306,24 @@ li {
     max-height: 300px;
   }
 
+  .lista_mobile {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   @media screen and (max-width: 1300px){
@@ -361,6 +382,9 @@ li {
         margin-left: auto;
         margin-right: auto;
       }
+      .row2-1{
+        width: 46%;
+      }
     }
 
   @media screen and (max-width: 1055px){
@@ -371,7 +395,7 @@ li {
       display: none;
     }
     .row1{
-     padding: 0px 20px;
+     padding: 0px 0px;
     }
       .row2-1{
         display: none;
@@ -383,14 +407,7 @@ li {
   }
 
     @media screen and (max-width: 1055px){
-      .promocja-bar{
-        background-color: white;
-        height: 30px;
-        padding: 0px;
-      }
-        #promo{
-          display: none;
-        }
+ 
       .nav{
         width: auto;
         border: 1px solid black;
@@ -405,6 +422,7 @@ li {
         width: auto;
         height: 100%;
         float: right;
+        overflow: visible;
         
       }
         .row2{
@@ -423,7 +441,138 @@ li {
       #logo{
         width: 170px;
       }
+      
+      #btn_mobile{
+        cursor:pointer; 
+        color:black; 
+        font-weight:bold; 
+        font-size:40px; 
+        padding:5px; 
+        margin-top:auto; 
+        margin-bottom:auto;
+      }
+        #menu_list_mobile{
+          cursor:pointer; 
+          color:black; 
+          font-weight:bold; 
+          font-size:40px; 
+          padding:5px; 
+          margin-top:auto; 
+          margin-bottom:auto;
 
-    
+        }
+
+              .lista_mobile{
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                opacity:0.9;
+              }
+                .lista_mobile li{
+                  color: white;
+                  font-family: Arial;
+                  font-weight: normal;
+                  font-size: 15px;
+                  padding: 5px;
+                  background-color: black;
+                }
+                    .list_m1{
+                      cursor: pointer;
+                    }
+                      .list_m2{
+                        cursor: pointer;
+                      }
+                        .list_m3{
+                          cursor: pointer;
+                        }
+                        .list_m4{
+                          cursor: pointer;
+                        }
+                      .list_m5{
+                        cursor: pointer;
+                      }
+                    .list_m6{
+                      cursor: pointer;
+                    }
+              
+              .menu_a{
+                text-decoration: none;
+                color: white;
+              }
+
+              .meni1{
+                display: none;
+                position: static;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+              }
+                .meni1 li {
+                  background-color: white;
+                  opacity:0.9; 
+                  color: black;
+                }
+                  .meni2{
+                    display: none;
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                  }
+                    .meni2 li {
+                      background-color: white;
+                      opacity:0.9; 
+                      color: black;
+                    }
+                  .meni3{
+                    display: none;
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                  }
+                    .meni3 li {
+                      background-color: white;
+                      opacity:0.9; 
+                      color: black;
+                    }
+                    .meni4{
+                      display: none;
+                      position: static;
+                      width: 100%;
+                      height: auto;
+                      overflow: hidden;
+                    }
+                      .meni4 li {
+                        background-color: white;
+                        opacity:0.9; 
+                        color: black;
+                      }
+                      .meni5{
+                        display: none;
+                        position: static;
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                      }
+                        .meni5 li {
+                          background-color: white;
+                          opacity:0.9; 
+                          color: black;
+                        }
+                        .meni6{
+                          display: none;
+                          position: static;
+                          width: 100%;
+                          height: auto;
+                          overflow: hidden;
+                        }
+                          .meni6 li {
+                            background-color: white;
+                            opacity:0.9; 
+                            color: black;
+                          }
     }
     
