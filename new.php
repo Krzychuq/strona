@@ -27,14 +27,13 @@
        <div class="rows">
                 <div class="row1">
                         <div class="info">
-                                <span id="row1-przerwa"></span>
-                        <span class="info_spany">(+48) 884 321 940</span>
-                                <span id="puste" style="margin-left:20px;"></span>  
-                        <span class="info_spany">email@gmail.com</span>
-                                <span id="puste" style="margin-left:20px;"></span>    
-                        <span class="info_spany">Zaloguj</span>
-                                <span id="puste" style="margin-left:20px;"></span>     
-                        <span class="info_spany">Ulubione(0)</span>
+                                <span class="info_spany">(+48) 884 321 940</span>
+                                        <span id="puste" style="margin-left:20px;"></span>  
+                                <span class="info_spany">email@gmail.com</span>
+                                        <span id="puste" style="margin-left:20px;"></span>    
+                                <span class="info_spany">Zaloguj</span>
+                                        <span id="puste" style="margin-left:20px;"></span>     
+                                <span class="info_spany">Ulubione(0)</span>
                         </div>
                 </div>
 
