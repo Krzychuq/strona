@@ -35,8 +35,6 @@ li {
     margin-top: 10px;
     width: 110%;
     float: right;
-
-    
   }
 
     #row1-przerwa {
@@ -46,15 +44,21 @@ li {
       float: right;
       width: 50%;
     }
-
       .info_spany{
         padding: 5px 6px;
         font-size: 16px;
       }
 
-  /* .row2{
+    #logo{
+      width:250px; 
+      height:auto; 
+      float:left; 
+      padding:10px 20px; 
+      margin-left:40px; 
+      margin-top:10px;
+    }
 
-  } */
+
     .row2-1{
       float: right;
       width: 38%;
@@ -274,10 +278,23 @@ li {
   color:black; 
   cursor: pointer;
 }
+
+
+
             /* MENU */
 
+      /* Moblie menu */
+  .nav_mobile{
+    display: none;
+  }
+
+
+
+      /* Mobile menu */
+    
+
 .slajdy{
-  position: relative;
+  position: static;
   display: flex;
 }
   .slajdy img{
@@ -285,6 +302,7 @@ li {
     width: 100%;
     max-height: 300px;
   }
+
 
 
   @media screen and (max-width: 1300px){
@@ -328,16 +346,26 @@ li {
         }
       }
 
+
+
+
     @media screen and (max-width: 1100px){
       .nav{
         margin-left: 0px;
+        margin-right: 0px;
+      }
+      .slajdy{
+        display: grid;
+        width: 90%;
+        padding: 5px 40px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
-  @media screen and (max-width: 1050px){
+  @media screen and (max-width: 1055px){
     .nav_bottom{
       display: none;
-      
     }
     #zl{
       display: none;
@@ -345,4 +373,57 @@ li {
     .row1{
      padding: 0px 20px;
     }
+      .row2-1{
+        display: none;
+      }
+    .row1{
+      display: none;
+
+    }
   }
+
+    @media screen and (max-width: 1055px){
+      .promocja-bar{
+        background-color: white;
+        height: 30px;
+        padding: 0px;
+      }
+        #promo{
+          display: none;
+        }
+      .nav{
+        width: auto;
+        border: 1px solid black;
+        border-left: hidden;
+        border-right: hidden;
+        margin-left:0px;
+        margin-right: 0px;
+        
+      }
+      .nav_mobile{
+        display: flex;
+        width: auto;
+        height: 100%;
+        float: right;
+        
+      }
+        .row2{
+          width: 100%;
+        }
+      
+      .slajdy{
+        padding: 0px;
+        margin-right: 0px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: auto;
+      }
+      
+      
+      #logo{
+        width: 170px;
+      }
+
+    
+    }
+    

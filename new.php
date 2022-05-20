@@ -4,19 +4,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
-<script src="jquery-3.6.0.js"></script>
-<script src="ui/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="ui/jquery-ui.css">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href=
 "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" type="text/css" href="/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="/slick/slick-theme.css">
+
 <title>Nowa strona</title>
 </head>
 
 <body>
 
 <div class="promocja-bar">
-        <span>Promocja 20% na produkty!!</span>
+        <span id="promo">Promocja 20% na produkty!!</span>
 </div>
 
 
@@ -38,8 +39,12 @@
                 </div>
 
                 <div class="row2">
-                        <img src="logo.png" style="width:250px; height:auto; float:left; padding:10px 20px; 
-                        margin-left:40px; margin-top:10px;">
+                        <img id="logo" src="logo.png">
+                                <div class="nav_mobile">
+                                        <i class="bi bi-heart"style="color:black; font-weight:bold; font-size:40px; padding:5px; margin-top:auto; margin-bottom:auto;"></i>
+                                        <i class="bi bi-cart3" style="color:black; font-weight:bold; font-size:40px; padding:5px; margin-top:auto; margin-bottom:auto;"></i>
+                                        <i class="bi bi-list" style="color:black; font-weight:bold; font-size:40px; padding:5px; margin-top:auto; margin-bottom:auto;"></i>
+                                </div>       
                         <div class="row2-1">
                                 <input class="searchbar" type="text" name="text" autocomplete="off" 
                                 placeholder="CZEGO SZUKASZ?">
@@ -142,22 +147,29 @@
 </div>
 
 
-
-
-
 <!-- MENU -->
-
-<div class="slajdy">
-        <img src="photos/1.jpg" alt="photo" >
-        <img src="photos/2.jpg" alt="photo" >
-        <img src="photos/3.jpg" alt="photo" >
-</div>
-
+<section class="photos slider">
+        <div class="slajdy">
+                <img src="photos/1.jpg" alt="photo" >
+                <img src="photos/2.jpg" alt="photo" >
+                <img src="photos/3.jpg" alt="photo" >
+        </div>
+</section>
 
 </body>
 </html>
 
-
-<script>
-
-</script>
+<script src="jquery-3.6.0.js"></script>
+<script src="ui/jquery-ui.min.js"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        $(document).on('ready', function() {
+                $(".photos").slick({
+                        dots: true,
+                        vertical: true,
+                        centerMode: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                });
+        });
+        </script>
