@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.contener{
+    background-color: white;
+}
+.banner{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.logo{
+    background-color: white;
+    display: flex;
+    
+}
+
+.menu{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+    .menu li{
+        list-style-type: none;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+        .droplista1{
+            
+        }
+            .droplista2{
+                
+            }
+                .droplista3{
+                    
+                }
+            .droplista4{
+                
+            }
+        .droplista5{
+            
+        }
+
+    @media screen and (max-width: 500px) {
+        .menu li{
+            font-size: 13px;
+        }
+    }
