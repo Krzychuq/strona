@@ -273,7 +273,7 @@ li {
 
 .a1{
   text-decoration: none; 
-  color:black; 
+  color:darkred; 
   cursor: pointer;
 }
 .a2{
@@ -493,7 +493,8 @@ li {
               
               .menu_a{
                 text-decoration: none;
-                color: white;
+                color: darkred;
+
               }
 
               .meni1{

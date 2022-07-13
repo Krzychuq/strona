@@ -59,7 +59,7 @@
 
 
                 <div class="nav_bottom">
-                        <a class="a1" href="#">Nowość</a>
+                        <a class="a1" href="bluzy.php">Nowość</a>
                                 <span id="puste" style="margin-left:5px;"></span>
                                         <span id="puste" style="margin-left:25px;"></span>
                         <div class="dropdown1">
@@ -150,7 +150,7 @@
 </div>
 
 <div class="lista_mobile">   
-        <li><a class="menu_a" href="#">Nowość</a></li>    
+        <li><a class="menu_a" href="bluzy.php">Nowość</a></li>    
         <li class="list_m1">Odzież</li>
                 <div class="meni1">
                         <li>Bluzy</li>
@@ -195,7 +195,7 @@
                         <li>40%</li>
                         <li>70%</li>
                 </div>
-        <li><a class="menu_a" href="#">Marki</a></li>
+        <li><a class="menu_b" href="#">Marki</a></li>
 
 </div>
 <!-- MENU -->
