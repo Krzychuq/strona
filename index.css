@@ -1,119 +1,283 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+*{
+    box-sizing: border-box;
+    margin: 0px;
 }
 
-body {
-  background: #1F2833;
-  font-family: Arial;
-  font-size: 1em;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
 
 .contener{
-  background-image: linear-gradient(to bottom, #faf6f6 0%, #c29fe9 100%);
-  width: 100%;
-  height: 1000px;
-  margin-top: 10px;
-  position:static;
+    background-color: white;
 }
-/* przyciski */
-.ikona2{
-  display: block;
-  background: url("box.png");
-  width: 48px;
-  height: 48px;
+.banner{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
-    .ikona2:hover{
-      display: block;
-      background: url("box_hover.png");
-      width: 48px;
-      height: 48px;
-    }
-
-.hehe{
-  background-color: rgb(255, 255, 255);
-  border: 2px solid black;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.hehe:active{
-  transform: scale(0.9);
-}
-  
-
-/* confetti */
- .icons{
-  text-align: center;
+ .header{
+    background-color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
  }
-.przycisk-confetti{
-  display:inline-flex;
-  padding: 10px 10px;
-  position: relative;
-}
-
-.ikon{
-  display: block;
-  background: url("confetti_icon.png");
-  width: 48px;
-  height: 48px;
-}
-
-.przyciski{
-  background-color: rgb(255, 255, 255);
-  font-size: medium;
-  font-family: sans-serif;
-  border: 2px solid black;
-  border-radius: 6px;
-  cursor: pointer;
-  
-}
-    .przyciski:hover{
-      background-color: #e60074;
-      box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
-      border: 2px solid rgb(34, 34, 34);
-      overflow: hidden;
+    .logo{
+        font-size: 2.7rem; 
+        font-family:monospace; 
+        width: 100%;
     }
-      .przyciski:active{
-        transform: scale(0.9);
-      }
+        .search{
+            padding-top: 5px;
+            text-align: right;
+            width: 30%;
+            
+        }
+            .icon1 {
+                display: inline-flex;
+                font-size: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 25px;
+                background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+                background-size: 20px;
+                border: 2px solid black;
+                border-radius: 6px;
+            }
+                .icon2{
+                    display: none;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 25px;
+                    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+                    background-size: 20px;
+                    border: 2px solid black;
+                    border-radius: 6px;
+                    font-size: 0.7rem;
+                    width: 90%;
+                }
+                .account{
+                    padding-top:5px;
+                    text-align: center;
+                    width: 10%;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            .account a{
+                text-decoration: none;
+                color: black;
+                
+            }   
+        .cart{
+            padding-top:5px;
+            text-align: center;
+            width: 10%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }   
+    .cart a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #konto1{
+        display: inline-flex;
+    }
+        #konto2{
+            display: inline-flex;
+        }
+        #koszyk1{
+            display: inline-flex;
+        }
+    #koszyk2{
+        display: inline-flex;
+    }
 
-/* koniec confetti */
-.alu{
-  text-align: center;
-  display: flex;
-  width: 100%;
-  gap:10px;
+.menu{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-ul {
-  padding-inline-start: 0px;
-}
+    .menu li{
+        list-style-type: none;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+        /* .droplista1{
+            
+        }
+            .droplista2{
+                
+            }
+                .droplista3{
+                    
+                }
+            .droplista4{
+                
+            }
+        .droplista5{
+            
+        } */
 
 
-@media screen and (max-width:1000px){
-  .alert_but{
-    font-size: 12px;
-  }
-  .alu{
-    gap:5px;
-    display: grid;
-  }
-}
+        .prodcon{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(235, 245, 235);
+            
+        }
+            #produkt{
+                background-color: yellow;
+                margin-left: 10px;
+                margin-top: 10px;
+                width: 50%;
+                height:auto;
+                position: relative;
+            }
+                div#produkt{
+                    overflow: hidden;
+                }
+                    div#produkt figure img{ 
+                        width: 20%; 
+                        height:100%;  
+                        float: left; 
+                    }
+                        div#produkt figure{ 
+                        position: relative;
+                        width: 500%;
+                        margin: 0;
+                        left: 0;
+                        transition: 1s ease-in-out;
+                        }
+        
+                            .prawy, .lewy{
+                            position: absolute;
+                            top: 45%;
+                            cursor: pointer;
+                            color: white;
+                            background: transparent;
+                            padding: 20px;
+                            font-size: 40px;
+                            border:none;
+                            }
+        
+                        .lewy{
+                        left: 0px;
+                        }
+                    .prawy{
+                    right: 0px;
+                    }
+            .info{
+                text-align: center;
+                flex: 10%;
+                margin-top: 10px;
+                margin-right: 10px;
+
+            }
+        .opis{
+            background-color: purple;
+            height: 13em;
+            padding: 30px 20px;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            font-size: 1.3rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+            #tytul{
+                font-family: 'Segoe UI';
+                font-size: 2.3rem;
+                text-align: left;
+                padding-left: 10%;
+            }
+                #cena{
+                    font-family: 'Verdana';
+                    font-size: 2rem;
+                    text-align: left;
+                    padding-left: 10%;
+                    color: rgb(192, 38, 38);
+                }
+                    #rodzaj{
+                        font-family: 'Segoe UI';
+                        font-size: 1.6rem;
+                        text-align: left;
+                        padding-left: 10%;
+                    }
+                    #ilosc{
+                        font-family: 'Segoe UI';
+                        font-size: 1.6em;
+                        text-align: left;
+                        padding-left: 10%;
+                    }
+                #zakup{
+                    font-family: 'Segoe UI';
+                    font-size: 1.6rem;
+                    text-align: left;
+                    padding-left: 10%;
+                }
+            .btkup{
+                width: 90%;
+                height: 7%;
+                font-size: 1.2rem;
+                
+            }
+        
+        
+        
+        
+
+    @media screen and (max-width: 550px) {
+        .menu li{
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        .header{
+            margin-left: 5%;
+            margin-right: 0%;
+        }
+        .logo{
+          width: 50%;
+          font-size: 2rem;
+        }
+
+        .account{
+            width: 11%;
+        }
+        .cart{
+            width: 11%;
+        }
+        .icon1{
+            display: none;
+        }
+        
+        .icon2{
+            display: inline-flex;
+        }
+
+        #konto1{
+            font-size: 2rem;
+
+        }
+            #konto2{
+                display: none;
+            }
+            #koszyk1{
+                font-size: 2rem;
+
+            }
+        #koszyk2{
+            display: none;
+        }
+        #ikony{
+            display: none;
+        }
+    }
