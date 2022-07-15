@@ -38,12 +38,38 @@
                 </div>
             </div>
         <div class="menu">
-            <li>AKWARIUM</li>
-                <li>SPRZĘT</li>
-                    <li>RYBY</li>
-                <li>DEKORACJE</li>
-            <li>NOWOŚCI</li>
+            <div class="dropdown1">
+                <span>AKWARIUM</span>
+                    <div class="droplista1">
+                    <li>test</li>
+                </div>
+            </div>
+            <div class="dropdown2">
+                    <span>SPRZĘT</span>
+                        <div class="droplista2">
+                        <li>test</li>
+                    </div>
+                </div>      
+                <div class="dropdown3">
+                    <span>RYBY</span>
+                    <div class="droplista3">
+                        <li>test</li>
+                    </div>
+                </div>  
+                <div class="dropdown4">
+                    <span>DEKORACJE</span> 
+                    <div class="droplista4">
+                        <li>test</li>
+                    </div>
+                </div> 
+            <div class="dropdown5">
+                    <span>NOWOŚCI</span>
+                <div class="droplista5">
+                     <li>test</li>
+                </div>
+            </div>  
         </div>
+
 
         <div class="prodcon">
             <div id="produkt">
@@ -65,17 +91,31 @@
                         </div>
                             <div id="rodzaj">
                                 <p>Rodzaj</p>
-                                
-                                <br>
                             </div>
+                                    <div class="kolor-rodzaj">
+                                        <button class="black"></button>
+                                            <button class="white"></button>
+                                            <button class="yellow"></button>
+                                        <button class="orange"></button>
+                                    </div>
+                                <br>
                         <div id="ilosc">
                             <p>Ilosc</p>
-                            <br><br><br><br>
+                                <button class="down" onclick="down()">-</button>
+                                    <a id="licznik">1</a>
+                                <button class="up" onclick="up()">+</button>
+                              
                         </div>
+                        <br>
+                            <div id="dostepnosc">
+                                <p>Dostępność 10szt</p>
+                            </div>
+                            <br><br><br><br><br><br>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
                     </div>
                 </div>
+                <!-- Opis szczegółowy produktu -->
             <div class="opis">
                 <p>Opis</p><br>
                 <p>Skalar</p><br>
@@ -84,7 +124,13 @@
                 <p>-posis</p>
                 <p>-posis</p>
 
+
+                
+
             </div>
+        </div>
+        <div class="podobne">
+            Podobne produkty
         </div>
 
     </div>
@@ -99,7 +145,7 @@
 <script>
 	$(document).ready(function(){
 		var x = 0;
-    // for next slide
+    // w prawo przesuniecie
 		$('.prawy').click(function(){
     
         x= (x<=200)?(x+100):0;
@@ -107,11 +153,23 @@
 		});
 
 
-     // for prev slide
+     // w lewo przesuniecie
      $('.lewy').click(function(){
     
         x= (x>=100)?(x-100):400;
       $('figure').css('left', -x+'%');
     });
 	});
+    // Licznik produktów
+    var licznik = 1;
+        function down() {
+            if(this.licznik > 1){
+                this.licznik -= 1 }
+            document.getElementById("licznik").innerHTML = licznik;
+        };
+        function up() {
+            if(this.licznik < 10 ){
+                licznik += 1;}
+            document.getElementById("licznik").innerHTML = licznik;
+        };
 </script>

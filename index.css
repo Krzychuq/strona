@@ -97,40 +97,164 @@
 
 .menu{
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 13rem;
 }
-    .menu li{
-        list-style-type: none;
+    .dropdown1 span{
+        cursor: pointer;
+        padding-left: 3rem;
         flex-basis: 150%;
         text-align: center;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.2rem;
     }
-        /* .droplista1{
-            
+    .dropdown2 span{
+        cursor: pointer;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .dropdown3 span{
+        cursor: pointer;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .dropdown4 span{
+        cursor: pointer;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .dropdown5 span{
+        cursor: pointer;
+        flex-basis: 150%;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .dropdown1{
+        display: inline-block;
+      }
+        .dropdown2{
+          display: inline-block;
         }
-            .droplista2{
-                
-            }
-                .droplista3{
-                    
-                }
-            .droplista4{
-                
-            }
-        .droplista5{
-            
-        } */
+          .dropdown3{
+            display: inline-block;
+          }
+          .dropdown4{
+            display: inline-block;
+          }
+        .dropdown5{
+          display: inline-block;
+        }
+
+            .dropdown1:hover .droplista1{display: block;}
+              .dropdown2:hover .droplista2{display: block;}
+                .dropdown3:hover .droplista3{display: block;}
+                .dropdown4:hover .droplista4{display: block;}
+              .dropdown5:hover .droplista5{display: block;}
+
+        .droplista1{
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: hidden;
+            opacity: 0.9;
+            box-shadow: 0 0 10px;
+        }
+        .droplista1 li {
+            color: white;
+            font-family: Helvetica;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+          }
+          .droplista2{
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: hidden;
+            opacity: 0.9;
+            box-shadow: 0 0 10px;
+        }
+        .droplista2 li {
+            color: white;
+            font-family: Helvetica;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+          }
+          .droplista3{
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: hidden;
+            opacity: 0.9;
+            box-shadow: 0 0 10px;
+        }
+        .droplista3 li {
+            color: white;
+            font-family: Helvetica;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+          }
+          .droplista4{
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: hidden;
+            opacity: 0.9;
+            box-shadow: 0 0 10px;
+        }
+        .droplista4 li {
+            color: white;
+            font-family: Helvetica;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+          }
+          .droplista5{
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: hidden;
+            opacity: 0.9;
+            box-shadow: 0 0 10px;
+        }
+        .droplista5 li {
+            color: white;
+            font-family: Helvetica;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+          }
 
 
         .prodcon{
             display: flex;
+            position: static;
             flex-wrap: wrap;
-            background-color: rgb(235, 245, 235);
-            
+            background-color:ghostwhite;   
         }
+
             #produkt{
                 background-color: yellow;
                 margin-left: 10px;
@@ -194,7 +318,7 @@
         }
             #tytul{
                 font-family: 'Segoe UI';
-                font-size: 2.3rem;
+                font-size: 2.2rem;
                 text-align: left;
                 padding-left: 10%;
             }
@@ -211,11 +335,70 @@
                         text-align: left;
                         padding-left: 10%;
                     }
+                        .kolor-rodzaj{ 
+                            display: flex; 
+                            gap:5px; 
+                            text-align: center; 
+                            margin-left: 10%;
+                            width: 100%;
+                            margin-top: 1%;
+                        }
+                        .black{
+                             background-color: black; 
+                             border: 2px solid black ; 
+                             border-radius: 10px; 
+                             padding: 0.9rem 1px; 
+                             width: 2.5rem;
+                        }
+                            .black:active{
+                                transform: scale(0.9);
+                            }
+                               
+                        .white{ 
+                            background-color: whitesmoke; 
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px; 
+                            width: 2.5rem;
+                        }
+                            .white:active{
+                                transform: scale(0.9);
+                            }
+                        .yellow{ 
+                            background-color: yellow;
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px;
+                            width: 2.5rem;
+                            }
+                                .yellow:active{
+                                    transform: scale(0.9);
+                                }
+                        .orange{ 
+                            background-color: orange; 
+                            border: 2px solid black; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px; 
+                            width: 2.5rem;
+                        }
+                            .orange:active{
+                                transform: scale(0.9);
+                            }
+
                     #ilosc{
                         font-family: 'Segoe UI';
-                        font-size: 1.6em;
+                        font-size: 1.6rem;
                         text-align: left;
                         padding-left: 10%;
+                    }
+                    #dostepnosc{
+                        font-family: 'Segoe UI';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: black;
+                        text-align: left;
+                        padding-left: 10%;
+
                     }
                 #zakup{
                     font-family: 'Segoe UI';
@@ -229,17 +412,54 @@
                 font-size: 1.2rem;
                 
             }
+            
+            .up{
+                display: inline-block;
+                width: 2em;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+                .up:active{
+                    transform: scale(0.9);
+                    box-shadow: 0 0 0.4rem black;
+                }
+            .down{
+                display: inline-block;
+                width: 2em;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+                .down:active{
+                    transform: scale(0.9);
+                    box-shadow: 0 0 0.4rem black;
+                }
         
         
-        
-        
+        /* Mobile version */
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 750px) {
         .menu li{
-            font-size: 13px;
+            font-size: 1rem;
+        }
+        .icon1{
+            display: none;
+        }
+        
+        .icon2{
+            display: inline-flex;
         }
     }
+    
+    
     @media screen and (max-width: 680px) {
+        .menu li{
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
         .header{
             margin-left: 5%;
             margin-right: 0%;
@@ -254,13 +474,6 @@
         }
         .cart{
             width: 11%;
-        }
-        .icon1{
-            display: none;
-        }
-        
-        .icon2{
-            display: inline-flex;
         }
 
         #konto1{
