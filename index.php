@@ -18,11 +18,12 @@
 
     <div class="contener">
         <div class="banner">
-            <p>Promocja na wszystkie filtry!!!</p>
+            <!-- <p>Promocja na wszystkie filtry!!!</p> -->
+            <p>Uwaga jest to strona poglądowa. Nie służy do zakupów!!!</p>
         </div>
             <div class="header">
                 <div class="logo">
-                    <p>SKLEP.AM</p>
+                    <p>Sklepik</p>
                 </div>
                     <div class="search">
                         <input type="text" class="icon1" value placeholder="Czego szukasz?">
@@ -30,52 +31,47 @@
                     </div>
                     <div class="account">
                         <h4 id="ikony0"><a id="konto1" href="konto.php"><i class="bi bi-person-circle"></i></a></h4>
-                        <a id="konto2" href="konto.php">Konto</a>
+                        <a id="konto2" href="#konto">Konto</a>
                     </div>
                 <div class="cart">
                     <h4 id="ikony0"><a id="koszyk1" href="koszyk.php"><i class="bi bi-basket2-fill"></i></a></h4>   
-                    <a id="koszyk2" href="koszyk.php">Koszyk</a>
+                    <a id="koszyk2" href="#koszyk">Koszyk</a>
                 </div>
             </div>
         <div class="menu">
             <div class="dropdown1">
                 <span>AKWARIUM</span>
                     <div class="droplista1">
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
+                    <li>Szkła</li>
+                    <li>Pokrywy</li>
                 </div>
             </div>
             <div class="dropdown2">
                     <span>SPRZĘT</span>
                         <div class="droplista2">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <li>Filtry</li>
+                        <li>Grzałki</li>
+                        <li>termometry</li>
                     </div>
                 </div>      
                 <div class="dropdown3">
-                    <span>RYBY</span>
-                    <div class="droplista3">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </div>
+                    <a href="#ryby"><span>RYBY</span></a>
                 </div>  
                 <div class="dropdown4">
                     <span>DEKORACJE</span> 
                     <div class="droplista4">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <li>Roślinki</li>
+                        <li>Ozdoby</li>
+                        <li>Tła</li>
                     </div>
                 </div> 
             <div class="dropdown5">
                     <span>NOWOŚCI</span>
                 <div class="droplista5">
-                     <li>test</li>
-                     <li>test</li>
-                     <li>test</li>
+                     <li>Dekoracje</li>
+                     <li>Sprzęt</li>
+                     <li>Ryby</li>
+                     <li>Akwarium</li>
                 </div>
             </div>  
         </div>
@@ -97,7 +93,7 @@
                         <h2>Skalar</h2>
                     </div>
                         <div id="cena">
-                            <p>10,99zł</p><br><br>
+                            <p>10,99zł</p>
                         </div>
                             <div id="rodzaj">
                                 <p>Rodzaj</p>
@@ -120,7 +116,6 @@
                             <div id="dostepnosc">
                                 <p>Dostępność 10szt</p>
                             </div>
-                            <br><br><br><br><br><br>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
                     </div>
@@ -133,17 +128,11 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                            Kirysek Panda w akwarium
-                            Kiryski są rybkami stadnymi. Najlepiej trzymać je w grupach od 6szt wzwyż. 
-                            Cztery sztuki to absolutne minimum i wtedy wystarczy im akwarium 40 litrowe. 
-                            Na podłoże najlepiej użyć piasku. Jeżeli jednak z jakiegoś powodu nie chcemy samego piasku to na części dna można zrobić drobny żwirek.
-                            Ważne by nie był to żwirek o ostrych krawędziach. 
-                            Roślinki są bardzo dobrym rozwiązaniem, aczkolwiek niekoniecznym. 
-                            Dobrze jest zapewnić rybom zacienione miejsca. 
-                            Można to osiągnąć na różne sposoby. 
-                            Mogą to być roślinki pływające, korzeń, grota lub skały. 
-                            Moim zdaniem bardzo fajnym rozwiązaniem będzie taki kawałek kory. 
-                            Pamiętaj by przynajmniej część tafli wody była wolna od roślin.
+                            Ryba stadna, pokojowo usposobiona do innych "współtowarzyszy". 
+                            Nie potrafi bronić się przed rybkami agresywnymi i bardzo ruchliwymi 
+                            (np. brzanka sumatrzańska podgryza jej płetwy). 
+                            Po osiągnięciu dojrzałości płciowej i dobraniu się w pary podczas tarła może być agresywna. 
+                            W warunkach hodowlanych skalar żyje ok. 15 lat. 
                         </p>
                     </div>
                     <div class="opis2">
@@ -171,11 +160,58 @@
         </div>
             <div class="podobne">
                 <span>Podobne produkty</span>
+                <div class="podobne_zdjecia">
+                    <div class="item" id="1">
+                        <a href="mieczyk.php"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg">
+                            <p>Mieczyk</p>
+                        <p>9zł/szt</p></a>
+                    </div>
+                        <div class="item" id="2">
+                            <a href="glonojad.php"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg">
+                                <p>Glonojad</p>
+                            <p>7zł/szt</p></a>
+                        </div>
+                            <div class="item" id="3">
+                                <a href="krewetka.php"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg">
+                                    <p>Krewetka blue</p>
+                                <p>20zł/szt</p></a>
+                            </div>
+                        <div class="item" id="4">
+                            <a href="tetra.php"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg">
+                                <p>Tetra czarna</p>
+                            <p>14zł/szt</p></a>
+                        </div>
+                    <div class="item" id="5">
+                        <a href="gupik.php"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg">
+                            <p>Gupik</p>
+                        <p>3zł/szt</p></a>
+                    </div>
+                </div>
             </div>
 
     </div>
 <div class="footer">
-
+    <div class="klasa">
+        <span class="footer-title">Kontakt</span>
+        <p style=" margin-top: 10px;"><i style="font-size:1.4em;" class="bi bi-envelope-fill"></i> przykladowy2@email.com</p>
+        <p><i style="font-size:1.4em;" class="bi bi-telephone-fill"></i> +43 123 456 789</p>
+    </div>
+        <div class="klasa">
+            <span class="footer-title">Polityka prywatności</span>
+        </div>
+        <div class="klasa">
+            <span class="footer-title">Regulamin</span>
+            <li style=" margin-top: 10px;">Zwroty</li>
+            <li>Zakupy online</li>
+        </div>
+    <div class="klasa">
+        <span class="footer-title">Śledz nas</span>
+        <p style=" margin-top: 10px;font-size:20px;">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </p>
+    </div>
 </div>
 </body>
 </html>
