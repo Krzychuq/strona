@@ -11,6 +11,10 @@
 <link rel="stylesheet" type="text/css" href="slick/slick.css">
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -25,14 +29,14 @@
                 <div class="logo">
                     <p>Sklepik</p>
                 </div>
-                    <div class="search">
-                        <input type="text" class="icon1" value placeholder="Czego szukasz?">
-                        <input type="text" class="icon2" value>
-                    </div>
-                    <div class="account">
-                        <h4 id="ikony0"><a id="konto1" href="konto.php"><i class="bi bi-person-circle"></i></a></h4>
-                        <a id="konto2" href="#konto">Konto</a>
-                    </div>
+                <div class="search">
+                    <input type="text" class="icon1" value placeholder="Czego szukasz?">
+                    <input type="text" class="icon2" value>
+                </div>
+                <div class="account">
+                    <h4 id="ikony0"><a id="konto1" href="konto.php"><i class="bi bi-person-circle"></i></a></h4>
+                    <a id="konto2" href="#konto">Konto</a>
+                </div>
                 <div class="cart">
                     <h4 id="ikony0"><a id="koszyk1" href="koszyk.php"><i class="bi bi-basket2-fill"></i></a></h4>   
                     <a id="koszyk2" href="#koszyk">Koszyk</a>
@@ -42,16 +46,20 @@
             <div class="dropdown1">
                 <span>AKWARIUM</span>
                     <div class="droplista1">
-                    <li>Szkła</li>
-                    <li>Pokrywy</li>
+                    <ul>
+                        <li>Szkła</li>
+                        <li>Pokrywy</li>
+                    </ul>
                 </div>
             </div>
             <div class="dropdown2">
                     <span>SPRZĘT</span>
                         <div class="droplista2">
-                        <li>Filtry</li>
-                        <li>Grzałki</li>
-                        <li>termometry</li>
+                        <ul>
+                            <li>Filtry</li>
+                            <li>Grzałki</li>
+                            <li>Termometry</li>
+                        </ul>
                     </div>
                 </div>      
                 <div class="dropdown3">
@@ -60,18 +68,22 @@
                 <div class="dropdown4">
                     <span>DEKORACJE</span> 
                     <div class="droplista4">
-                        <li>Roślinki</li>
-                        <li>Ozdoby</li>
-                        <li>Tła</li>
+                        <ul>    
+                            <li>Roślinki</li>
+                            <li>Ozdoby</li>
+                            <li>Tła</li>
+                        </ul>
                     </div>
                 </div> 
             <div class="dropdown5">
                     <span>NOWOŚCI</span>
                 <div class="droplista5">
-                     <li>Dekoracje</li>
-                     <li>Sprzęt</li>
-                     <li>Ryby</li>
-                     <li>Akwarium</li>
+                    <ul>
+                        <li>Dekoracje</li>
+                        <li>Sprzęt</li>
+                        <li>Ryby</li>
+                        <li>Akwarium</li>
+                    </ul>
                 </div>
             </div>  
         </div>
@@ -160,6 +172,18 @@
         </div>
             <div class="podobne">
                 <span>Podobne produkty</span>
+                <!-- <div id="produkt1">
+                <figure>
+                    <img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg"> 
+                        <img style="width: 200px; height: 200px;" src="photos/glonojad.jpg">
+                            <img style="width: 200px; height: 200px;" src="photos/krewetka.jpg">
+                        <img style="width: 200px; height: 200px;" src="photos/tetra.jpg">
+                    <img style="width: 200px; height: 200px;" src="photos/gupik.jpg">
+                    </figure>
+                <button class="lewy1"><i class="fa fa-arrow-circle-left"></i> </button>
+                <button class="prawy1"><i class="fa fa-arrow-circle-right"></i> </button>
+            </div> -->
+            
                 <div class="podobne_zdjecia">
                     <div class="item" id="1">
                         <a href="mieczyk.php"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg">
@@ -187,38 +211,48 @@
                         <p>3zł/szt</p></a>
                     </div>
                 </div>
+                <div id = "slider-1"></div>
             </div>
 
     </div>
 <div class="footer">
     <div class="klasa">
         <span class="footer-title">Kontakt</span>
-        <p style=" margin-top: 10px;"><i style="font-size:1.4em;" class="bi bi-envelope-fill"></i> przykladowy2@email.com</p>
-        <p><i style="font-size:1.4em;" class="bi bi-telephone-fill"></i> +43 123 456 789</p>
+        <p class="tekst-footer"><i style="font-size:1.4em; margin-right:5px;" class="bi bi-envelope-fill"></i> przykladowy2@email.com</p>
+        <p><i style="font-size:1.4em; margin-right:5px;" class="bi bi-telephone-fill"></i> +43 123 456 789</p>
     </div>
         <div class="klasa">
-            <span class="footer-title">Polityka prywatności</span>
+            <span class="footer-title">Informacje</span>
+            <ul class="tekst-footer">
+                <li>Płatności</li>
+                <li>Współpraca</li>
+            </ul>
         </div>
         <div class="klasa">
             <span class="footer-title">Regulamin</span>
-            <li style=" margin-top: 10px;">Zwroty</li>
-            <li>Zakupy online</li>
+            <ul class="tekst-footer">
+                <li>Zwroty</li>
+                <li>Zakupy online</li>
+                <li>Polityka prywatności</li>
+            </ul>
         </div>
     <div class="klasa">
         <span class="footer-title">Śledz nas</span>
-        <p style=" margin-top: 10px;font-size:20px;">
+        <p class="tekst-footer" style="font-size:20px;">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-youtube"></i></a>
             <a href="#"><i class="bi bi-instagram"></i></a>
         </p>
     </div>
+    
 </div>
 </body>
 </html>
 
 <script>
 	$(document).ready(function(){
-		var x = 0;
+	// Produkt górny                
+        var x = 0;
     // w prawo przesuniecie
     $('.prawy').click(function(){
 
@@ -231,6 +265,23 @@
         x= (x>=100)?(x-100):300;
         $('figure').css('left', -x+'%');
     });
+
+    // Produkt dolny (podobny)
+    var x = 0;
+    // w prawo przesuniecie
+    $('.prawy1').click(function(){
+
+        x= (x<=100)?(x+50):0;
+        $('figure').css('left', -x+'%');
+    });
+     // w lewo przesuniecie
+     $('.lewy1').click(function(){
+    
+        x= (x>=100)?(x-50):200;
+        $('figure').css('left', -x+'%');
+    });
+
+
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
                 $('.opis2').css('display','none');
@@ -256,7 +307,13 @@
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
-
+        $(function() {
+            $( "#slider-1" ).slider({
+               value: 60,
+               animate:"slow",
+               orientation: "horizontal"
+            });
+         });
 
 
 </script>

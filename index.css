@@ -171,7 +171,7 @@ a{
             opacity: 1;
             box-shadow: 0 0 10px;
         }
-        .droplista1 li {
+        .droplista1 ul, li {
             color: white;
             font-family: Helvetica;
             font-weight: lighter;
@@ -188,7 +188,7 @@ a{
             opacity: 1;
             box-shadow: 0 0 10px;
         }
-        .droplista2 li {
+        .droplista2 ul, li {
             color: white;
             font-family: Helvetica;
             font-weight: lighter;
@@ -205,7 +205,7 @@ a{
             opacity: 1;
             box-shadow: 0 0 10px;
         }
-        .droplista3 li {
+        .droplista3 ul, li {
             color: white;
             font-family: Helvetica;
             font-weight: lighter;
@@ -222,7 +222,7 @@ a{
             opacity: 1;
             box-shadow: 0 0 10px;
         }
-        .droplista4 li {
+        .droplista4 ul, li {
             color: white;
             font-family: Helvetica;
             font-weight: lighter;
@@ -239,7 +239,7 @@ a{
             opacity: 1;
             box-shadow: 0 0 10px;
         }
-        .droplista5 li {
+        .droplista5 ul, li {
             color: white;
             font-family: Helvetica;
             font-weight: lighter;
@@ -251,7 +251,6 @@ a{
 
         .prodcon{
             display: flex;
-            position: relative;
             flex-wrap: wrap;
             background-color:ghostwhite;
         }
@@ -267,13 +266,13 @@ a{
                 }
                     div#produkt figure img{ 
                         width: 20%;
-                        height: 730px;   
+                        height: auto;   
                         float: left; 
                     }
                         div#produkt figure{ 
                         position: relative;
                         width: 500%;
-                        height: 80%;
+                        height: auto;
                         margin: 0;
                         left: 0;
                         transition: 1s ease-in-out;
@@ -304,7 +303,7 @@ a{
             }
         .opis{
             background-color:ghostwhite;
-            height: 15em;
+            height: auto;
             padding: 30px 20px;
             width: 100%;
             margin-left: 10px;
@@ -449,9 +448,12 @@ a{
                 }
             .btkup{
                 width: 90%;
-                height: 7%;
+                height: 10%;
                 font-size: 1.2rem;
-                
+                font-family: 'Segoe UI';
+                border-radius: 4px;
+                border: 1px solid transparent;
+                background-color: lightgrey;
             }
             
             .up{
@@ -512,12 +514,11 @@ a{
     font-weight: bold;
     height: 9rem;
 }
-    .footer li{
-        list-style-type: square;
-    }
-        .footer-title{
-            border-bottom: 1px solid black;
-        }
+    .footer ul{padding-left: 16px;}
+        .footer li{padding-left: 0px; padding-right: 0px;}
+            .footer ul, li{color: black; list-style-type: square; background-color: transparent;}
+                .footer-title{border-bottom: 1px solid black;}
+                    .tekst-footer{margin-top: 10px;}
 
         
 /* ----------------------------------------------------------------------------------------------------------------- */
@@ -533,12 +534,6 @@ a{
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
-    }
-
-    .podobne_zdjecia{
-        display: grid;
-        grid-template-areas: "1 2 3"
-                             "4 5 6";
     }
     
     div#produkt figure img{ 
@@ -581,9 +576,52 @@ a{
     .menu li{font-size: 1rem;}
         .icon1{display: none;}
     .icon2{display: inline-flex;}
+    .prodcon{display: block; background-color:ghostwhite;}
+    #produkt{margin-left: auto; margin-right: auto; width: 80%;}
+    .footer{text-align: justify; height: auto; display:block;}
+    .footer ul{padding-left: 16px;}
+    .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
+    .tekst-footer{margin: 0px;}
+    .klasa{margin-top: 10px;}
+    .podobne{margin-top: 30px;}
+    .opis{height: auto;}
+    .droplista1{list-style:none;}
+    .droplista2{list-style:none; width: 30%;}
+    .droplista3{list-style:none;}
+    .droplista4{list-style:none;}
+    .droplista5{list-style:none;}
+    #produkt1{
+        width: 100%;
+        position: relative;
+    }
+        div#produkt1{
+            overflow: hidden;
+        }
+                div#produkt1 figure{ 
+                    position: relative;
+                    width: 500%;
+                    height: auto;
+                    margin: 0;
+                    left: 0;
+                    transition: 1s ease-in-out;
+                    justify-content: center;
+                }
+                    .prawy1, .lewy1{
+                        position: absolute;
+                        top: 50%;
+                        cursor: pointer;
+                        color: white;
+                        background: transparent;
+                        padding: 10px;
+                        font-size: 35px;
+                        border:none;
+                    }
+                    .lewy1{left: 0px;}
+                    .prawy1{right: 0px;}
 }
 
 @media screen and (max-width: 680px){
     .menu li{font-size: 0.8rem;}
     .menu{overflow: visible;}
+
 }
