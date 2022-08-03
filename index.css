@@ -3,17 +3,27 @@
     margin: 0px 0px;
 }
 
+    ::-webkit-scrollbar {
+        width: 17px;
+    }
+        ::-webkit-scrollbar-thumb {
+            background: lightgray; 
+            border-radius: 1px;
+        }
+
 a{
     text-decoration: none;
     color: black;
 }
 
 .contener{
-    background-color: white;
+    background: url("photos/tlo.jpg");
     overflow-x: hidden;
 }
 .banner{
-    background-color: black;
+
+    width: 100%;
+    background-color: darkred;
     padding: 10px;
     text-align: center;
     color: white;
@@ -22,7 +32,7 @@ a{
     font-weight: bold;
 }
  .header{
-    background-color: white;
+    background-color: transparent;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -33,12 +43,13 @@ a{
         font-size: 2.7rem; 
         font-family:monospace; 
         width: 100%;
+        color:black;
     }
         .search{
             padding-top: 5px;
             text-align: right;
             width: 30%;
-            
+            color:black;
         }
             .icon1 {
                 display: inline-flex;
@@ -48,7 +59,6 @@ a{
                 padding-left: 25px;
                 background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
                 background-size: 20px;
-                border: 2px solid black;
                 border-radius: 6px;
             }
                 .icon2{
@@ -72,8 +82,7 @@ a{
                 }
             .account a{
                 text-decoration: none;
-                color: black;
-                
+                color:black;
             }   
         .cart{
             padding-top:5px;
@@ -103,6 +112,7 @@ a{
     padding-bottom: 0.5%;
     gap: 10%;
     overflow: hidden;
+    color:black;
     
 }
     .dropdown1 span{
@@ -166,143 +176,182 @@ a{
             z-index: 99;
             display: none;
             position: absolute;
-            width: 20%;
             overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: auto;
             opacity: 1;
-            box-shadow: 0 0 10px;
+            box-shadow: 0 0 20px black;
         }
-        .droplista1 ul, li {
-            color: white;
+        .droplista1 li {
             font-family: Helvetica;
-            font-weight: lighter;
+            font-weight: bold;
             font-size: 15px;
             padding: 5px;
-            background-color: black;
+            list-style-type: square;
           }
           .droplista2{
             z-index: 99;
             display: none;
             position: absolute;
-            width: 20%;
             overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: auto;
             opacity: 1;
-            box-shadow: 0 0 10px;
+            box-shadow: 0 0 20px black;
         }
-        .droplista2 ul, li {
-            color: white;
+        .droplista2 li {
             font-family: Helvetica;
-            font-weight: lighter;
+            font-weight: bold;
             font-size: 15px;
             padding: 5px;
-            background-color: black;
+            list-style-type: square;
           }
           .droplista3{
             z-index: 99;
             display: none;
             position: absolute;
-            width: 20%;
             overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: auto;
             opacity: 1;
-            box-shadow: 0 0 10px;
+            box-shadow: 0 0 20px black;
         }
-        .droplista3 ul, li {
-            color: white;
+        .droplista3  li {
             font-family: Helvetica;
-            font-weight: lighter;
+            font-weight: bold;
             font-size: 15px;
             padding: 5px;
-            background-color: black;
+            list-style-type: square;
           }
           .droplista4{
             z-index: 99;
             display: none;
             position: absolute;
-            width: 20%;
             overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: auto;
             opacity: 1;
-            box-shadow: 0 0 10px;
+            box-shadow: 0 0 20px black;
         }
-        .droplista4 ul, li {
-            color: white;
+        .droplista4 li {
             font-family: Helvetica;
-            font-weight: lighter;
+            font-weight: bold;
             font-size: 15px;
             padding: 5px;
-            background-color: black;
+            list-style-type: square;
           }
           .droplista5{
             z-index: 99;
             display: none;
             position: absolute;
-            width: 20%;
             overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: auto;
             opacity: 1;
-            box-shadow: 0 0 10px;
+            box-shadow: 0 0 20px black;
         }
-        .droplista5 ul, li {
-            color: white;
+        .droplista5 li {
             font-family: Helvetica;
-            font-weight: lighter;
+            font-weight: bold;
             font-size: 15px;
             padding: 5px;
-            background-color: black;
+            list-style-type: square;
           }
 
 
         .prodcon{
             display: flex;
             flex-wrap: wrap;
-            background-color:ghostwhite;
+            color:black;
         }
 
-            #produkt{
+            .produkt{
                 margin-left: 10px;
-                margin-top: 10px;
+                padding-top:20px;
+                padding-bottom: 20px;
+                /* padding-right: 5%; */
+                /* padding-left: 5%; */
                 width: 50%;
-                position: relative;
+                background-color: ghostwhite;
+                display: flex;
             }
-                div#produkt{
-                    overflow: hidden;
-                }
-                    div#produkt figure img{ 
-                        width: 20%;
-                        height: auto;   
-                        float: left; 
+                    .thumbnails {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 0;
+                        padding: 0;
+                        height: 0;
                     }
-                        div#produkt figure{ 
-                        position: relative;
-                        width: 500%;
-                        height: auto;
-                        margin: 0;
-                        left: 0;
-                        transition: 1s ease-in-out;
+                    .thumbnails li {
+                        flex: auto;
+                        list-style-type: none;
+                    }
+                    
+                    .thumbnails img {
+                        width: 140px;
+                        height: 140px;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                    .slides {
+                        padding-left: 1px;
+                        overflow: hidden;
+                        height: 600px;
+                    }
+                    .slides li {
+                        z-index: 1;
+                        position: static;
+                        list-style-type: none;
+                    }
+                    .slides img {
+                        width: 450px;
+                        height: 560px;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                    .slides li:target {
+                        z-index: 3;
+                        -webkit-animation: slide 1.5s 1;
+                    }
+                    .slides li:not(:target) {
+                        -webkit-animation: hidden 1.5s 1;
+                    }
+                    @keyframes slide {
+                        /* 0% {
+                            transform: translatex(-100%);
+                    }
+                        100% {
+                            transform: translatex(0%);
+                    } */
+                    }
+                    @keyframes hidden {
+                            /* 0% {
+                                z-index: 2;
                         }
-        
-                            .prawy, .lewy{
-                            position: absolute;
-                            top: 40%;
-                            cursor: pointer;
-                            color: white;
-                            background: transparent;
-                            padding: 20px;
-                            font-size: 40px;
-                            border:none;
-                            }
-        
-                        .lewy{
-                        left: 0px;
-                        }
-                    .prawy{
-                    right: 0px;
+                            100% {
+                                z-index: 2;
+                        } */
                     }
             .info{
+                height: auto;
                 text-align: center;
                 flex: 10%;
-                margin-top: 10px;
                 margin-right: 10px;
+                background-color:ghostwhite;
+                
             }
         .opis{
-            background-color:ghostwhite;
+            background-color: ghostwhite;
             height: auto;
             padding: 30px 20px;
             width: 100%;
@@ -314,14 +363,13 @@ a{
             padding-left: 15%;
             padding-right: 15%;
         }
+        .opis-btn{text-align: center;}
             .opis1{
                 display: block;
-                margin-top: 2%;
             }
 
                 .opis2{
                     display:none;
-                    margin-top: 2%;
                 }
                     #opis1-btn{
                         border-left: none;
@@ -334,11 +382,11 @@ a{
                         
                     }
                     #opis2-btn{
+                        background-color: ghostwhite;
                         border-left: none;
                         border-right: none;
                         border-bottom: none;
                         border-top: none;
-                        background-color: ghostwhite;
                         font-size: 1.4em;
                         font-family: 'Segoe UI';
                     }
@@ -346,12 +394,13 @@ a{
                         border-collapse: collapse;
                         width: 100%;
                         font-size: 1em;
+                        background-color: ghostwhite;
                     }
                         .tabelka td{
-                            border-top: 1px solid lightgray;
-                            border-left: 1px solid lightgray;
-                            border-right: 1px solid lightgray;
-                            border-bottom: 2px solid lightgray;
+                            border-top: 1px solid black;
+                            border-left: 1px solid black;
+                            border-right: 1px solid black;
+                            border-bottom: 2px solid black;
                         }
 
             #tytul{
@@ -365,7 +414,7 @@ a{
                     font-size: 2rem;
                     text-align: left;
                     padding-left: 10%;
-                    color: rgb(192, 38, 38);
+                    color: rgb(45, 98, 177);
                     height: 150px;
                 }
                     #rodzaj{
@@ -413,6 +462,36 @@ a{
                                 .yellow:active{
                                     transform: scale(0.9);
                                 }
+                        .green{
+                            background-color: lightgreen;
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px;
+                            width: 2.5rem;
+                        }
+                            .green:active{
+                                transform: scale(0.9);
+                            }
+                        .darkgreen{
+                            background-color: darkgreen;
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px;
+                            width: 2.5rem;
+                        }
+                            .darkgreen:active{
+                                transform: scale(0.9);
+                            }
+                        .brown{
+                            background-color: rgb(100, 44, 30);
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px;
+                            width: 2.5rem;
+                        }
+                            .brown:active{
+                                transform: scale(0.9);
+                            }
                         .orange{ 
                             background-color: orange; 
                             border: 2px solid black; 
@@ -438,7 +517,7 @@ a{
                         color: black;
                         text-align: left;
                         padding-left: 10%;
-                        height: 130px;
+                        height: 100px;
                     }
                 #zakup{
                     font-family: 'Segoe UI';
@@ -482,19 +561,26 @@ a{
     .podobne{
         font-size: 1.4em;
         font-family: 'Segoe UI';
-        margin: 3%;
+        margin: 1%;
+        background-color: ghostwhite;
+        text-align: center;
     }
         .podobne_zdjecia{
+            scroll-snap-type: x mandatory;
+            width: auto;
+            height: auto;
             display: flex;
-            flex-direction: row;
+            overflow-x: auto;
             gap: 20px;
-            justify-content: center;
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 1%;
-            height: auto;
         }
             .item{
+                scroll-snap-align: start;
+                width: 300px;
+                flex-shrink: 0;
+                height: auto;
                 font-size: 0.8em;
                 font-family: 'Segoe UI';
                 text-align: center;
@@ -507,7 +593,7 @@ a{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    background-color: darkgray;
+    background-color: whitesmoke ;
     padding-top: 20px;
     font-size: 0.9em;
     font-family: 'Segoe UI';
@@ -515,16 +601,35 @@ a{
     height: 9rem;
 }
     .footer ul{padding-left: 16px;}
-        .footer li{padding-left: 0px; padding-right: 0px;}
-            .footer ul, li{color: black; list-style-type: square; background-color: transparent;}
+        .footer li{font-weight: bold; padding-left: 0px; padding-right: 0px;}
+            .li{font-family: 'Segoe UI'; list-style-type: square; }
                 .footer-title{border-bottom: 1px solid black;}
                     .tekst-footer{margin-top: 10px;}
 
-        
-/* ----------------------------------------------------------------------------------------------------------------- */
-                                                /* Mobile version */
-/* ----------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width: 1250px){
+@media screen and (min-width: 1700px) {
+    .produkt{width: 35%}
+    .info{width: 65%;}
+}
+@media screen and (max-width: 1699px) {
+    .produkt{width: 40%}
+    .info{width: 60%;}
+}                  
+@media screen and (max-width: 1580px) {
+    .produkt{width: 40%}
+    .info{width: 60%;}
+}
+
+@media screen and (max-width: 1460px) {
+    .produkt{width: 45%}
+    .info{width: 55%;}
+}
+
+@media screen and (max-width: 1250px) {
+    .produkt{width: 55%}
+    .info{width: 45%;}
+    
+}
+@media screen and (max-width: 1000px){
     .menu{
         display: flex;
         width: 60%;
@@ -535,93 +640,65 @@ a{
         margin-right: auto;
         overflow: hidden;
     }
-    
-    div#produkt figure img{ 
-        height: 400px;   
-    }
-    
-    .info{
-        height: 400px;
-    }
-    #ilosc{
-        margin-top: 1px;
-    }
-    
-    #cena{
-        height: 50px;
-    }
-    #dostepnosc{
-        height: 50px;
-    }
+    #ilosc{ margin-top: 1px;}
+    #cena{height: 50px;}
+    #dostepnosc{height: 50px;}
 }
-
+/* ----------------------------------------------------------------------------------------------------------------- */
+                                                /* Mobile version */
+/* ----------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 900px){
     .header{margin-left: 5%; margin-right: 0%;}
         .logo{width: 50%; font-size: 2rem;}
             .account{width: 11%;}
                 .cart{width: 11%;}
                     #konto1{font-size: 2rem;}
-                #konto2{display: none;}
-            #koszyk1{font-size: 2rem;}
-        #koszyk2{display: none;}
-    #ikony{display: none;}
-    .menu{
-        padding-top: none;
-        padding-bottom: none;
-        gap: 3%;
-    }
+                            #konto2{display: none;}
+                        #koszyk1{font-size: 2rem;}
+                    #koszyk2{display: none;}
+                #ikony{display: none;}
+            .menu{padding-top: none; padding-bottom: none; gap: 3%;}
 }
+
 
 @media screen and (max-width: 750px){
     .menu li{font-size: 1rem;}
         .icon1{display: none;}
     .icon2{display: inline-flex;}
     .prodcon{display: block; background-color:ghostwhite;}
-    #produkt{margin-left: auto; margin-right: auto; width: 80%;}
     .footer{text-align: justify; height: auto; display:block;}
     .footer ul{padding-left: 16px;}
     .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
     .tekst-footer{margin: 0px;}
     .klasa{margin-top: 10px;}
-    .podobne{margin-top: 30px;}
+    .podobne{margin-top: 10px;}
     .opis{height: auto;}
     .droplista1{list-style:none;}
     .droplista2{list-style:none; width: 30%;}
     .droplista3{list-style:none;}
     .droplista4{list-style:none;}
     .droplista5{list-style:none;}
-    #produkt1{
-        width: 100%;
-        position: relative;
-    }
-        div#produkt1{
-            overflow: hidden;
-        }
-                div#produkt1 figure{ 
-                    position: relative;
-                    width: 500%;
-                    height: auto;
-                    margin: 0;
-                    left: 0;
-                    transition: 1s ease-in-out;
-                    justify-content: center;
-                }
-                    .prawy1, .lewy1{
-                        position: absolute;
-                        top: 50%;
-                        cursor: pointer;
-                        color: white;
-                        background: transparent;
-                        padding: 10px;
-                        font-size: 35px;
-                        border:none;
-                    }
-                    .lewy1{left: 0px;}
-                    .prawy1{right: 0px;}
+    .thumbnails{padding: 0px;}
 }
 
 @media screen and (max-width: 680px){
-    .menu li{font-size: 0.8rem;}
-    .menu{overflow: visible;}
+    .menu li{font-size: 0.9rem; list-style-type: none;}
+    .menu{overflow: visible; gap: 5%;}
+    .podobne_zdjecia{gap:0px;}
+    .item{ width: 350px; margin-bottom:5px;}
+    .produkt{padding-top: 4px;}
+    .dropdown1 span{font-size: 1em;}
+    .dropdown2 span{font-size: 1em;}
+    .dropdown3 span{font-size: 1em;}
+    .dropdown4 span{font-size: 1em;}
+    .dropdown5 span{font-size: 1em;}
+
+}
+
+@media screen and (max-width: 480px){
+    .thumbnails li{height: 120px;}
+    .thumbnails img {width: 120px; height: 120px;}
+    .slides{height: 300px;}
+    .slides img {width: 240px; height: 300px;}
 
 }

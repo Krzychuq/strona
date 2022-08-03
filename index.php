@@ -46,66 +46,62 @@
             <div class="dropdown1">
                 <span>AKWARIUM</span>
                     <div class="droplista1">
-                    <ul>
                         <li>Szkła</li>
                         <li>Pokrywy</li>
-                    </ul>
                 </div>
             </div>
             <div class="dropdown2">
                     <span>SPRZĘT</span>
                         <div class="droplista2">
-                        <ul>
                             <li>Filtry</li>
                             <li>Grzałki</li>
                             <li>Termometry</li>
-                        </ul>
                     </div>
                 </div>      
                 <div class="dropdown3">
-                    <a href="#ryby"><span>RYBY</span></a>
+                    <a href="#ryby" style="color:black;"><span>RYBY</span></a>
                 </div>  
                 <div class="dropdown4">
                     <span>DEKORACJE</span> 
-                    <div class="droplista4">
-                        <ul>    
+                    <div class="droplista4"> 
                             <li>Roślinki</li>
                             <li>Ozdoby</li>
                             <li>Tła</li>
-                        </ul>
                     </div>
                 </div> 
             <div class="dropdown5">
                     <span>NOWOŚCI</span>
                 <div class="droplista5">
-                    <ul>
                         <li>Dekoracje</li>
                         <li>Sprzęt</li>
                         <li>Ryby</li>
                         <li>Akwarium</li>
-                    </ul>
                 </div>
             </div>  
         </div>
 
 
         <div class="prodcon">
-            <div id="produkt">
-                <figure>
-                    <img src="photos/skalar1.jpg"> 
-                        <img src="photos/skalar2.jpg">
-                            <img src="photos/skalar3.jpg">
-                        <img  id="photo" src="photos/skalar4.jpg">
-                    </figure>
-                <button class="lewy"><i class="fa fa-arrow-circle-left"></i> </button>
-                <button class="prawy"><i class="fa fa-arrow-circle-right"></i> </button>
+            <div class="produkt">
+                <ul class="thumbnails">
+                    <li><a href="#slide1"><img src="photos/skalar1.jpg" /></a></li>
+                    <li><a href="#slide2"><img src="photos/skalar2.jpg" /></a></li>
+                    <li><a href="#slide3"><img src="photos/skalar3.jpg" /></a></li>
+                    <li><a href="#slide4"><img src="photos/skalar4.jpg" /></a></li>
+                </ul>
+                <ul class="slides">
+                    <li id="slide1"><img src="photos/skalar1.jpg" alt="" /></li>
+                    <li id="slide2"><img src="photos/skalar2.jpg" alt="" /></li>
+                    <li id="slide3"><img src="photos/skalar3.jpg" alt="" /></li>
+                    <li id="slide4"><img src="photos/skalar4.jpg" alt="" /></li>
+                </ul>
             </div>
                 <div class="info">
                     <div id="tytul">
                         <h2>Skalar</h2>
                     </div>
                         <div id="cena">
-                            <p>10,99zł</p>
+                            <p>11zł</p>
                         </div>
                             <div id="rodzaj">
                                 <p>Rodzaj</p>
@@ -172,46 +168,33 @@
         </div>
             <div class="podobne">
                 <span>Podobne produkty</span>
-                <!-- <div id="produkt1">
-                <figure>
-                    <img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg"> 
-                        <img style="width: 200px; height: 200px;" src="photos/glonojad.jpg">
-                            <img style="width: 200px; height: 200px;" src="photos/krewetka.jpg">
-                        <img style="width: 200px; height: 200px;" src="photos/tetra.jpg">
-                    <img style="width: 200px; height: 200px;" src="photos/gupik.jpg">
-                    </figure>
-                <button class="lewy1"><i class="fa fa-arrow-circle-left"></i> </button>
-                <button class="prawy1"><i class="fa fa-arrow-circle-right"></i> </button>
-            </div> -->
-            
                 <div class="podobne_zdjecia">
                     <div class="item" id="1">
-                        <a href="mieczyk.php"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg">
+                        <a href="mieczyk.php"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg" alt="mieczyk">
                             <p>Mieczyk</p>
-                        <p>9zł/szt</p></a>
+                        <p style="font-weight:bold;">9zł/szt</p></a>
                     </div>
                         <div class="item" id="2">
-                            <a href="glonojad.php"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg">
+                            <a href="glonojad.php"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg" alt="glonojad">
                                 <p>Glonojad</p>
-                            <p>7zł/szt</p></a>
+                            <p style="font-weight:bold;">7zł/szt</p></a>
                         </div>
                             <div class="item" id="3">
-                                <a href="krewetka.php"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg">
+                                <a href="krewetka.php"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg" alt="krewetka">
                                     <p>Krewetka blue</p>
-                                <p>20zł/szt</p></a>
+                                <p style="font-weight:bold;">20zł/szt</p></a>
                             </div>
                         <div class="item" id="4">
-                            <a href="tetra.php"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg">
+                            <a href="tetra.php"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
                                 <p>Tetra czarna</p>
-                            <p>14zł/szt</p></a>
+                            <p style="font-weight:bold;">14zł/szt</p></a>
                         </div>
                     <div class="item" id="5">
-                        <a href="gupik.php"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg">
+                        <a href="gupik.php"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">
                             <p>Gupik</p>
-                        <p>3zł/szt</p></a>
+                        <p style="font-weight:bold;">3zł/szt</p></a>
                     </div>
                 </div>
-                <div id = "slider-1"></div>
             </div>
 
     </div>
@@ -251,36 +234,7 @@
 
 <script>
 	$(document).ready(function(){
-	// Produkt górny                
-        var x = 0;
-    // w prawo przesuniecie
-    $('.prawy').click(function(){
-
-        x= (x<=200)?(x+100):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy').click(function(){
-    
-        x= (x>=100)?(x-100):300;
-        $('figure').css('left', -x+'%');
-    });
-
-    // Produkt dolny (podobny)
-    var x = 0;
-    // w prawo przesuniecie
-    $('.prawy1').click(function(){
-
-        x= (x<=100)?(x+50):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy1').click(function(){
-    
-        x= (x>=100)?(x-50):200;
-        $('figure').css('left', -x+'%');
-    });
-
+        
 
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
@@ -307,13 +261,4 @@
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
-        $(function() {
-            $( "#slider-1" ).slider({
-               value: 60,
-               animate:"slow",
-               orientation: "horizontal"
-            });
-         });
-
-
 </script>
