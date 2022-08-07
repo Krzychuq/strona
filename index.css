@@ -289,11 +289,12 @@ a{
                         display: flex;
                         flex-direction: column;
                         line-height: 0;
+                        padding: 0;
+                        height: 0;
                     }
                     .thumbnails li {
                         flex: auto;
                         list-style-type: none;
-                        height: 140px;
                     }
                     
                     .thumbnails img {
@@ -304,44 +305,42 @@ a{
                     }
                     .slides {
                         padding-left: 1px;
-                        margin-top: auto;
-                        margin-bottom: auto;
                         overflow: hidden;
-                        height: 300px;
+                        height: 600px;
                     }
                     .slides li {
                         z-index: 1;
-                        position: absolute;
+                        position: static;
                         list-style-type: none;
                     }
                     .slides img {
-                        width: 300px;
-                        height: 300px;
+                        width: 450px;
+                        height: 560px;
                         object-fit: cover;
                         object-position: top;
                     }
                     .slides li:target {
                         z-index: 3;
-                        -webkit-animation: slide 1s 1;
+                        -webkit-animation: slide 1.5s 1;
                     }
                     .slides li:not(:target) {
-                        -webkit-animation: hidden 1s 1;
+                        -webkit-animation: hidden 1.5s 1;
                     }
                     @keyframes slide {
-                            0% {
-                                transform: translateY(-100%);
-                        }
-                            100% {
-                                transform: translateY(0%);
-                        }
+                        /* 0% {
+                            transform: translatex(-100%);
+                    }
+                        100% {
+                            transform: translatex(0%);
+                    } */
                     }
                     @keyframes hidden {
-                            0% {
+                            /* 0% {
                                 z-index: 2;
                         }
                             100% {
                                 z-index: 2;
-                        }
+                        } */
                     }
             .info{
                 height: auto;
@@ -521,13 +520,16 @@ a{
                         height: 100px;
                     }
                 #zakup{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
                     font-family: 'Segoe UI';
                     font-size: 1.6rem;
                     text-align: left;
                     padding-left: 10%;
                 }
             .btkup{
-                width: 90%;
+                width: 80%;
                 height: 10%;
                 font-size: 1.2rem;
                 font-family: 'Segoe UI';
@@ -628,6 +630,7 @@ a{
 @media screen and (max-width: 1250px) {
     .produkt{width: 55%}
     .info{width: 45%;}
+    
 }
 @media screen and (max-width: 1000px){
     .menu{

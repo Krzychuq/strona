@@ -83,17 +83,13 @@
 
         <div class="prodcon">
             <div id="produkt">
-            <li><a href="#slide1"><img src="photos/skalar1.jpg" /></a></li>
-                    <li><a href="#slide2"><img src="photos/skalar2.jpg" /></a></li>
-                    <li><a href="#slide3"><img src="photos/skalar3.jpg" /></a></li>
-                    <li><a href="#slide4"><img src="photos/skalar4.jpg" /></a></li>
-                </ul>
-                <ul class="slides">
-                    <li id="slide1"><img src="photos/skalar1.jpg" alt="" /></li>
-                    <li id="slide2"><img src="photos/skalar2.jpg" alt="" /></li>
-                    <li id="slide3"><img src="photos/skalar3.jpg" alt="" /></li>
-                    <li id="slide4"><img src="photos/skalar4.jpg" alt="" /></li>
-                </ul>
+                <figure>
+                    <img src="photos/glonojad.jpg"> 
+                        <img src="photos/glonojad2.jpg">
+                    <img src="photos/glonojad3.jpg">
+                    </figure>
+                <button class="lewy"><i class="fa fa-arrow-circle-left"></i> </button>
+                <button class="prawy"><i class="fa fa-arrow-circle-right"></i> </button>
             </div>
                 <div class="info">
                     <div id="tytul">
@@ -227,6 +223,37 @@
 
 <script>
 	$(document).ready(function(){
+	// Produkt górny                
+        var x = 0;
+    // w prawo przesuniecie
+    $('.prawy').click(function(){
+
+        x= (x<=100)?(x+100):0;
+        $('figure').css('left', -x+'%');
+    });
+     // w lewo przesuniecie
+     $('.lewy').click(function(){
+    
+        x= (x>=100)?(x-100):200;
+        $('figure').css('left', -x+'%');
+    });
+
+    // Produkt dolny (podobny)
+    var x = 0;
+    // w prawo przesuniecie
+    $('.prawy1').click(function(){
+
+        x= (x<=100)?(x+50):0;
+        $('figure').css('left', -x+'%');
+    });
+     // w lewo przesuniecie
+     $('.lewy1').click(function(){
+    
+        x= (x>=100)?(x-50):200;
+        $('figure').css('left', -x+'%');
+    });
+
+
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
                 $('.opis2').css('display','none');

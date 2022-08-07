@@ -234,6 +234,8 @@
 
 <script>
 	$(document).ready(function(){
+        
+
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
                 $('.opis2').css('display','none');
