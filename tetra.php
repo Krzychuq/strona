@@ -197,9 +197,9 @@
                                 <p style="font-weight:bold;">20zł/szt</p></a>
                             </div>
                         <div class="item" id="4">
-                            <a href="tetra"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
-                                <p>Tetra czarna</p>
-                            <p style="font-weight:bold;">14zł/szt</p></a>
+                            <a href="index"><img style="width: 200px; height: 200px;" src="photos/skalar1.jpg" alt="skalar">
+                                <p>Skalar</p>
+                            <p style="font-weight:bold;">11zł/szt</p></a>
                         </div>
                     <div class="item" id="5">
                         <a href="gupik"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">

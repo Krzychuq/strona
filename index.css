@@ -748,9 +748,12 @@ a{
             .produkt{width: 90%; margin-left: 25px; }
         .slideshow-container{max-width: 80%; margin-left: 10%;}
     .kropki{max-width:80%;}
-    #zakup{padding-left:32px; margin: 0;}
+    #zakup{padding-left:32px; margin: 0; margin-bottom: 5px;}
     .btkup{height: 40px; font-size: 1.3rem;}
-
+    .info{ height: 460px;}
+    .logo{font-size: 1.8rem;}
+    .menu{height: 30px; margin-top: 10px;}
+    
 
 }
 
@@ -765,15 +768,16 @@ a{
                 .dropdown3 span{font-size: 1em;}
             .dropdown4 span{font-size: 1em;}
         .dropdown5 span{font-size: 1em;}
-    .banner{font-size: 1rem;}
+    .banner{font-size: 0.8rem;}
     #zakup{padding-left: 17px;}
+    #tytul{font-size: 1.9rem;}
 
 }
 @media screen and (max-width: 590px) {
     .produkt{width: 90%; padding-left: 0;}
         .slideshow-container{max-width: 100%; margin-left: 0;}
         .kropki{max-width:100%;}
-    .prev, .next{font-size: 12px; padding: 10px;}    
+    .prev, .next{font-size: 12px; padding: 10px;}   
 }
 @media screen and (max-width: 480px){
     .thumbnails li{height: 120px;}
