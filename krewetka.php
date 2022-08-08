@@ -30,15 +30,17 @@
                     <p>Sklepik</p>
                 </div>
                 <div class="search">
+                    <i id="lupy1" class="bi bi-search" style="color: black; background:white; font-size:20px; font-weight: bolder;"></i>
                     <input type="text" class="icon1" value placeholder="Czego szukasz?">
+                    <i id="lupy2" class="bi bi-search" style="color: black; background:white; font-size: 22px;"></i>
                     <input type="text" class="icon2" value>
                 </div>
                 <div class="account">
-                    <h4 id="ikony0"><a id="konto1" href="konto.php"><i class="bi bi-person-circle"></i></a></h4>
+                    <h4 id="ikony0"><a id="konto1" href="konto"><i class="bi bi-person-circle"></i></a></h4>
                     <a id="konto2" href="#konto">Konto</a>
                 </div>
                 <div class="cart">
-                    <h4 id="ikony0"><a id="koszyk1" href="koszyk.php"><i class="bi bi-basket2-fill"></i></a></h4>   
+                    <h4 id="ikony0"><a id="koszyk1" href="koszyk"><i class="bi bi-basket2-fill"></i></a></h4>   
                     <a id="koszyk2" href="#koszyk">Koszyk</a>
                 </div>
             </div>
@@ -59,7 +61,7 @@
                     </div>
                 </div>      
                 <div class="dropdown3">
-                    <a href="#ryby" style="color:black;"><span>RYBY</span></a>
+                    <a href="#ryby" style="color:white;"><span>RYBY</span></a>
                 </div>  
                 <div class="dropdown4">
                     <span>DEKORACJE</span> 
@@ -82,32 +84,34 @@
 
 
         <div class="prodcon">
-            <div id="produkt">
-                <figure>
-                    <img src="photos/skalar1.jpg"> 
-                        <img src="photos/skalar2.jpg">
-                            <img src="photos/skalar3.jpg">
-                        <img  id="photo" src="photos/skalar4.jpg">
-                    </figure>
-                <button class="lewy"><i class="fa fa-arrow-circle-left"></i> </button>
-                <button class="prawy"><i class="fa fa-arrow-circle-right"></i> </button>
+            <div class="produkt">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img src="photos/krewetka.jpg" id="produkt-img">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div class="kropki">
+                <span class="dot" onclick="currentSlide(1)"></span>   
+                </div>
             </div>
                 <div class="info">
                     <div id="tytul">
-                        <h2>Skalar</h2>
+                        <h2>Krewetka blue</h2>
                     </div>
                         <div id="cena">
-                            <p>10,99zł</p>
+                            <p>20zł</p>
                         </div>
-                            <div id="rodzaj">
+                            <!-- <div id="rodzaj">
                                 <p>Rodzaj</p>
                             </div>
                                     <div class="kolor-rodzaj">
-                                        <button class="black"></button>
-                                            <button class="white"></button>
-                                            <button class="yellow"></button>
-                                        <button class="orange"></button>
-                                    </div>
+                                    </div> -->
                                 <br>
                         <div id="ilosc">
                             <p>Ilosc</p>
@@ -118,7 +122,7 @@
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność 10szt</p>
+                                <p>Dostępność 14szt</p>
                             </div>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
@@ -132,31 +136,27 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                            Ryba stadna, pokojowo usposobiona do innych "współtowarzyszy". 
-                            Nie potrafi bronić się przed rybkami agresywnymi i bardzo ruchliwymi 
-                            (np. brzanka sumatrzańska podgryza jej płetwy). 
-                            Po osiągnięciu dojrzałości płciowej i dobraniu się w pary podczas tarła może być agresywna. 
-                            W warunkach hodowlanych skalar żyje ok. 15 lat. 
+                        Krewetki są zwierzętami stadnymi – są bardzo prospołeczne i potrzebują mieć w swoim pobliżu swoich krewnych, dlatego w akwarium powinieneś trzymać od ośmiu do dziesięciu osobników. Generalnie da się socjalizować między sobą większość najróżniejszych rodzajów krewetek, jednak należy uważać, by krewetki do siebie pasowały, ale nie krzyżowały się ze sobą.
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
                                 <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>20cm</td>
+                                <td>10cm</td>
                             </tr>
 
                             <tr>
                                 <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>80 litrów</td>
+                                <td>20 litrów</td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">pH wody</td>
-                                <td>6-7</td>
+                                <td>5,5-6,5</td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>23-27°C</td>
+                                <td>18-24°C</td>
                             </tr>
                         </table>
                     </div>
@@ -166,27 +166,27 @@
                 <span>Podobne produkty</span>
                 <div class="podobne_zdjecia">
                     <div class="item" id="1">
-                        <a href="mieczyk.php"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg" alt="mieczyk">
+                        <a href="mieczyk"><img style="width: 200px; height: 200px;" src="photos/mieczyk.jpg" alt="mieczyk">
                             <p>Mieczyk</p>
                         <p style="font-weight:bold;">9zł/szt</p></a>
                     </div>
                         <div class="item" id="2">
-                            <a href="glonojad.php"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg" alt="glonojad">
+                            <a href="glonojad"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg" alt="glonojad">
                                 <p>Glonojad</p>
                             <p style="font-weight:bold;">7zł/szt</p></a>
                         </div>
                             <div class="item" id="3">
-                                <a href="krewetka.php"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg" alt="krewetka">
-                                    <p>Krewetka blue</p>
-                                <p style="font-weight:bold;">20zł/szt</p></a>
+                                <a href="krewetka"><img style="width: 200px; height: 200px;" src="photos/skalar1.jpg" alt="skalar">
+                                    <p>Skalar</p>
+                                <p style="font-weight:bold;">11zł/szt</p></a>
                             </div>
                         <div class="item" id="4">
-                            <a href="tetra.php"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
+                            <a href="tetra"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
                                 <p>Tetra czarna</p>
                             <p style="font-weight:bold;">14zł/szt</p></a>
                         </div>
                     <div class="item" id="5">
-                        <a href="gupik.php"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">
+                        <a href="gupik"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">
                             <p>Gupik</p>
                         <p style="font-weight:bold;">3zł/szt</p></a>
                     </div>
@@ -229,37 +229,34 @@
 </html>
 
 <script>
+        let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
 	$(document).ready(function(){
-	// Produkt górny                
-        var x = 0;
-    // w prawo przesuniecie
-    $('.prawy').click(function(){
-
-        x= (x<=200)?(x+100):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy').click(function(){
-    
-        x= (x>=100)?(x-100):300;
-        $('figure').css('left', -x+'%');
-    });
-
-    // Produkt dolny (podobny)
-    var x = 0;
-    // w prawo przesuniecie
-    $('.prawy1').click(function(){
-
-        x= (x<=100)?(x+50):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy1').click(function(){
-    
-        x= (x>=100)?(x-50):200;
-        $('figure').css('left', -x+'%');
-    });
-
+        
 
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
@@ -282,7 +279,7 @@
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < 10 ){
+            if(this.licznik < 14 ){
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };

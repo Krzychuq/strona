@@ -30,15 +30,17 @@
                     <p>Sklepik</p>
                 </div>
                 <div class="search">
+                    <i id="lupy1" class="bi bi-search" style="color: black; background:white; font-size:20px; font-weight: bolder;"></i>
                     <input type="text" class="icon1" value placeholder="Czego szukasz?">
+                    <i id="lupy2" class="bi bi-search" style="color: black; background:white; font-size: 22px;"></i>
                     <input type="text" class="icon2" value>
                 </div>
                 <div class="account">
-                    <h4 id="ikony0"><a id="konto1" href="konto.php"><i class="bi bi-person-circle"></i></a></h4>
+                    <h4 id="ikony0"><a id="konto1" href="konto"><i class="bi bi-person-circle"></i></a></h4>
                     <a id="konto2" href="#konto">Konto</a>
                 </div>
                 <div class="cart">
-                    <h4 id="ikony0"><a id="koszyk1" href="koszyk.php"><i class="bi bi-basket2-fill"></i></a></h4>   
+                    <h4 id="ikony0"><a id="koszyk1" href="koszyk"><i class="bi bi-basket2-fill"></i></a></h4>   
                     <a id="koszyk2" href="#koszyk">Koszyk</a>
                 </div>
             </div>
@@ -59,7 +61,7 @@
                     </div>
                 </div>      
                 <div class="dropdown3">
-                    <a href="#ryby" style="color:black;"><span>RYBY</span></a>
+                    <a href="#ryby" style="color:white;"><span>RYBY</span></a>
                 </div>  
                 <div class="dropdown4">
                     <span>DEKORACJE</span> 
@@ -82,14 +84,31 @@
 
 
         <div class="prodcon">
-            <div id="produkt">
-                <figure> 
-                        <img src="photos/mieczyk.jpg">
-                            <img src="photos/mieczyk2.jpg">
-                        <img  id="photo" src="photos/mieczyk3.jpg">
-                    </figure>
-                <button class="lewy"><i class="fa fa-arrow-circle-left"></i> </button>
-                <button class="prawy"><i class="fa fa-arrow-circle-right"></i> </button>
+            <div class="produkt">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img src="photos/mieczyk.jpg" id="produkt-img">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="photos/mieczyk2.jpg" id="produkt-img">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="photos/mieczyk3.jpg" id="produkt-img">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div class="kropki">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
                 <div class="info">
                     <div id="tytul">
@@ -102,9 +121,9 @@
                                 <p>Rodzaj</p>
                             </div>
                                     <div class="kolor-rodzaj">
-                                        <button class="black"></button>
-                                            <button class="green"></button>
                                         <button class="orange"></button>
+                                            <button class="black"></button>
+                                            <button class="green"></button>
                                     </div>
                                 <br>
                         <div id="ilosc">
@@ -116,7 +135,7 @@
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność 20szt</p>
+                                <p>Dostępność 4szt</p>
                             </div>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
@@ -130,7 +149,7 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                            Mieczyk jest rybą stadną, żywotną i ruchliwą, zasiedla środkowe piętro zbiornika. Osiąga długość 12 cm. Forma naturalna ma przeciętnie około 3 cm długości całkowitej. Samce można rozpoznać po gonopodium (umożliwiające zapłodnienie wewnętrzne) i mieczowato wydłużonej płetwie ogonowej.
+                        Mieczyk jest rybą stadną, żywotną i ruchliwą, zasiedla środkowe piętro zbiornika. Osiąga długość 12 cm. Forma naturalna ma przeciętnie około 3 cm długości całkowitej. Samce można rozpoznać po gonopodium (umożliwiające zapłodnienie wewnętrzne) i mieczowato wydłużonej płetwie ogonowej.
                         </p>
                     </div>
                     <div class="opis2">
@@ -160,27 +179,27 @@
                 <span>Podobne produkty</span>
                 <div class="podobne_zdjecia">
                     <div class="item" id="1">
-                        <a href="index.php"><img style="width: 200px; height: 200px;" src="photos/skalar1.jpg" alt="skalar">
+                        <a href="index"><img style="width: 200px; height: 200px;" src="photos/skalar1.jpg" alt="mieczyk">
                             <p>Skalar</p>
                         <p style="font-weight:bold;">11zł/szt</p></a>
                     </div>
                         <div class="item" id="2">
-                            <a href="glonojad.php"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg" alt="glonojad">
+                            <a href="glonojad"><img style="width: 200px; height: 200px;" src="photos/glonojad.jpg" alt="glonojad">
                                 <p>Glonojad</p>
                             <p style="font-weight:bold;">7zł/szt</p></a>
                         </div>
                             <div class="item" id="3">
-                                <a href="krewetka.php"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg" alt="krewetka">
+                                <a href="krewetka"><img style="width: 200px; height: 200px;" src="photos/krewetka.jpg" alt="krewetka">
                                     <p>Krewetka blue</p>
                                 <p style="font-weight:bold;">20zł/szt</p></a>
                             </div>
                         <div class="item" id="4">
-                            <a href="tetra.php"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
+                            <a href="tetra"><img style="width: 200px; height: 200px;" src="photos/tetra.jpg" alt="tetra">
                                 <p>Tetra czarna</p>
                             <p style="font-weight:bold;">14zł/szt</p></a>
                         </div>
                     <div class="item" id="5">
-                        <a href="gupik.php"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">
+                        <a href="gupik"><img style="width: 200px; height: 200px;" src="photos/gupik.jpg" alt="gupik">
                             <p>Gupik</p>
                         <p style="font-weight:bold;">3zł/szt</p></a>
                     </div>
@@ -223,37 +242,34 @@
 </html>
 
 <script>
+        let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
 	$(document).ready(function(){
-	// Produkt górny                
-        var x = 0;
-    // w prawo przesuniecie
-    $('.prawy').click(function(){
-
-        x= (x<=100)?(x+100):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy').click(function(){
-    
-        x= (x>=100)?(x-100):200;
-        $('figure').css('left', -x+'%');
-    });
-
-    // Produkt dolny (podobny)
-    var x = 0;
-    // w prawo przesuniecie
-    $('.prawy1').click(function(){
-
-        x= (x<=100)?(x+50):0;
-        $('figure').css('left', -x+'%');
-    });
-     // w lewo przesuniecie
-     $('.lewy1').click(function(){
-    
-        x= (x>=100)?(x-50):200;
-        $('figure').css('left', -x+'%');
-    });
-
+        
 
         $('#opis1-btn').click(function(){
                 $('.opis1').css('display','block');
@@ -276,7 +292,7 @@
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < 20 ){
+            if(this.licznik < 4 ){
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
