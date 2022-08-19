@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{text-decoration: none;}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray; 
+    border-radius: 1px;
+}
+
+.contener{
+    overflow-x: hidden;
+    background: url("https://p0.pikist.com/photos/676/293/jellyfish-jelly-fish-aquarium-dark-wallpaper-underwater-fish-marine-sea.jpg");
+}
+
+
+

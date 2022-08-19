@@ -17,281 +17,9 @@ a{
 }
 
 .contener{
-    background: url("photos/wall.jpg");
+    background: url("https://p0.pikist.com/photos/676/293/jellyfish-jelly-fish-aquarium-dark-wallpaper-underwater-fish-marine-sea.jpg"); 
     overflow-x: hidden;
 }
-.banner{
-
-    width: 100%;
-    background-color: darkred;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
- .header{
-    background-color: transparent;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    
- }
-    .logo{
-        font-size: 2.7rem; 
-        font-family:monospace; 
-        width: 100%;
-        /* color:black; */
-        color:white;
-    }
-        .search{
-            display: flex;
-            padding-top: 5px;
-            text-align: right;
-            width: 40%;
-            /* color:black; */
-            color:white;
-        }
-            .icon1 {
-                display: inline-flex;
-                font-size: 15px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                background: transparent;
-                border: 2px solid white;
-                border-top-right-radius: 6px;
-                border-bottom-right-radius: 6px;
-                /* color:black; */
-                color:white;
-            }
-                #lupy1{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 5%; width: 25px; justify-content: center;}
-                    #lupy2{display: none;}
-                .icon2{
-                    display: none;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    background: transparent;
-                    border: 2px solid white;
-                    border-top-right-radius: 6px;
-                    border-bottom-right-radius: 6px;
-                    font-size: 0.7rem;
-                    width: 100%;
-                    /* color:black; */
-                    color:white;
-                }
-                .account{
-                    padding-top:5px;
-                    text-align: center;
-                    width: 10%;
-                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-weight: bold;
-                }
-            .account a{
-                text-decoration: none;
-                /* color:black; */
-                color:white;
-            }   
-        .cart{
-            padding-top:5px;
-            text-align: center;
-            width: 10%;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bold;
-            
-        }   
-    
-    #konto1{
-        display: inline-flex;
-    }
-        #konto2{
-            display: inline-flex;
-        }
-        #koszyk1{
-            display: inline-flex;
-            /* color:black; */
-            color:white;
-        }
-    #koszyk2{
-        display: inline-flex;
-        /* color:black; */
-        color:white;
-    }
-
-.menu{
-    display: flex;
-    justify-content: center;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    gap: 10%;
-    overflow: hidden;
-    /* color:black; */
-    color:white;
-}
-    .dropdown1 span{
-        cursor: pointer;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-    .dropdown2 span{
-        cursor: pointer;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-    .dropdown3 span{
-        cursor: pointer;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-    .dropdown4 span{
-        cursor: pointer;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-    .dropdown5 span{
-        cursor: pointer;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-    .dropdown1{
-        display: inline;
-      }
-        .dropdown2{
-          display: inline;
-        }
-          .dropdown3{
-            display: inline;
-          }
-          .dropdown4{
-            display: inline;
-          }
-        .dropdown5{
-          display: inline;
-        }
-
-            .dropdown1:hover .droplista1{display: block;}
-              .dropdown2:hover .droplista2{display: block;}
-                .dropdown3:hover .droplista3{display: block;}
-                .dropdown4:hover .droplista4{display: block;}
-              .dropdown5:hover .droplista5{display: block;}
-
-        .droplista1{
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 20%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista1 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-          .droplista2{
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 20%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista2 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-          .droplista3{
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 20%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista3  li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-          .droplista4{
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 20%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista4 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-          .droplista5{
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 20%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista5 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-
 
         .prodcon{
             display: flex;
@@ -312,11 +40,11 @@ a{
                 height: 650px;
             }
 
-            #produkt-img{width:100%; height: 80%;}
+            #produkt-img{width: 100%; height: 500px;}
     
             /* Slideshow container */
             .slideshow-container {
-            max-width: 100%;
+            max-width: 584px;
             position: relative;
             }
     
@@ -511,8 +239,18 @@ a{
                                 .pink:active{
                                     transform: scale(0.9);
                                 }
+                        .purple{ 
+                            background-color: purple;
+                            border: 2px solid black ; 
+                            border-radius: 10px; 
+                            padding: 0.9rem 1px;
+                            width: 2.5rem;
+                            }
+                                .purple:active{
+                                    transform: scale(0.9);
+                                }
                         .green{
-                            background-color: lightgreen;
+                            background-color: greenyellow;
                             border: 2px solid black ; 
                             border-radius: 10px; 
                             padding: 0.9rem 1px;
@@ -592,7 +330,7 @@ a{
                 }
             .btkup{
                 width: 80%;
-                height: 10%;
+                height: 50px;
                 font-size: 1.2rem;
                 font-family: 'Segoe UI';
                 border-radius: 4px;
@@ -700,89 +438,51 @@ a{
     
 }
 @media screen and (max-width: 1000px){
-    .menu{display: flex; width: 60%; padding-top: 0.5%; padding-bottom: 0.5%; gap: 8%; margin-left: auto; margin-right: auto; overflow: hidden;}
         #ilosc{ margin-top: 1px;}
             #cena{height: 50px;}
         #dostepnosc{height: 80px;}
-    .produkt{height: 500px; padding-bottom: 0px;}
+    .produkt{height: 550px; padding-bottom: 0px;}
     
 }
 /* ----------------------------------------------------------------------------------------------------------------- */
                                                 /* Mobile version */
 /* ----------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width: 900px){
-    #lupy1{padding-top: 10px;}
-    .header{margin-left: 5%; margin-right: 0%;}
-        .logo{width: 50%; font-size: 2rem;}
-            .account{width: 11%;}
-                .cart{width: 11%;}
-                    #konto1{font-size: 2rem;}
-                            #konto2{display: none;}
-                        #koszyk1{font-size: 2rem;}
-                    #koszyk2{display: none;}
-                #ikony{display: none;}
-            .menu{padding-top: none; padding-bottom: none; gap: 3%;}
-}
 
 
 @media screen and (max-width: 750px){
-    .menu li{font-size: 1rem;}
-        .icon1{display: none;}
-            #lupy1{display: none;}
-                #lupy2{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 5px; width: 29px; justify-content: center;}
-                    .icon2{display: inline-flex;}
-                        .prodcon{display: block; background-color:ghostwhite;}
-                            .footer{text-align: justify; height: auto; display:block;}
-                                .footer ul{padding-left: 16px;}
-                                    .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
-                                        .tekst-footer{margin: 0px;}
-                                            .klasa{margin-top: 10px;}
-                                            .podobne{margin-top: 10px; margin-left: 15px; margin-right: 15px;}
-                                        .opis{height: auto; padding-left: 7%; padding-right: 7%; margin: 0; font-size: 1.2rem;}
-                                    .droplista1{list-style:none;}
-                                .droplista2{list-style:none; width: 30%;}
-                            .droplista3{list-style:none;}
-                        .droplista4{list-style:none;}
-                    .droplista5{list-style:none;}
-                .thumbnails{padding: 0px;}
-            .produkt{width: 90%; margin-left: 25px; }
-        .slideshow-container{max-width: 80%; margin-left: 10%;}
-    .kropki{max-width:80%;}
-    #zakup{padding-left:32px; margin: 0; margin-bottom: 5px;}
-    .btkup{height: 40px; font-size: 1.3rem;}
+    .prodcon{display: block; background-color:ghostwhite;}
+        .footer{text-align: justify; height: auto; display:block;}
+            .footer ul{padding-left: 16px;}
+                .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
+                    .tekst-footer{margin: 0px;}
+                        .klasa{margin-top: 10px;}
+                            .podobne{margin-top: 10px; margin-left: 15px; margin-right: 15px;}
+                                .opis{height: auto; padding-left: 7%; padding-right: 7%; margin: 0; font-size: 1.2rem;}
+                            .thumbnails{padding: 0px;}
+                        .produkt{width: 90%; justify-content: center; }
+                    .slideshow-container{max-width: 100%;}
+                .kropki{max-width:100%;}
+            #zakup{padding-left:32px; margin: 0; margin-bottom: 5px;}
+        .btkup{height: 40px; font-size: 1.3rem;}
     .info{ height: 460px;}
-    .logo{font-size: 1.8rem;}
-    .menu{height: 30px; margin-top: 10px;}
-    
-
 }
 
 @media screen and (max-width: 680px){
-    .menu li{font-size: 0.9rem; list-style-type: none;}
-        .menu{overflow: visible; gap: 5%;}
-            .podobne_zdjecia{gap:0px;}
-                .item{ width: 350px; margin-bottom:5px;}
-                    .produkt{padding-top: 10px;}
-                        .dropdown1 span{font-size: 1em;}
-                    .dropdown2 span{font-size: 1em;}
-                .dropdown3 span{font-size: 1em;}
-            .dropdown4 span{font-size: 1em;}
-        .dropdown5 span{font-size: 1em;}
-    .banner{font-size: 0.8rem;}
-    #zakup{padding-left: 17px;}
+    .podobne_zdjecia{gap:0px;}
+        .item{ width: 350px; margin-bottom:5px;}
+            .produkt{padding-top: 10px;}
+        #zakup{padding-left: 17px;}
     #tytul{font-size: 1.9rem;}
 
 }
 @media screen and (max-width: 590px) {
     .produkt{width: 90%; padding-left: 0;}
-        .slideshow-container{max-width: 100%; margin-left: 0;}
+        #produkt-img{height: 400px;}
+            .slideshow-container{max-width: 100%;}
         .kropki{max-width:100%;}
     .prev, .next{font-size: 12px; padding: 10px;}   
 }
 @media screen and (max-width: 480px){
-    .thumbnails li{height: 120px;}
-        .thumbnails img {width: 120px; height: 120px;}
-        .slides{height: 300px;}
-    .slides img {width: 240px; height: 300px;}
-
+    #produkt-img{height: 300px;}
+    .produkt{height: 400px;}
 }

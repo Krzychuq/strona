@@ -1,0 +1,324 @@
+.banner{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+ .header{
+    background-color: transparent;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 7px;
+    padding-bottom: 5px;
+ }
+ .plogo{
+    width: 60px;
+    height: auto;    
+ }
+    .logo{
+        font-size: 2.7rem; 
+        font-family:monospace; 
+        width: 100%;
+        /* color:black; */
+        color:white;
+        
+    }
+        .search{
+            display: flex;
+            padding-top: 5px;
+            text-align: right;
+            width: 40%;
+            /* color:black; */
+            color:white;
+            height: 100%;
+        }
+            .icon1 {
+                display: inline-flex;
+                font-size: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background: transparent;
+                border: 2px solid white;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                /* color:black; */
+                color:white;
+            }
+                #lupy1{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 3%; width: 25px; justify-content: center;}
+                    #lupy2{display: none;}
+                .icon2{
+                    display: none;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    background: transparent;
+                    border: 2px solid white;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    font-size: 0.7rem;
+                    width: 100%;
+                    /* color:black; */
+                    color:white;
+                }
+                .account{
+                    padding-top:5px;
+                    text-align: center;
+                    width: 10%;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            .account a{
+                text-decoration: none;
+                /* color:black; */
+                color:white;
+            }   
+        .cart{
+            padding-top:5px;
+            text-align: center;
+            width: 10%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            
+        }   
+    
+    #konto1{
+        display: inline-flex;
+    }
+        #konto2{
+            display: inline-flex;
+        }
+        #koszyk1{
+            display: inline-flex;
+            /* color:black; */
+            color:white;
+        }
+    #koszyk2{
+        display: inline-flex;
+        /* color:black; */
+        color:white;
+    }
+
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    gap: 10%;
+    /* color:black; */
+    color:white;
+}
+    .dropdown1 {
+        cursor: pointer;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .dropdown2 {
+        cursor: pointer;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .dropdown3 {
+        cursor: pointer;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .dropdown4 {
+        cursor: pointer;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .dropdown5 {
+        cursor: pointer;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .dropdown1{
+        display: inline;
+      }
+        .dropdown2{
+          display: inline;
+        }
+          .dropdown3{
+            display: inline;
+          }
+          .dropdown4{
+            display: inline;
+          }
+        .dropdown5{
+          display: inline;
+        }
+
+            .dropdown1:hover .droplista1{display: block;}
+              .dropdown2:hover .droplista2{display: block;}
+                .dropdown4:hover .droplista4{display: block;}
+              .dropdown5:hover .droplista5{display: block;}
+
+        .droplista1{
+            margin-left: -10%;
+            padding: 5px;
+            z-index: 99;
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 90%;
+            height: auto;
+            opacity: 1;
+            box-shadow: 0 0 20px black;
+            text-align: center;
+        }
+        .droplista1 li {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            list-style-type: none;
+          }
+          .droplista2{
+            margin-left: -28%;
+            padding: 5px;
+            z-index: 99;
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 90%;
+            height: auto;
+            opacity: 1;
+            box-shadow: 0 0 20px black;
+            text-align: center;
+        }
+        .droplista2 li {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            list-style-type: none;
+          }
+          .droplista4{
+            margin-left: -56%;
+            padding: 5px;
+            z-index: 99;
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 90%;
+            height: auto;
+            opacity: 1;
+            box-shadow: 0 0 20px black;
+            text-align: center;
+        }
+        .droplista4 li {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            list-style-type: none;
+          }
+          .droplista5{
+            margin-left: -73%;
+            padding: 5px;
+            z-index: 99;
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            width: 90%;
+            height: auto;
+            opacity: 1;
+            box-shadow: 0 0 20px black;
+            text-align: center;
+        }
+        .droplista5 li {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            list-style-type: none;
+          }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*                                              screen */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        @media screen and (min-width: 1600px){
+          .droplista1{margin-left: -15%;};
+          .droplista2{margin-left: -15%;};
+          .droplista3{margin-left: -15%;};
+          .droplista4{margin-left: -15%;};
+          .droplista5{margin-left: -15%;};
+        }
+
+        @media screen and (max-width: 1000px){
+            .menu{display: flex; width: 60%; padding-top: 0.5%; padding-bottom: 0.5%; gap: 8%; margin-left: auto; margin-right: auto;}
+            .droplista1{margin-left: -15%;}
+            .droplista2{margin-left: -15%;}
+            .droplista4{margin-left: -50%;}
+            .droplista5{margin-left: -65%;}
+        }
+
+
+        @media screen and (max-width: 900px){
+            #lupy1{padding-top: 10px;}
+            .header{margin-left: 5%; margin-right: 0%;}
+            .logo{width: 50%; font-size: 2rem;}
+            .account{width: 11%;}
+            .cart{width: 11%;}
+            #konto1{font-size: 2rem;}
+            #konto2{display: none;}
+            #koszyk1{font-size: 2rem;}
+            #koszyk2{display: none;}
+            #ikony{display: none;}
+            .menu{padding-top: none; padding-bottom: none; gap: 3%;}
+        }
+
+        @media screen and (max-width: 750px){
+            .menu li{font-size: 1rem;}
+            .icon1{display: none;}
+            #lupy1{display: none;}
+            #lupy2{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 5px; width: 29px; justify-content: center;}
+            .icon2{display: inline-flex;}
+            .droplista1{list-style:none;}
+            .droplista2{list-style:none;}
+            .droplista3{list-style:none;}
+            .droplista4{list-style:none;}
+            .droplista5{list-style:none;}
+            .logo{font-size: 1.8rem;}
+            .menu{height: 30px; margin-top: 10px;}
+        }
+        
+        @media screen and (max-width: 680px){
+            .menu li{font-size: 0.9rem; list-style-type: none;}
+            .menu{overflow: visible; gap: 5%;}
+            .dropdown1{font-size: 1em;}
+            .dropdown2{font-size: 1em;}
+            .dropdown3{font-size: 1em;}
+            .dropdown4{font-size: 1em;}
+            .dropdown5{font-size: 1em;}
+            .banner{font-size: 0.8rem;}
+            .droplista1{margin-left: -3%;}
+            .droplista2{margin-left: -26%;}
+            .droplista4{margin-left: -50%;}
+            .droplista5{margin-left: -69%;}
+            
+        }
