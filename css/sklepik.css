@@ -19,5 +19,24 @@ a{text-decoration: none;}
     background: url("https://p0.pikist.com/photos/676/293/jellyfish-jelly-fish-aquarium-dark-wallpaper-underwater-fish-marine-sea.jpg");
 }
 
+.nnazwa{
+    color: white; 
+    font-size: 30px; 
+    font-family: 'Segoe UI'; 
+    padding: 10px;
+    text-align: center;
+}
 
+#produkt-img{width: 330px; height: 330px;}
 
+.nowosci {
+    max-width: 100%;
+    position: relative;
+}
+    .produkty{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+        .item{ width: 28%;}
+
+    

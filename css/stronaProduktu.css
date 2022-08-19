@@ -394,25 +394,7 @@ a{
                 text-align: center;
             }
 
-.footer{
-    justify-content: center;
-    padding: 5px;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    background-color: whitesmoke ;
-    padding-top: 20px;
-    font-size: 0.9em;
-    font-family: 'Segoe UI';
-    font-weight: bold;
-    height: 9rem;
-}
-    .footer ul{padding-left: 16px;}
-        .footer li{font-weight: bold; padding-left: 0px; padding-right: 0px;}
-            .li{font-family: 'Segoe UI'; list-style-type: square; }
-                .footer-title{border-bottom: 1px solid black;}
-                    .tekst-footer{margin-top: 10px;}
+
 
 @media screen and (min-width: 1700px) {
     .produkt{width: 35%}
@@ -451,14 +433,10 @@ a{
 
 @media screen and (max-width: 750px){
     .prodcon{display: block; background-color:ghostwhite;}
-        .footer{text-align: justify; height: auto; display:block;}
-            .footer ul{padding-left: 16px;}
-                .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
-                    .tekst-footer{margin: 0px;}
-                        .klasa{margin-top: 10px;}
-                            .podobne{margin-top: 10px; margin-left: 15px; margin-right: 15px;}
-                                .opis{height: auto; padding-left: 7%; padding-right: 7%; margin: 0; font-size: 1.2rem;}
-                            .thumbnails{padding: 0px;}
+        .klasa{margin-top: 10px;}
+            .podobne{margin-top: 10px; margin-left: 15px; margin-right: 15px;}
+                .opis{height: auto; padding-left: 7%; padding-right: 7%; margin: 0; font-size: 1.2rem;}
+                    .thumbnails{padding: 0px;}
                         .produkt{width: 90%; justify-content: center; }
                     .slideshow-container{max-width: 100%;}
                 .kropki{max-width:100%;}
