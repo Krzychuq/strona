@@ -6,7 +6,7 @@
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
     <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-        <link rel="stylesheet" href="css/index.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+        <link rel="stylesheet" href="css/ryby.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta charset="UTF-8"/>
                     <meta name="robotscontent=noindex,nofollow"/>
@@ -27,64 +27,41 @@
 <!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
     <div class="nowosci">
         <div class="nnazwa">
-            <p>Nowości</p>
+            <p>Ryby</p>
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="juwelFiltrL"><img src="photos/juwel filtrL.jpg" id="produkt-mobile">
-                <p>Filtr Juwel BIOFLOW L</p>
-                </a>
+                <a href="mieczyk"><img src="photos/mieczyk.jpg" id="produkt-mobile">
+                <p>Mieczyk</p>
+                <p>9zł</p></a>
             </div>
             <div class="item">
                 <a href="skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
                 <p>Skalar</p>
-                </a>
+                <p>11zł</p></a>
             </div>
             <div class="item">
-                <a href="pokrywaJuwel60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
-                <p>Pokrywa Juwel PRIMOLUX 60</p>
-                </a>
+                <a href="gupik"><img src="photos/gupik.jpg" id="produkt-mobile">
+                <p>Gupik</p>
+                <p>3zł</p></a>
             </div>
             <div class="item">
-                <a href="grzalkaJuwel50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
-                <p>Grzałka AQUA HEAT 50</p>
-                </a>
+                <a href="tetra"><img src="photos/tetra.jpg" id="produkt-mobile">
+                <p>Tetra</p>
+                <p>14zł</p></a>
+            </div>
+            <div class="item">
+                <a href="krewetka"><img src="photos/krewetka.jpg" id="produkt-mobile">
+                <p>Krewetka blue</p>
+                <p>20zł</p></a>
+            </div>
+            <div class="item">
+                <a href="glonojad"><img src="photos/glonojad.jpg" id="produkt-mobile">
+                <p>Glonojad</p>
+                <p>7zł</p></a>
             </div>
         </div>
     </div>
-<!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
-
-<!-- /////////////////////////////////////////////////////  Mobile nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
-                <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <a href="juwelFiltrL"><img src="photos/juwel filtrL.jpg" id="produkt-mobile">
-                                <p>Filtr Juwel BIOFLOW L</p>
-                                </a>
-                            </div>
-                            <div class="mySlides fade">
-                                <a href="skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
-                                <p>Skalar</p>
-                            </a>
-                            </div>
-                            <div class="mySlides fade">
-                                <a href="pokrywaJuwel60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
-                                <p>Pokrywa Juwel PRIMOLUX 60</p>
-                                </a>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <a href="grzalkaJuwel50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
-                                <p>Grzałka AQUA HEAT 50</p>
-                                </a>
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
-                        </div>
-                            
-
-                            
-<!-- /////////////////////////////////////////////////////  Mobile nowosci    ////////////////////////////////////////////////////////////////////////////////// -->
 
 
 <?php include_once("html/footer.html"); ?>

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI'; 
+}
+
+a{text-decoration: none;}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray; 
+    border-radius: 1px;
+}
+
+.contener{
+    margin: 0;
+    overflow-x: hidden;
+    background: url("https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg");
+}
+
+.nnazwa{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    background-color: white;
+    font-weight: bold;
+    color: black; 
+    font-size: 30px; 
+    padding: 10px;
+    text-align: center;
+}
+
+#produkt-mobile{width: 250px; height: 250px; }
+
+.nowosci {
+    max-width: 100%;
+    position: relative;
+}
+    .produkty{
+        height: auto;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+        .item{padding-top: 10px; padding-bottom: 10px; background-color: white; width: 100%; text-align: center;}
+        .item p{
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 240px;
+        }
+
+
+
+/* //////////////////////////////////////////// MOBILE  ////////////////////////////////////////////////////////////////// */
+    @media screen and (max-width: 710px) {
+        .produkty{grid-template-columns: 100%;}
+        .nowosci{margin: 15px;}
+    }
+/* //////////////////////////////////////////////// MOBILE  ///////////////////////////////////////////////////////////// */
+  

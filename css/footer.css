@@ -1,13 +1,14 @@
-a{text-decoration: none; color:black;}
+.footer a{text-decoration: none; color:white;}
 
 .footer{
+    color: white;
     justify-content: center;
     padding: 5px;
     text-align: left;
     display: flex;
     flex-direction: row;
     gap: 50px;
-    background-color: whitesmoke ;
+    background-color: black ;
     padding-top: 20px;
     font-size: 0.9em;
     font-family: 'Segoe UI';
@@ -17,14 +18,15 @@ a{text-decoration: none; color:black;}
     .footer ul{padding-left: 16px;}
         .footer li{font-weight: bold; padding-left: 0px; padding-right: 0px;}
             .li{font-family: 'Segoe UI'; list-style-type: square; }
-                .footer-title{border-bottom: 1px solid black;}
+                .footer-title{border-bottom: 1px solid white;}
                     .tekst-footer{margin-top: 10px;}
 
 
 @media screen and (max-width: 750px){
-    .prodcon{display: block; background-color:ghostwhite;}
-        .footer{text-align: justify; height: auto; display:block;}
+    .prodcon{display: block; background-color:black;}
+        .footer{text-align: justify; height: auto; display:block; }
             .footer ul{padding-left: 16px;}
                 .footer li{padding-left: 0px; padding-right: 0px; list-style: square; }
                     .tekst-footer{margin: 0px;}
+                .klasa{padding-bottom: 10px;}
 }

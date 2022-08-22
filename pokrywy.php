@@ -6,7 +6,7 @@
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
     <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-        <link rel="stylesheet" href="css/sklepik.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+        <link rel="stylesheet" href="css/pokrywy.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta charset="UTF-8"/>
                     <meta name="robotscontent=noindex,nofollow"/>
@@ -24,35 +24,45 @@
 
 <div class="contener">
 <?php include_once("html/menu.html"); ?>
+<!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
     <div class="nowosci">
         <div class="nnazwa">
-            <p>Nowości</p>
+            <p>Ryby</p>
         </div>
         <div class="produkty">
             <div class="item">
-                <img src="photos/glonojad.jpg" alt="glonojad" id="produkt-img">
-                <p>Glonojad</p>
-            </div>
-            <div class="item">
-                <img src="photos/glonojad.jpg" alt="glonojad" id="produkt-img">
-                <p>Glonojad</p>
-            </div>
-            <div class="item">
-                <img src="photos/glonojad.jpg" alt="glonojad" id="produkt-img">
-                <p>Glonojad</p>
-            </div>
-            <div class="item">
-                <img src="photos/glonojad.jpg" alt="glonojad" id="produkt-img">
-                <p>Glonojad</p>
+                <a href="pokrywaJuwel60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
+                <p>Pokrywa Juwel PRIMOLUX 60</p>
+                </a>
             </div>
         </div>
     </div>
-
-
 
 
 <?php include_once("html/footer.html"); ?>
 </div>   
 </body>
 </html>
-
+<script>
+let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+    </script>
