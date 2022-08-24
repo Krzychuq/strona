@@ -31,7 +31,7 @@
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="pokrywaJuwel60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
+                <a href="pokrywaJuwelPrimolux60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
                 <p>Pokrywa Juwel PRIMOLUX 60</p>
                 </a>
             </div>

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/stronaProduktu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/podobne-ryby.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -85,6 +86,8 @@
                         <br>
                             <div id="dostepnosc">
                                 <p>Dostępność 10szt</p>
+                                <br>
+                                <p style="font-size:15px;"><i class="bi bi-truck"></i>Dostawa: 14zł</p>
                             </div>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
