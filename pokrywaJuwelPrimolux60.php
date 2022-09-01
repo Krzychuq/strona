@@ -1,9 +1,14 @@
+
+<?php
+    include_once 'dbh.inc.php';
+?>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/stronaProduktu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/podobne-ryby.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/podobny-sprzet.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -12,70 +17,45 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-         rel = "stylesheet">
-      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
 
-
     <div class="contener">
     <div><?php include_once("html/menu.html"); ?></div>
-
 
         <div class="prodcon">
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src="photos/gupik.jpg" id="produkt-img">
+                <img src="photos/pokrywa juwel60.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                <img src="photos/gupik2.jpg" id="produkt-img">
-                </div>
-
-                <div class="mySlides fade">
-                <img src="photos/gupik3.jpg" id="produkt-img">
-                </div>
-
-                <div class="mySlides fade">
-                <img src="photos/gupik4.jpg" id="produkt-img">
-                </div>
-                
-                <div class="mySlides fade">
-                <img src="photos/gupik5.jpg" id="produkt-img">
+                <img src="photos/pokrywa juwel60 2.jpg" id="produkt-img">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
 
-                </div>
+            </div>
                 <br>
 
                 <div class="kropki">
                 <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>   
+                <span class="dot" onclick="currentSlide(2)"></span>  
                 </div>
             </div>
                 <div class="info">
                     <div id="tytul">
-                        <h2>Gupik</h2>
+                        <h2>Pokrywa Juwel PRIMOLUX 60</h2>
                     </div>
                         <div id="cena">
-                            <p>3zł</p>
+                            <p>220zł</p>
                         </div>
-                            <div id="rodzaj">
-                                <p>Rodzaj</p>
-                            </div>
-                                    <div class="kolor-rodzaj">
-                                        <span style="color:red; font-size: 14px; font-family:'Segoe UI';">Prosze napisac w zamówieniu jaki kolor ma być gupika!</span>
-                                    </div>
-                                <br>
                         <div id="ilosc">
                             <p>Ilosc</p>
                                 <button class="down" onclick="down()">-</button>
@@ -85,7 +65,7 @@
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność 50szt</p>
+                                <p>Dostępność 2szt</p>
                                 <br>
                                 <p style="font-size:15px;"><i class="bi bi-truck"></i>Dostawa: 14zł</p>
                             </div>
@@ -101,36 +81,32 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                        Gupik to najpopularniejsza rybka hodowana w akwarium, polecana początkującym. Jest to słodkowodna ryba akwariowa z rodziny piękniczkowatych. Charakteryzuje ją dymorfizm płciowy. Samica jest niepozorna w kolorze oliwkowym. Samiec odznacza się pięknymi płetwami i różnorodnym ubarwieniem.
+                            Bioflow L to filtr wewnętrzny przeznaczony do akwarium o wysokości 60cm. Filtr działa bez połączeń wężowych, mogących powodować przecieki oraz redukujące wydajność pompy z powodu tarcia. W skład zestawu filtra wchodzi pompa Eccoflow 1000 l/h oraz zróżnicowane wkłady filtracyjne. Grzałkę można dokupić osobno. 
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
-                                <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>6cm</td>
+                                <td style="font-weight: bold; width: 35%;">Wymiary</td>
+                                <td>23,5 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>20 litrów</td>
+                                <td style="font-weight: bold;">Wydajność</td>
+                                <td>20 - 28 °C</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">pH wody</td>
-                                <td>5-7</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>23-26°C</td>
+                                <td style="font-weight: bold;">Moc</td>
+                                <td>50W</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
-        
-        <div><?php include_once("html/podobne-ryby.html");?></div>
-    
-        <div><?php include_once("html/footer.html");?></div>
+            
+        <div><?php include_once("html/podobny-sprzet.html");?></div>
+    </div>
+    <div><?php include_once("html/footer.html");?></div>
     
 </div>
 </body>
@@ -187,7 +163,7 @@
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < 50 ){
+            if(this.licznik < 2 ){
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };

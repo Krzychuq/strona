@@ -147,6 +147,7 @@ a{color: black; text-decoration: none;}
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
         font-size: 1.3rem;
+        
     }
     .dropdown1{
         display: inline;
@@ -166,8 +167,7 @@ a{color: black; text-decoration: none;}
 
             .dropdown1:hover .droplista1{display: block;}
               .dropdown2:hover .droplista2{display: block;}
-                .dropdown4:hover .droplista4{display: block;}
-              .dropdown5:hover .droplista5{display: block;}
+            .dropdown4:hover .droplista4{display: block;}
 
         .droplista1{
             margin-left: -10%;
@@ -213,7 +213,7 @@ a{color: black; text-decoration: none;}
             padding: 5px;
             list-style-type: none;
           }
-          .droplista4{
+        .droplista4{
             margin-left: -56%;
             padding: 5px;
             z-index: 99;
@@ -228,38 +228,16 @@ a{color: black; text-decoration: none;}
             box-shadow: 0 0 20px black;
             text-align: center;
         }
-        .droplista4 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
-          .droplista5{
-            margin-left: -73%;
-            padding: 5px;
-            z-index: 99;
-            display: none;
-            position: absolute;
-            overflow: hidden;
-            background-color: white;
-            color: black;
-            width: 90%;
-            height: auto;
-            opacity: 1;
-            box-shadow: 0 0 20px black;
-            text-align: center;
-        }
-        .droplista5 li {
-            font-family: Helvetica;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
+            .droplista4 li {
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 15px;
+                padding: 5px;
+                list-style-type: none;
+            }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/*                                              screen */
+/*                                              screen                                                                 */
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
         @media screen and (min-width: 1600px){
@@ -267,7 +245,6 @@ a{color: black; text-decoration: none;}
           .droplista2{margin-left: -15%;};
           .droplista3{margin-left: -15%;};
           .droplista4{margin-left: -15%;};
-          .droplista5{margin-left: -15%;};
         }
 
         @media screen and (max-width: 1000px){
@@ -275,7 +252,6 @@ a{color: black; text-decoration: none;}
             .droplista1{margin-left: -15%;}
             .droplista2{margin-left: -15%;}
             .droplista4{margin-left: -50%;}
-            .droplista5{margin-left: -65%;}
         }
 
 
@@ -303,7 +279,6 @@ a{color: black; text-decoration: none;}
             .droplista2{list-style:none;}
             .droplista3{list-style:none;}
             .droplista4{list-style:none;}
-            .droplista5{list-style:none;}
             .logo{font-size: 1.8rem;}
             .menu{height: 30px; margin-top: 10px;}
         }
@@ -320,6 +295,5 @@ a{color: black; text-decoration: none;}
             .droplista1{margin-left: -3%;}
             .droplista2{margin-left: -26%;}
             .droplista4{margin-left: -50%;}
-            .droplista5{margin-left: -69%;}
             
         }
