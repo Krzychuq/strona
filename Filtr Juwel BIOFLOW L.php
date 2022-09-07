@@ -1,7 +1,6 @@
 <?php
     include_once 'dbh.inc.php';
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
@@ -21,47 +20,40 @@
 </head>
 
 <body>
+
+
     <div class="contener">
     <div><?php include_once("html/menu.php"); ?></div>
+
 
         <div class="prodcon">
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src="photos/skalar1.jpg" id="produkt-img">
+                    <img src="photos/juwel filtrL.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                <img src="photos/skalar2.jpg" id="produkt-img">
-                </div>
-
-                <div class="mySlides fade">
-                <img src="photos/skalar3.jpg" id="produkt-img">
-                </div>
-
-                <div class="mySlides fade">
-                <img src="photos/skalar4.jpg" id="produkt-img">
+                    <img src="photos/juwel filtrL2.jpg" id="produkt-img">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
-
-            </div>
+                </div>
+                
                 <br>
 
                 <div class="kropki">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>  
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
                 </div>
             </div>
 <?php
-            $stmt = $conn->prepare(
-                    "SELECT * FROM produkty WHERE id=1");
-            $stmt->execute();
-            $prod = $stmt->fetchAll();
-            foreach($prod as $prod) {
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=7");  // wpisz id
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
 ?>
                 <div class="info">
                     <div id="tytul">
@@ -70,16 +62,14 @@
                         <div id="cena">
                             <p><?php echo $prod['cena']; ?>zł</p>
                         </div>
-                            <div id="rodzaj">
+                          <!--  <div id="rodzaj"> 
                                 <p>Rodzaj</p>
                             </div>
                                     <div class="kolor-rodzaj">
-                                        <button class="black" onclick="currentSlide(1)"></button>
-                                            <button class="white" onclick="currentSlide(4)"></button>
-                                            <button class="yellow" onclick="currentSlide(3)"></button>
-                                        <button class="orange" onclick="currentSlide(2)"></button>
+                                        <button class="" onclick="currentSlide(1)"></button>
+                                            <button class="" onclick="currentSlide(2)"></button>
                                     </div>
-                                <br>
+                                <br> -->
                         <div id="ilosc">
                             <p>Ilosc</p>
                                 <button class="down" onclick="down()">-</button>
@@ -91,13 +81,12 @@
                             <div id="dostepnosc">
                                 <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p>
                                 <br>
-                                <p style="font-size:15px;"><i class="bi bi-truck"></i>Odbiór w sklepie</p>
+                                <p style="font-size:15px;"><i class="bi bi-truck"></i>Odbiór w sklepie / Dostawa:11zł</p>
                             </div>
                     <div id="zakup">
                         <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
                     </div>
                 </div>
-
                 <!-- Opis szczegółowy produktu -->
                 <div class="opis">
                     <ul class="opis-btn">
@@ -106,40 +95,36 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                            Ryba stadna, pokojowo usposobiona do innych "współtowarzyszy". 
-                            Nie potrafi bronić się przed rybkami agresywnymi i bardzo ruchliwymi 
-                            (np. brzanka sumatrzańska podgryza jej płetwy). 
-                            Po osiągnięciu dojrzałości płciowej i dobraniu się w pary podczas tarła może być agresywna. 
-                            W warunkach hodowlanych skalar żyje ok. 15 lat. 
+                        [wpisz opis]
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
                                 <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>20cm</td>
+                                <td>x cm</td>
                             </tr>
 
                             <tr>
                                 <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>80 litrów</td>
+                                <td>x litrów</td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">pH wody</td>
-                                <td>6-7</td>
+                                <td>x-x</td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>23-27°C</td>
+                                <td>x-x°C</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
-            
+        
         <div><?php include_once("html/podobne-ryby.html");?></div>
-    </div>
-    <div><?php include_once("html/footer.html");?></div>
+        
+        <div><?php include_once("html/footer.html");?></div>
     
 </div>
 </body>

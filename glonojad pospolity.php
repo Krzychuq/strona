@@ -1,61 +1,74 @@
-
 <?php
     include_once 'dbh.inc.php';
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/stronaProduktu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/podobny-sprzet.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/podobne-ryby.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
-<link rel="stylesheet" href="ui/jquery-ui.css">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
 
+
     <div class="contener">
-    <div><?php include_once("html/menu.html"); ?></div>
+    <div><?php include_once("html/menu.php"); ?></div>
+
 
         <div class="prodcon">
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src="photos/juwel filtrL.jpg" id="produkt-img">
+                    <img src="photos/glonojad.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                <img src="photos/juwel filtrL2.jpg" id="produkt-img">
+                    <img src="photos/glonojad2.jpg" id="produkt-img">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
-
-            </div>
+                </div>
+                
                 <br>
 
                 <div class="kropki">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span>  
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
                 </div>
             </div>
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=6");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
                 <div class="info">
                     <div id="tytul">
-                        <h2>Filtr Juwel BIOFLOW L</h2>
+                        <h2><?php echo $prod['nazwa']; ?></h2>
                     </div>
                         <div id="cena">
-                            <p>443zł</p>
+                            <p><?php echo $prod['cena']; ?>zł</p>
                         </div>
+                            <div id="rodzaj">
+                                <p>Rodzaj</p>
+                            </div>
+                                    <div class="kolor-rodzaj">
+                                        <button class="brown" onclick="currentSlide(1)"></button>
+                                            <button class="yellow" onclick="currentSlide(2)"></button>
+                                    </div>
+                                <br>
                         <div id="ilosc">
                             <p>Ilosc</p>
                                 <button class="down" onclick="down()">-</button>
@@ -65,7 +78,7 @@
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność 4szt</p>
+                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p>
                                 <br>
                                 <p style="font-size:15px;"><i class="bi bi-truck"></i>Dostawa: 14zł</p>
                             </div>
@@ -81,36 +94,36 @@
                     </ul>
                     <div class="opis1">
                         <p>
-                            Bioflow L to filtr wewnętrzny przeznaczony do akwarium o wysokości 60cm. Filtr działa bez połączeń wężowych, mogących powodować przecieki oraz redukujące wydajność pompy z powodu tarcia. W skład zestawu filtra wchodzi pompa Eccoflow 1000 l/h oraz zróżnicowane wkłady filtracyjne. Grzałkę można dokupić osobno. 
+                        Przeciętnie dorastają do 13 cm długości. Ubarwienie ciała różnorodne, zależne od genów, od jasnobrunatnej do niemal czarnej barwy z licznymi, drobnymi, jaśniejszymi plamkami. Charakterystyczne dla większości zbrojników brzusznie spłaszczone ciało, z szeroką głową, wypukłym grzbietem i dwiema płetwami grzbietowymi. Szerokie, masywne płetwy piersiowe ułatwiają rybie poruszanie się po dnie. Otwór gębowy w dolnym położeniu, zakończony przyssawką, którą przyczepiają się do dekoracji i zeskrobują glony. Nie posiadają łusek, ich skóra pokryta jest nakładającymi się na siebie płytkami kostnymi, które tworzą pewnego rodzaju pancerz.
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
-                                <td style="font-weight: bold; width: 35%;">Wymiary</td>
-                                <td>200x 132 x 532mm</td>
+                                <td style="font-weight: bold; width: 35%;">Dorasta do</td>
+                                <td>10cm</td>
                             </tr>
 
                             <tr>
-                                <td style="font-weight: bold;">Wydajność</td>
-                                <td>1000l/h</td>
+                                <td style="font-weight: bold;">Wielkość akwarium</td>
+                                <td>80 litrów</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Moc</td>
-                                <td>8W</td>
+                                <td style="font-weight: bold;">pH wody</td>
+                                <td>6-7</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Do zbiorników</td>
-                                <td>Akwaria do 400l,  Wysokość akwarium < 60 cm</td>
+                                <td style="font-weight: bold;">Temperatura wody</td>
+                                <td>20-27°C</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
-            
-        <div><?php include_once("html/podobny-sprzet.html");?></div>
-    </div>
-    <div><?php include_once("html/footer.html");?></div>
+        
+        <div><?php include_once("html/podobne-ryby.html");?></div>
+        
+        <div><?php include_once("html/footer.html");?></div>
     
 </div>
 </body>
@@ -167,8 +180,9 @@
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < 4 ){
+            if(this.licznik < <?php echo $prod['ilosc']; ?> ){
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
 </script>
+<?php } ?>

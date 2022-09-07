@@ -1,3 +1,6 @@
+<?php
+    include_once 'dbh.inc.php';
+?>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
@@ -7,22 +10,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
-<link rel="stylesheet" href="ui/jquery-ui.css">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-         rel = "stylesheet">
-      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href = "https://code.jquery.com/ui/1.10.4/themes/vader/jquery-ui.css" rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
 
 
     <div class="contener">
-    <div><?php include_once("html/menu.html"); ?></div>
+    <div><?php include_once("html/menu.php"); ?></div>
 
 
         <div class="prodcon">
@@ -62,12 +63,19 @@
                 <span class="dot" onclick="currentSlide(5)"></span>   
                 </div>
             </div>
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=3");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
                 <div class="info">
                     <div id="tytul">
-                        <h2>Gupik</h2>
+                        <h2><?php echo $prod['nazwa']; ?></h2>
                     </div>
                         <div id="cena">
-                            <p>3zł</p>
+                            <p><?php echo $prod['cena']; ?>zł</p>
                         </div>
                             <div id="rodzaj">
                                 <p>Rodzaj</p>
@@ -85,7 +93,7 @@
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność 50szt</p>
+                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p>
                                 <br>
                                 <p style="font-size:15px;"><i class="bi bi-truck"></i>Dostawa: 14zł</p>
                             </div>
@@ -187,8 +195,9 @@
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < 50 ){
+            if(this.licznik < <?php echo $prod['ilosc']; ?> ){
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
 </script>
+<?php } ?>

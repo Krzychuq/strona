@@ -1,3 +1,6 @@
+<?php
+    include_once 'dbh.inc.php';
+?>
 <div class="banner">
     <!-- <p>Promocja na wszystkie filtry!!!</p> -->
     <p>Uwaga jest to strona poglądowa. Nie służy do zakupów!!!</p>
@@ -7,10 +10,27 @@
             <a style="color:white;" href="index"><img class="plogo" src="favicon.ico" alt="logo"></a>
         </div>
         <div class="search">
-            <i id="lupy1" class="bi bi-search" style="color: black; background:white; font-size:20px; font-weight: bolder;"></i>
-            <input type="text" class="icon1" value placeholder="Czego szukasz?">
-            <i id="lupy2" class="bi bi-search" style="color: black; background:white; font-size: 22px;"></i>
-            <input type="text" class="icon2" value>
+            <!-- (A) SEARCH FORM -->
+            <form method="post">
+            <div class="search-menu">
+                <input type="text" class="input-search"  name="search" title="Wyszukaj produkt" placeholder="Wyszukaj" required/>
+                <input type="submit" class="but-search" value="Szukaj"/>
+            </div>
+            <?php
+            // (B) PROCESS SEARCH WHEN FORM SUBMITTED
+            if (isset($_POST["search"])) {
+            // (B1) SEARCH FOR USERS
+            require "search-form.php";
+
+            // (B2) DISPLAY RESULTS
+            if (count($results) > 0) { foreach ($results as $r) {
+                echo"<div class='wyszukanie'><a href='$r[nazwa].php'>$r[nazwa]</a></div>";
+            }} else { echo "<div class='wyszukanie'>Nie znaleziono produktu</div>"; }
+            }
+            ?>
+            </form>
+
+            
         </div>
         <div class="account">
             <h4 id="ikony0"><a id="konto1" href="konto"><i class="bi bi-person-circle"></i></a></h4>

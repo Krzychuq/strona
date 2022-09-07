@@ -31,14 +31,54 @@ a{color: black; text-decoration: none;}
         
     }
         .search{
+            position: relative;
             display: flex;
             padding-top: 5px;
-            text-align: right;
+            text-align: left;
             width: 40%;
             /* color:black; */
             color:white;
             height: 100%;
         }
+            .input-search{
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border: 0px;
+                height: 30px;
+            }
+                .wyszukanie{
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    height: auto;
+                    padding-left: 5px;
+                    width: 100%;
+                    background-color: white;
+                    color: black;
+                    font-size: 15px;
+                }
+                    .but-search{
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border: 0px;
+                        height: 30px;
+                        font-weight: bold;
+                        background-color: whitesmoke;
+                    }
+                        .but-search:active{
+                            transform: scale(0.9);
+                            background-color: lightgrey;
+                        }
+                        .search-menu{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 0;
+                        }
             .icon1 {
                 display: inline-flex;
                 font-size: 15px;
@@ -51,8 +91,6 @@ a{color: black; text-decoration: none;}
                 /* color:black; */
                 color:white;
             }
-                #lupy1{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 3%; width: 25px; justify-content: center;}
-                    #lupy2{display: none;}
                 .icon2{
                     display: none;
                     padding-top: 8px;
@@ -67,6 +105,7 @@ a{color: black; text-decoration: none;}
                     color:white;
                 }
                 .account{
+                    position: relative;
                     padding-top:5px;
                     text-align: center;
                     width: 10%;
@@ -79,6 +118,7 @@ a{color: black; text-decoration: none;}
                 color:white;
             }   
         .cart{
+            position: relative;
             padding-top:5px;
             text-align: center;
             width: 10%;
@@ -256,7 +296,6 @@ a{color: black; text-decoration: none;}
 
 
         @media screen and (max-width: 900px){
-            #lupy1{padding-top: 10px;}
             .header{margin-left: 5%; margin-right: 0%;}
             .logo{width: 50%; font-size: 2rem;}
             .account{width: 11%;}
@@ -272,8 +311,6 @@ a{color: black; text-decoration: none;}
         @media screen and (max-width: 750px){
             .menu li{font-size: 1rem;}
             .icon1{display: none;}
-            #lupy1{display: none;}
-            #lupy2{display: inline-flex; border-top-left-radius: 6px; border-bottom-left-radius: 6px; padding-top: 5px; width: 29px; justify-content: center;}
             .icon2{display: inline-flex;}
             .droplista1{list-style:none;}
             .droplista2{list-style:none;}
@@ -296,4 +333,15 @@ a{color: black; text-decoration: none;}
             .droplista2{margin-left: -26%;}
             .droplista4{margin-left: -50%;}
             
+        }
+        @media  screen and (max-width: 523px) {
+            .logo{width: 30%;}
+            .search{width: 50%;}
+        }
+        @media  screen and (max-width: 440px) {
+            .logo{width: 23%;}
+                .search{width: 60%;}
+                    .input-search{width: 60%;}
+                .wyszukanie{width: 84%;}
+            .account{margin-right: 10px;}
         }
