@@ -30,11 +30,15 @@
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL.jpg" id="produkt-img">
+                    <img src="photos/pokrywa aquel leddy1.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL2.jpg" id="produkt-img">
+                    <img src="photos/pokrywa aquel leddy2.jpg" id="produkt-img">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="photos/pokrywa aquel leddy3.jpg" id="produkt-img">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -45,12 +49,13 @@
 
                 <div class="kropki">
                     <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>  
                 </div>
             </div>
 <?php
 $stmt = $conn->prepare(
-    "SELECT * FROM produkty WHERE id=7");  // wpisz id
+    "SELECT * FROM produkty WHERE id=11");  // wpisz id
 $stmt->execute();
 $prod = $stmt->fetchAll();
 foreach($prod as $prod) {
@@ -95,34 +100,30 @@ foreach($prod as $prod) {
                     </ul>
                     <div class="opis1">
                         <p>
-                        [wpisz opis]
+                            Wyposażenie akwarium w pokrywę ma wiele zalet. Po pierwsze wpływa na odczucia estetyczne, a także chroni ryby przed ewentualnym wyskoczeniem ze zbiornika. Jeśli jesteś posiadaczem kota, to będzie również stanowić ochronę przed nieoczekiwanym atakiem. Ponadto pokrywy akwariowe ograniczają parowanie wody i są praktyczną przestrzenią, którą można wykorzystać do zamontowania oświetlenia czy innych akcesoriów. Pokrywa posiada też podajnik na jedzenie dla ryb, co stanowi duże udogodnienie.
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
-                                <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>x cm</td>
+                                <td style="font-weight: bold; width: 35%;">Szerokość akwarium</td>
+                                <td>60 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>x litrów</td>
+                                <td style="font-weight: bold;">Moc</td>
+                                <td>7 W</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">pH wody</td>
-                                <td>x-x</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>x-x°C</td>
+                                <td style="font-weight: bold;">Oświetlenie</td>
+                                <td>LED dzień-noc</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
         
-        <div><?php include_once("html/podobny-sprzet.html");?></div>
+        <div><?php include_once("html/podobne-sprzet.html");?></div>
         
         <div><?php include_once("html/footer.html");?></div>
     

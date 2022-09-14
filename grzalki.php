@@ -30,7 +30,7 @@
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="Grzałka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
+                <a href="Grzalka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
                 <p>Grzałka AQUA HEAT 50</p>
                 </a>
             </div>

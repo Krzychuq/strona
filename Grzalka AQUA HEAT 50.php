@@ -1,7 +1,7 @@
 <?php
     include_once 'dbh.inc.php';
 ?>
-<html>
+<html lang="pl-PL">
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
@@ -30,11 +30,11 @@
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL.jpg" id="produkt-img">
+                    <img src="photos/grzalka juwel50 1.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL2.jpg" id="produkt-img">
+                    <img src="photos/grzalka juwel50 2.jpg" id="produkt-img">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -50,7 +50,7 @@
             </div>
 <?php
 $stmt = $conn->prepare(
-    "SELECT * FROM produkty WHERE id=7");  // wpisz id
+    "SELECT * FROM produkty WHERE id=8");  // wpisz id
 $stmt->execute();
 $prod = $stmt->fetchAll();
 foreach($prod as $prod) {

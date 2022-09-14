@@ -18,7 +18,7 @@ a{text-decoration: none;}
 .contener{
     margin: 0;
     overflow-x: hidden;
-    background: url("https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg");
+    background: url("/photos/tlo.jpg");
 }
 
 .nnazwa{
@@ -45,7 +45,7 @@ a{text-decoration: none;}
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 33% 33% 34%;
     }
         .item{padding-top: 10px; padding-bottom: 10px; background-color: white; width: 100%; text-align: center;}
         .item p{

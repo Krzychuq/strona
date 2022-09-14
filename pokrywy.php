@@ -24,20 +24,65 @@
 <div class="contener">
 <?php include_once("html/menu.php"); ?>
 <!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="nowosci">
+<div class="nowosci">
         <div class="nnazwa">
             <p>Pokrywy</p>
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="Pokrywa Juwel PRIMOLUX 60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
-                <p>Pokrywa Juwel PRIMOLUX 60</p>
-                </a>
+                <a href="Pokrywa Aquel leddy 40"><img src="photos/pokrywa aquel leddy1.jpg" id="produkt-mobile">
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=10");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
+                <p><?php echo $prod['nazwa']; ?></p>
+                <p><?php echo $prod['cena']; ?>zł</p></a>
+<?php } ?>
+            </div>
+            <div class="item">
+                <a href="Pokrywa Aquel leddy 60"><img src="photos/pokrywa aquel leddy1.jpg" id="produkt-mobile">
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=11");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
+                <p><?php echo $prod['nazwa']; ?></p>
+                <p><?php echo $prod['cena']; ?>zł</p></a>
+<?php } ?>
+            </div>
+            <div class="item">
+                <a href="Pokrywa Aquel Classic 100"><img src="photos/pokrywa aquel classic1.jpg" id="produkt-mobile">
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=12");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
+                <p><?php echo $prod['nazwa']; ?></p>
+                <p><?php echo $prod['cena']; ?>zł</p></a>
+<?php } ?>
+            </div>
+            <div class="item">
+                <a href="Pokrywa Aquel Classic 120"><img src="photos/pokrywa aquel classic1.jpg" id="produkt-mobile">
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=13");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
+                <p><?php echo $prod['nazwa']; ?></p>
+                <p><?php echo $prod['cena']; ?>zł</p></a>
+<?php } ?>
             </div>
         </div>
     </div>
-
-
 <?php include_once("html/footer.html"); ?>
 </div>   
 </body>

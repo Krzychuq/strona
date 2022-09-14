@@ -17,7 +17,7 @@ a{
 }
 
 .contener{
-    background: url("https://p0.pikist.com/photos/676/293/jellyfish-jelly-fish-aquarium-dark-wallpaper-underwater-fish-marine-sea.jpg"); 
+    background: url("/photos/tlo.jpg"); 
     overflow-x: hidden;
 }
 
@@ -111,7 +111,7 @@ a{
             .info{
                 height: auto;
                 text-align: center;
-                flex: 10%;
+                flex: 30%;
                 margin-right: 10px;
                 background-color:ghostwhite;
                 
@@ -411,18 +411,20 @@ a{
                 .kropki{max-width:100%;}
             #zakup{padding-left:32px; margin: 0; margin-bottom: 5px;}
         .btkup{height: 40px; font-size: 1.3rem;}
-    .info{ height: 520px;}
+    .info{height: 520px;}
 }
 
 @media screen and (max-width: 680px){
-            .produkt{padding-top: 10px;}
+    .produkt{padding-top: 10px;}
         #zakup{padding-left: 17px;}
-    #tytul{font-size: 1.9rem;}
+        #tytul{font-size: 1.3rem;}
+    #cena{margin-top:20px;font-size: 1.8rem;}
 
 }
 @media screen and (max-width: 590px) {
-    .produkt{width: 90%; padding-left: 0;}
-        #produkt-img{height: 400px;}
+    .info{width: 90%;}
+        .produkt{width: 90%; padding-left: 10px;}
+            #produkt-img{height: 400px;}
             .slideshow-container{max-width: 100%;}
         .kropki{max-width:100%;}
     .prev, .next{font-size: 12px; padding: 10px;}   

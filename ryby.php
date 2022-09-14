@@ -30,7 +30,7 @@
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="mieczyk"><img src="photos/mieczyk.jpg" id="produkt-mobile">
+                <a href="Mieczyk"><img src="photos/mieczyk.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=2");
@@ -43,7 +43,7 @@ foreach($prod as $prod) {
 <?php } ?>
             </div>
             <div class="item">
-                <a href="skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
+                <a href="Skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=1");
@@ -56,7 +56,7 @@ foreach($prod as $prod) {
 <?php } ?>
             </div>
             <div class="item">
-                <a href="gupik"><img src="photos/gupik.jpg" id="produkt-mobile">
+                <a href="Gupik"><img src="photos/gupik.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=3");
@@ -69,7 +69,7 @@ foreach($prod as $prod) {
 <?php } ?>
             </div>
             <div class="item">
-                <a href="tetra"><img src="photos/tetra.jpg" id="produkt-mobile">
+                <a href="Tetra"><img src="photos/tetra.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=4");
@@ -82,7 +82,7 @@ foreach($prod as $prod) {
 <?php } ?>
             </div>
             <div class="item">
-                <a href="krewetka niebieska"><img src="photos/krewetka.jpg" id="produkt-mobile">
+                <a href="Krewetka niebieska"><img src="photos/krewetka.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=5");
@@ -95,7 +95,7 @@ foreach($prod as $prod) {
 <?php } ?>
             </div>
             <div class="item">
-                <a href="glonojad pospolity"><img src="photos/glonojad.jpg" id="produkt-mobile">
+                <a href="Glonojad pospolity"><img src="photos/glonojad.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=6");

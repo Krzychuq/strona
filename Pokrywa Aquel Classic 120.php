@@ -30,12 +30,14 @@
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL.jpg" id="produkt-img">
+                    <img src="photos/pokrywa aquel classic1.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL2.jpg" id="produkt-img">
+                    <img src="photos/pokrywa aquel classic2.jpg" id="produkt-img">
                 </div>
+
+                
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
@@ -45,12 +47,12 @@
 
                 <div class="kropki">
                     <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </div>
 <?php
 $stmt = $conn->prepare(
-    "SELECT * FROM produkty WHERE id=7");  // wpisz id
+    "SELECT * FROM produkty WHERE id=13");  // wpisz id
 $stmt->execute();
 $prod = $stmt->fetchAll();
 foreach($prod as $prod) {
@@ -95,34 +97,30 @@ foreach($prod as $prod) {
                     </ul>
                     <div class="opis1">
                         <p>
-                        [wpisz opis]
+                            Pokrywa akwariowa to opcjonalne wyposażenie akwarium. Nie jest ono niezbędne do prawidłowego rozwoju ryb i roślin, jednakże ma wiele zalet. Skutecznie ogranicza bowiem możliwość wyskoczenia ryb ze zbiornika, zmniejsza parowanie wody, a także stanowi praktyczną platformą, na której można zawiesić dodatkowe oświetlenie czy inne akcesoria. Pokrywy owalne mogą okazać się niezbędne w przypadku posiadania kota czy małych dzieci. Wszystkie modele są wyposażone w praktyczne pojemniki na pokarm i stanowią duże udogodnienie. Aby wybrać odpowiednią pokrywę do akwarium, należy zwrócić uwagę przede wszystkim na jej rozmiar oraz materiał, z jakiego jest wykonana.
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
-                                <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>x cm</td>
+                                <td style="font-weight: bold; width: 35%;">Szerokość akwarium</td>
+                                <td>100 cm</td>
                             </tr>
 
                             <tr>
-                                <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>x litrów</td>
+                                <td style="font-weight: bold;">Moc</td>
+                                <td>28 W</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">pH wody</td>
-                                <td>x-x</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>x-x°C</td>
+                                <td style="font-weight: bold;">Oświetlenie</td>
+                                <td>LED dzień-noc</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
         
-        <div><?php include_once("html/podobny-sprzet.html");?></div>
+        <div><?php include_once("html/podobne-sprzet.html");?></div>
         
         <div><?php include_once("html/footer.html");?></div>
     
