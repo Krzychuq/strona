@@ -11,10 +11,10 @@
         </div>
         <div class="search">
             <!-- (A) SEARCH FORM -->
-            <form method="post">
+            <form method="post" id="resulty">
             <div class="search-menu">
                 <input type="text" class="input-search"  name="search" title="Wyszukaj produkt" placeholder="Wyszukaj" required/>
-                <input type="submit" class="but-search" value="Szukaj"/>
+                <input type="submit" class="but-search" value="&#8981;"/>
             </div>
             <?php
             // (B) PROCESS SEARCH WHEN FORM SUBMITTED

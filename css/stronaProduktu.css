@@ -17,6 +17,7 @@ a{
 }
 
 .contener{
+    height: auto;
     background: url("/photos/tlo.jpg"); 
     overflow-x: hidden;
 }

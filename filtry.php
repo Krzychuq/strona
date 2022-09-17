@@ -26,7 +26,7 @@
 <!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
 <div class="nowosci">
         <div class="nnazwa">
-            <p>Pokrywy</p>
+            <p>Filtry</p>
         </div>
         <div class="produkty">
             <div class="item">

@@ -120,7 +120,7 @@ foreach($prod as $prod) {
             </div>
         </div>
         
-        <div><?php include_once("html/podobne-sprzet.html");?></div>
+        <div><?php include_once("html/podobny-sprzet.html");?></div>
         
         <div><?php include_once("html/footer.html");?></div>
     

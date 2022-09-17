@@ -35,7 +35,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
+                <a href="Skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
                 <p>Skalar</p>
                 </a>
             </div>
@@ -45,8 +45,8 @@
                 </a>
             </div>
             <div class="item">
-                <a href="Grzałka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
-                <p>Grzałka AQUA HEAT 50</p>
+                <a href="Mieczyk"><img src="photos/mieczyk.jpg" id="produkt-mobile">
+                <p>Mieczyk</p>
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@
                             </div>
 
                             <div class="mySlides fade">
-                                <a href="Grzalka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
+                                <a href="Grzałka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
                                 <p>Grzałka AQUA HEAT 50</p>
                                 </a>
                             </div>
