@@ -36,7 +36,6 @@ a{text-decoration: none;}
         margin-right: auto;
     }
         .block1,.block2{
-            max-width: 550px;
             width: auto;
             height: 200px;
             padding: 2rem;

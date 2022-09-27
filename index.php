@@ -25,13 +25,13 @@
 <?php include_once("html/menu.php"); ?>
 <!-- PC -->
 <div class="glowna">
-    <div class="block">
+    <div class="block1">
         <div class="rekl">
             <p class="text">Odkryj nasze ryby</p>
         </div>
     </div>
     <br>
-    <div class="block">
+    <div class="block2">
         <div class="rekl">
             <p class="text">Akwaria</p>
         </div>
