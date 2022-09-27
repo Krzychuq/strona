@@ -184,5 +184,6 @@ foreach($prod as $prod) {
                 licznik += 1;}
             document.getElementById("licznik").innerHTML = licznik;
         };
+
 </script>
 <?php } ?>

@@ -15,11 +15,23 @@
     font-weight: bold;
     height: 9rem;
 }
+.mark{
+    color: white;
+    padding: 5px;
+    text-align: right;
+    background-color: black ;
+    font-size: 0.9em;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    height: auto;
+}
     .footer ul{padding-left: 16px;}
         .footer li{font-weight: bold; padding-left: 0px; padding-right: 0px;}
             .li{font-family: 'Segoe UI'; list-style-type: square; }
                 .footer-title{border-bottom: 1px solid white;}
                     .tekst-footer{margin-top: 10px;}
+
+@media screen and (max-width: 1360px){}
 
 
 @media screen and (max-width: 750px){

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Segoe UI'; 
+    height: auto;
 }
 
 a{text-decoration: none;}
@@ -19,7 +20,7 @@ a{text-decoration: none;}
     height: auto;
     margin: 0;
     overflow-x: hidden;
-    background: url("/photos/tlo.jpg");
+    background: rgb(221, 221, 221);
 }
 
 .nnazwa{
@@ -39,6 +40,7 @@ a{text-decoration: none;}
 .nowosci {
     max-width: 100%;
     position: relative;
+    margin-bottom: 10px;
 }
     .produkty{
         height: auto;
@@ -47,8 +49,16 @@ a{text-decoration: none;}
         margin-right: auto;
         display: grid;
         grid-template-columns: 33% 33% 34%;
+        gap: 5px;
     }
-        .item{padding-top: 10px; padding-bottom: 10px; background-color: white; width: 100%; text-align: center;}
+        .item{
+            padding-top: 20px; 
+            padding-bottom: 10px; 
+            background-color: white; 
+            border: solid 1px rgb(209, 206, 206);
+            width: 100%; 
+            text-align: center;
+        }
         .item p{
             text-align: center;
             color: black;
@@ -59,11 +69,9 @@ a{text-decoration: none;}
         }
 
 
-
-/* //////////////////////////////////////////// MOBILE  ////////////////////////////////////////////////////////////////// */
     @media screen and (max-width: 710px) {
         .produkty{grid-template-columns: 100%;}
         .nowosci{margin: 15px;}
     }
-/* //////////////////////////////////////////////// MOBILE  ///////////////////////////////////////////////////////////// */
+
   

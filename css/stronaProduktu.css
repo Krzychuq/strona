@@ -18,7 +18,7 @@ a{
 
 .contener{
     height: auto;
-    background: url("/photos/tlo.jpg"); 
+    background: rgb(221, 221, 221);
     overflow-x: hidden;
 }
 
@@ -43,13 +43,13 @@ a{
 
             #produkt-img{width: 100%; height: 500px;}
     
-            /* Slideshow container */
+            
             .slideshow-container {
             max-width: 584px;
             position: relative;
             }
     
-            /* Next & previous buttons */
+            
             .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -66,22 +66,21 @@ a{
             background-color: white;
             }
     
-            /* Position the "next button" to the right */
+            
             .next {
             right: 0;
             border-radius: 3px 0 0 3px;
             }
     
-            /* On hover, add a black background color with a little bit see-through */
             .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.8);
             color: white;
-            }
+            }li
             .kropki{
                 text-align:center; 
                 max-width:100%;
             }
-            /* The dots/bullets/indicators */
+
             .dot {
             cursor: pointer;
             height: 15px;
@@ -96,8 +95,7 @@ a{
             .active, .dot:hover {
             background-color: #717171;
             }
-    
-            /* Fading animation */
+
             .fade {
             animation-name: fade;
             animation-duration: 1.5s;
@@ -131,45 +129,45 @@ a{
             padding-right: 15%;
             padding-bottom: 20px;
         }
-        .opis-btn{text-align: center;}
-            .opis1{
-                display: block;
-            }
-
-                .opis2{
-                    display:none;
+            .opis-btn{text-align: center;}
+                .opis1{
+                    display: block;
                 }
-                    #opis1-btn{
-                        border-left: none;
-                        border-right: none;
-                        border-bottom: none;
-                        border-top: 3px solid red;
-                        background-color: ghostwhite;
-                        font-size: 1.4em;
-                        font-family: 'Segoe UI';
-                        
+
+                    .opis2{
+                        display:none;
                     }
-                    #opis2-btn{
-                        background-color: ghostwhite;
-                        border-left: none;
-                        border-right: none;
-                        border-bottom: none;
-                        border-top: none;
-                        font-size: 1.4em;
-                        font-family: 'Segoe UI';
-                    }
-                    .tabelka{
-                        border-collapse: collapse;
-                        width: 100%;
-                        font-size: 1em;
-                        background-color: ghostwhite;
-                    }
-                        .tabelka td{
-                            border-top: 1px solid black;
-                            border-left: 1px solid black;
-                            border-right: 1px solid black;
-                            border-bottom: 2px solid black;
+                        #opis1-btn{
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: none;
+                            border-top: 3px solid red;
+                            background-color: ghostwhite;
+                            font-size: 1.4em;
+                            font-family: 'Segoe UI';
+                            
                         }
+                        #opis2-btn{
+                            background-color: ghostwhite;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: none;
+                            border-top: none;
+                            font-size: 1.4em;
+                            font-family: 'Segoe UI';
+                        }
+                        .tabelka{
+                            border-collapse: collapse;
+                            width: 100%;
+                            font-size: 1em;
+                            background-color: ghostwhite;
+                        }
+                            .tabelka td{
+                                border-top: 1px solid black;
+                                border-left: 1px solid black;
+                                border-right: 1px solid black;
+                                border-bottom: 2px solid black;
+                            }
 
             #tytul{
                 font-family: 'Segoe UI';

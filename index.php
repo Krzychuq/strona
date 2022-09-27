@@ -23,67 +23,22 @@
 
 <div class="contener">
 <?php include_once("html/menu.php"); ?>
-<!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="nowosci">
-        <div class="nnazwa">
-            <p>Nowości</p>
-        </div>
-        <div class="produkty">
-            <div class="item">
-                <a href="Filtr Juwel BIOFLOW L"><img src="photos/juwel filtrL.jpg" id="produkt-mobile">
-                <p>Filtr Juwel BIOFLOW L</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="Skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
-                <p>Skalar</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="Pokrywa Juwel PRIMOLUX 60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
-                <p>Pokrywa Juwel PRIMOLUX 60</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="Mieczyk"><img src="photos/mieczyk.jpg" id="produkt-mobile">
-                <p>Mieczyk</p>
-                </a>
-            </div>
+<!-- PC -->
+<div class="glowna">
+    <div class="block">
+        <div class="rekl">
+            <p class="text">Odkryj nasze ryby</p>
         </div>
     </div>
-<!-- /////////////////////////////////////////////////////  PC nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
+    <br>
+    <div class="block">
+        <div class="rekl">
+            <p class="text">Akwaria</p>
+        </div>
+    </div>
+</div>
+<!-- PC -->
 
-<!-- /////////////////////////////////////////////////////  Mobile nowosci  ////////////////////////////////////////////////////////////////////////////////// -->
-                <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <a href="Filtr Juwel BIOFLOW L"><img src="photos/juwel filtrL.jpg" id="produkt-mobile">
-                                <p>Filtr Juwel BIOFLOW L</p>
-                                </a>
-                            </div>
-                            <div class="mySlides fade">
-                                <a href="skalar"><img src="photos/skalar1.jpg" id="produkt-mobile">
-                                <p>Skalar</p>
-                            </a>
-                            </div>
-                            <div class="mySlides fade">
-                                <a href="Pokrywa Juwel PRIMOLUX 60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
-                                <p>Pokrywa Juwel PRIMOLUX 60</p>
-                                </a>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <a href="Grzałka AQUA HEAT 50"><img src="photos/grzalka juwel50 1.jpg" id="produkt-mobile">
-                                <p>Grzałka AQUA HEAT 50</p>
-                                </a>
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
-                        </div>
-                            
-
-                            
-<!-- /////////////////////////////////////////////////////  Mobile nowosci    ////////////////////////////////////////////////////////////////////////////////// -->
 
 
 <?php include_once("html/footer.html"); ?>
@@ -91,25 +46,5 @@
 </body>
 </html>
 <script>
-let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slides[slideIndex-1].style.display = "block";  
-    }
-    </script>
+
+</script>
