@@ -25,17 +25,21 @@
 <?php include_once("html/menu.php"); ?>
 <!-- PC -->
 <div class="glowna">
-    <div class="block1">
-        <div class="rekl">
-            <p class="text">Odkryj nasze ryby</p>
+    <a href="ryby">
+        <div class="block1">
+            <div class="rekl">
+                <p class="text">Odkryj nasze ryby</p>
+            </div>
         </div>
-    </div>
+    </a>
     <br>
-    <div class="block2">
-        <div class="rekl">
-            <p class="text">Akwaria</p>
+    <a href="pokrywy">
+        <div class="block2">
+            <div class="rekl">
+                <p class="text">Akwaria</p>
+            </div>
         </div>
-    </div>
+    </a>
 </div>
 <!-- PC -->
 
