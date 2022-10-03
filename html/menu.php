@@ -15,7 +15,7 @@
             <p>Sprzęt</p>
                 <div class="bloczek2">
                     <li><a href="filtry">Filtry</a></li>
-                    <li><a href="grzalki">Grzałki</a></li>
+                    <li><a href="Grzalki">Grzałki</a></li>
                     <li><s>Termometry</s></li>
                 </div>
         </div>
@@ -63,18 +63,18 @@
 <div class="menu">
 
     <div class="dropdown1">
-    <span>AKWARIUM</span>
-        <div class="droplista1">
-            <li><s>Szkła</s></li>
-            <li><a href="pokrywy">Pokrywy</a></li>
-        </div>
+        <span>AKWARIUM</span>
+            <div class="droplista1">
+                <li><s>Szkła</s></li>
+                <li><a href="pokrywy">Pokrywy</a></li>
+            </div>
     </div>
 
         <div class="dropdown2">
             <span>SPRZĘT</span>
                 <div class="droplista2">
                     <li><a href="filtry">Filtry</a></li>
-                    <li><a href="grzalki">Grzałki</a></li>
+                    <li><a href="Grzalki">Grzałki</a></li>
                     <li><s>Termometry</s></li>
                 </div>
         </div>    

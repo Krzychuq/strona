@@ -20,13 +20,13 @@ a{text-decoration: none;}
     height: auto;
     margin: 0;
     overflow-x: hidden;
-    background: rgb(221, 221, 221);
+    background: url("/photos/tlo.jpg");
 }
 
 .nnazwa{
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 1020px;
     background-color: white;
     font-weight: bold;
     color: black; 
@@ -44,12 +44,12 @@ a{text-decoration: none;}
 }
     .produkty{
         height: auto;
-        max-width: 1000px;
+        max-width: 1020px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: 33% 33% 34%;
-        gap: 5px;
+        grid-template-columns: 33% 33% 33%;
+        gap: 5.9px;
     }
         .item{
             padding-top: 20px; 

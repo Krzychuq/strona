@@ -24,7 +24,6 @@ a{text-decoration: none;}
  }
     .logo{
         font-size: 2.7rem; 
-        font-family:monospace; 
         width: 70%;
     }
         .search{
@@ -103,9 +102,10 @@ a{text-decoration: none;}
     }  
 
 .lista{
-    padding: auto;
+    padding-left: 60px;
+    padding-right: 60px;
     z-index:100;
-    background: rgb(221, 221, 221);
+    background: url("/photos/tlo.jpg");
     display: none;
     position: absolute;
     width: 100%;
@@ -167,6 +167,7 @@ a{text-decoration: none;}
 
 
 .menu{
+    font-family: 'Segoe UI'; 
     display: flex;
     border-radius:13px 13px 0 0;
     justify-content: center;
