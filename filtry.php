@@ -30,7 +30,7 @@
         </div>
         <div class="produkty">
             <div class="item">
-                <a href="Filtr Juwel BIOFLOW L"><img src="photos/juwel filtrL.jpg" id="produkt-mobile">
+                <a href="Filtr Juwel BIOFLOW L"><img src="photos/juwel filtrL1.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=7");

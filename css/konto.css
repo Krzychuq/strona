@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI'; 
+    height: auto;
+}
+
+a{text-decoration: none;}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray; 
+    border-radius: 1px;
+}
+
+.box{
+    display: flex;
+    height: 70%;
+}
+    .sideboxleft{
+        background-color: rgb(247, 247, 247);
+        flex: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .sideboxright{
+            background-color: lavender;
+            flex: 50%;
+        }
+            .title{
+                padding-top: 30px;                
+                text-align: center;
+                font-size: 1.7rem;
+            }
+                .inputs{
+                    padding-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    gap: 13px;
+                }
+.inp{
+    font-size: 18px;
+    background: transparent;
+    border: 0;
+    border-bottom: solid  1px black;
+    height: 50px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+    .login{
+       width: auto;
+       color: white;
+       background: black;
+       border: 0; 
+       font-size:16px;
+       font-weight: bold;
+       height: 30px;
+    }
+        .passrem{
+            padding:33px 0 3px 0 ;
+            text-decoration: overline 1px;
+            
+        }
+        

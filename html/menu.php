@@ -46,11 +46,11 @@
         </div>
             <div class="account">
                 <h4><a id="konto1" href="konto"><i class="bi bi-person-circle"></i></a></h4>
-                <a id="konto2" href="#konto">Konto</a>
+                <a id="konto2" href="konto">Konto</a>
             </div>
             <div class="cart">
                 <h4><a id="koszyk1" href="koszyk"><i class="bi bi-basket2-fill"></i></a></h4>   
-                <a id="koszyk2" href="#koszyk">Koszyk</a>
+                <a id="koszyk2" href="koszyk">Koszyk</a>
             </div>
         <div class="cart">
             <button class="butmobilemenu1"><i class="bi bi-list"></i></button>

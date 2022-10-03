@@ -30,7 +30,7 @@
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="photos/juwel filtrL.jpg" id="produkt-img">
+                    <img src="photos/juwel filtrL1.jpg" id="produkt-img">
                 </div>
 
                 <div class="mySlides fade">
