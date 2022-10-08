@@ -186,18 +186,19 @@ a{text-decoration: none;}
         background-color: rgb(22, 22, 22);
         transition: 0.5s;
     }
-        .dropdown1:hover,.dropdown2:hover,.dropdown3:hover,.dropdown4:hover,.dropdown5:hover{
-            background: white;
-            color: black;
-            transition: background 0.6s linear, color 0.5 linear;
-        }
+        /* .dropdown1:hover,.dropdown2:hover,.dropdown3:hover,.dropdown4:hover,.dropdown5:hover{
+
+        } */
             .dropdown1 a,.dropdown2 a,.dropdown3 a,.dropdown4 a,.dropdown5 a{
+                background: rgb(22, 22, 22);
+                border-radius: 10px;
                 color: white;
-                text-decoration: none;
+                transition: background 0.6s linear, color 0.5 linear;
             }
-                .dropdown1 a:hover,.dropdown2 a:hover,.dropdown3 a:hover,.dropdown4 a:hover,.dropdown5 a:hover{
+                .dropdown1 a:hover,.dropdown2 a:hover,.dropdown2 a:active,.dropdown3 a:hover,.dropdown4 a:hover,.dropdown5 a:hover{
+                    background: white;
                     color: black;
-                    transition: color 0.5 linear;
+                    transition: background 0.6s linear, color 0.5 linear;
                 }
             .dropdown1:hover .droplista1{display: block;}
               .dropdown2:hover .droplista2{display: block;}
@@ -218,13 +219,7 @@ a{text-decoration: none;}
             box-shadow: 0 0 20px black;
             text-align: center;
         }
-        .droplista1 li,.droplista1 a {
-            color: black;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
+
           .droplista2{
             margin-left: -28%;
             padding: 5px;
@@ -240,13 +235,6 @@ a{text-decoration: none;}
             box-shadow: 0 0 20px black;
             text-align: center;
         }
-        .droplista2 li, .droplista2 a {
-            color: black;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 5px;
-            list-style-type: none;
-          }
         .droplista4{
             margin-left: -56%;
             padding: 5px;
@@ -262,8 +250,9 @@ a{text-decoration: none;}
             box-shadow: 0 0 20px black;
             text-align: center;
         }
-            .droplista4 li, .droplista4 a {
+            .droplista1 li, .droplista1 a, .droplista2 li, .droplista2 a, .droplista4 li, .droplista4 a {
                 color: black;
+                background-color: white;
                 font-weight: bold;
                 font-size: 15px;
                 padding: 5px;

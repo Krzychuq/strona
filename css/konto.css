@@ -4,7 +4,9 @@
     font-family: 'Segoe UI'; 
     height: auto;
 }
-
+body{
+    background: url("/photos/tlo.jpg");
+}
 a{text-decoration: none;}
 
 ::-webkit-scrollbar {
@@ -63,9 +65,15 @@ a{text-decoration: none;}
        font-weight: bold;
        height: 30px;
     }
-        .passrem{
-            padding:33px 0 3px 0 ;
-            text-decoration: overline 1px;
+        .login:active{
             
+            transform: scale(0.9)
         }
+    
+    .passrem{
+        padding:33px 0 3px 0 ;
+        text-decoration: overline 1px;
+        
+    }
+        
         

@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/konto.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/akwarium.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -19,31 +19,26 @@
 </head>
 <body>
     <!-- <a href="https://akwar.epizy.com/"> Powrot</a> -->
+<div class="contener">
 <?php include_once("html/menu.php");?>
-<div class="box">
-    <div class="sideboxleft">
-        <div class="title">
-            <p>Mam już konto</p>
-        </div>
-            <form class="inputs" action="">
-                <input class="inp" type="email" placeholder="Email">
-                <input class="inp" type="password" placeholder="Hasło">
-                <button class="login" type="submit">Zaloguj się</button>
-                <p class="passrem">Nie pamiętasz hasła?</p>
-            </form>
-    </div>
-    
-    <div class="sideboxright">
-        <div class="title">
-            <p>Nie masz konta?</p>
-            <p style="padding-top:4px;">To nie problem</p>
-        </div>
 
-    </div>
+<div class="shortcuts">
+    <a href="szkla"><div class="sh1">
+        <p>Szkła</p>
+    </div></a>
+
+    <a href="pokrywy"><div class="sh2">
+        <p>Pokrywy</p>
+    </div></a>
 </div>
+    
+    
+
+
 
 
 <?php include_once("html/footer.html"); ?>
+</div>
 </body>
 </html>
 <script>

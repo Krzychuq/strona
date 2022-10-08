@@ -42,7 +42,7 @@
 </div>
     <div class="header">
         <div class="logo">
-            <a href="index"><img class="plogo" src="favicon.ico" alt="logo"></a>
+            <a href="index"><img class="plogo" src="logo.jpg" alt="sklepik"></a>
         </div>
             <div class="account">
                 <h4><a id="konto1" href="konto"><i class="bi bi-person-circle"></i></a></h4>
@@ -63,7 +63,7 @@
 <div class="menu">
 
     <div class="dropdown1">
-        <span>AKWARIUM</span>
+        <a href="akwarium">Akwarium</a>
             <div class="droplista1">
                 <li><s>Szkła</s></li>
                 <li><a href="pokrywy">Pokrywy</a></li>
@@ -71,7 +71,7 @@
     </div>
 
         <div class="dropdown2">
-            <span>SPRZĘT</span>
+            <a href="sprzet">Sprzęt</a>
                 <div class="droplista2">
                     <li><a href="filtry">Filtry</a></li>
                     <li><a href="Grzalki">Grzałki</a></li>
@@ -80,20 +80,20 @@
         </div>    
 
             <div class="dropdown3">
-                <a href="ryby">RYBY</a>           <!-- kolor czcionki -->
+                <a href="ryby">Ryby</a>           
             </div> 
 
         <div class="dropdown4">
-        <span>DEKORACJE</span> 
-            <div class="droplista4"> 
-                    <li><s>Roślinki</s></li>
-                    <li><s>Ozdoby</s></li>
-                    <li><s>Tła</s></li>
-            </div>
+            <a href="dekoracje">Dekoracje</a> 
+                <div class="droplista4"> 
+                        <li><s>Roślinki</s></li>
+                        <li><s>Ozdoby</s></li>
+                        <li><s>Tła</s></li>
+                </div>
         </div> 
         
     <div class="dropdown5">
-        <a href="index">NOWOŚCI</a>                  <!-- kolor czcionki -->
+        <a href="index">Nowości</a>                
     </div> 
     
 </div>
@@ -118,9 +118,6 @@ $('.butmobilemenu2').click(function(){
     $('.butmobilemenu1').css('display','block'); 
 });
 </script>
-<!-- Menu Mobile ⬆️-->
-
-
 <!-- searchbar -->
     <div class="search">
         <!-- SEARCH FORM -->
