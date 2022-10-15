@@ -30,7 +30,7 @@ a{text-decoration: none;}
             position: relative;
             text-align: center;
             width: auto;
-            height: auto;
+            height: 60px;
             margin-bottom: 60px;
         }
             .input-search{

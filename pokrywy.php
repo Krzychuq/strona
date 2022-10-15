@@ -29,6 +29,7 @@
             <p>Pokrywy</p>
         </div>
         <div class="produkty">
+
             <div class="item">
                 <a href="Pokrywa Aquel leddy 40"><img src="photos/pokrywa aquel leddy1.jpg" id="produkt-mobile">
 <?php
@@ -42,6 +43,7 @@ foreach($prod as $prod) {
                 <p><?php echo $prod['cena']; ?>zł</p></a>
 <?php } ?>
             </div>
+
             <div class="item">
                 <a href="Pokrywa Aquel leddy 60"><img src="photos/pokrywa aquel leddy1.jpg" id="produkt-mobile">
 <?php
@@ -55,6 +57,7 @@ foreach($prod as $prod) {
                 <p><?php echo $prod['cena']; ?>zł</p></a>
 <?php } ?>
             </div>
+
             <div class="item">
                 <a href="Pokrywa Aquel Classic 100"><img src="photos/pokrywa aquel classic1.jpg" id="produkt-mobile">
 <?php
@@ -68,11 +71,26 @@ foreach($prod as $prod) {
                 <p><?php echo $prod['cena']; ?>zł</p></a>
 <?php } ?>
             </div>
+
             <div class="item">
                 <a href="Pokrywa Aquel Classic 120"><img src="photos/pokrywa aquel classic1.jpg" id="produkt-mobile">
 <?php
 $stmt = $conn->prepare(
     "SELECT * FROM produkty WHERE id=13");
+$stmt->execute();
+$prod = $stmt->fetchAll();
+foreach($prod as $prod) {
+?>
+                <p><?php echo $prod['nazwa']; ?></p>
+                <p><?php echo $prod['cena']; ?>zł</p></a>
+<?php } ?>
+            </div>
+
+            <div class="item">
+                <a href="Pokrywa Juwel PRIMOLUX 60"><img src="photos/pokrywa juwel60.jpg" id="produkt-mobile">
+<?php
+$stmt = $conn->prepare(
+    "SELECT * FROM produkty WHERE id=9");
 $stmt->execute();
 $prod = $stmt->fetchAll();
 foreach($prod as $prod) {

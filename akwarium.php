@@ -1,12 +1,12 @@
 <?php
-    include_once 'dbh.inc.php';
+    include 'dbh.inc.php';
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/index.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/kategoria.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/podobny-sprzet.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -18,37 +18,30 @@
 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
-
 <body>
-
+    <!-- <a href="https://akwar.epizy.com/"> Powrot</a> -->
 <div class="contener">
-<?php include_once("html/menu.php"); ?>
-<!-- PC -->
-<div class="glowna">
-    <a href="ryby">
-        <div class="block1">
-            <div class="rekl">
-                <p class="text">Odkryj nasze ryby</p>
-            </div>
-        </div>
+<div><?php include_once("html/menu.php");?></div>
+
+<div class="shortcuts">
+    <a href="szkla" class="sh1">
+        <p>Szkła</p>
     </a>
-    <br>
-    <a href="akwarium">
-        <div class="block2">
-            <div class="rekl">
-                <p class="text">Akwaria</p>
-            </div>
-        </div>
+    <a href="pokrywy" class="sh1">
+        <p>Pokrywy</p>
     </a>
 </div>
-<!-- PC -->
+    
+    
 
 
 
-<?php include_once("html/footer.html"); ?>
-</div>   
+<div><?php include_once("html/podobny-sprzet.html");?></div>
+<div><?php include_once("html/footer.html"); ?></div>
+</div>
 </body>
 </html>
 <script>
+
 
 </script>

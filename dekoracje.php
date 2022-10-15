@@ -5,7 +5,8 @@
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/akwarium.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/kategoria.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/podobny-sprzet.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -23,20 +24,22 @@
 <?php include_once("html/menu.php");?>
 
 <div class="shortcuts">
-    <a href="szkla"><div class="sh1">
-        <p>Szkła</p>
-    </div></a>
-
-    <a href="pokrywy"><div class="sh2">
-        <p>Pokrywy</p>
-    </div></a>
+    <a href="roslinki"><div class="sh1">
+        <p>Roślinki</p></a>
+    </div>
+    <a href="ozdoby"><div class="sh1">
+        <p>Ozdoby</p></a>
+    </div>
+    <a href="tla"><div class="sh1">
+        <p>Tła</p></a>
+    </div>
 </div>
     
     
 
 
 
-
+<?php include_once("html/podobny-sprzet.html");?>
 <?php include_once("html/footer.html"); ?>
 </div>
 </body>
