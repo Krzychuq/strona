@@ -29,14 +29,21 @@
                 <input class="inp" type="email" placeholder="Email">
                 <input class="inp" type="password" placeholder="Hasło">
                 <button class="login" type="submit">Zaloguj się</button>
-                <p class="passrem">Nie pamiętasz hasła?</p>
+                
             </form>
+            <p class="passrem">Nie pamiętasz hasła?</p>
     </div>
     
     <div class="sideboxright">
         <div class="title">
             <p>Nie masz konta?</p>
             <p style="padding-top:4px;">To nie problem</p>
+                <form class="inputs" action="">
+                    <input class="inp" type="email" placeholder="Email">
+                    <input class="inp" type="password" placeholder="Hasło">
+                    <input class="inp" type="password" placeholder="Powtórz hasło">
+                    <button class="login" type="submit">Zarejestruj się</button>
+                </form>
         </div>
 
     </div>

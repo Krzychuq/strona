@@ -85,12 +85,12 @@ foreach($prod as $prod) {
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p>
+                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p><?php } ?>
                                 <br>
                                 <p style="font-size:15px;"><i class="bi bi-truck"></i>Dostawa: 14zł</p>
                             </div>
                     <div id="zakup">
-                        <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
+                        <button class="btkup" onclick="kupno()"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
                     </div>
                 </div>
                 <!-- Opis szczegółowy produktu -->
@@ -185,9 +185,39 @@ foreach($prod as $prod) {
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < <?php echo $prod['ilosc']; ?> ){
-                licznik += 1;}
+            <?php
+            $stmt = $conn->prepare(
+            "SELECT * FROM produkty WHERE id=2");
+            $stmt->execute();
+            $prod = $stmt->fetchAll();
+            foreach($prod as $prod) {
+            ?>
+                if(this.licznik < <?php echo $prod['ilosc']; ?> ){
+                    licznik += 1;}
+            <?php } ?>        
             document.getElementById("licznik").innerHTML = licznik;
         };
-</script>
+
+
+// Kupno
+function kupno(){
+<?php
+    $stmt = $conn->prepare(
+            "SELECT * FROM produkty WHERE id=2");
+    $stmt->execute();
+    $prod = $stmt->fetchAll();
+    foreach($prod as $prod) {
+?>
+    var x = <?php echo $prod['cena']; ?>; 
 <?php } ?>
+
+    var y = licznik;
+    let price = x;
+    let amount = y;
+    let sum = "";
+//Obliczenie
+    sum= price*amount;
+    const a=document.getElementsByClassName("btkup");
+    a[0].innerHTML='<i class="bi bi-bag-fill"></i> Wynosi '+sum+'zł';
+};
+</script>

@@ -41,7 +41,7 @@ a{text-decoration: none;}
                     padding-top: 40px;
                     display: flex;
                     flex-direction: column;
-                    width: 30%;
+                    width: 45%;
                     margin-left: auto;
                     margin-right: auto;
                     gap: 13px;
@@ -66,14 +66,32 @@ a{text-decoration: none;}
        height: 30px;
     }
         .login:active{
-            
-            transform: scale(0.9)
+            transform: scale(0.9);
         }
     
     .passrem{
+        width: auto;
         padding:33px 0 3px 0 ;
         text-decoration: overline 1px;
-        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-        
+
+    @media screen and (max-width: 900px) {
+        .box{height: 80%;}
+        .title{font-size: 1.3rem}
+    }
+    
+    @media screen and (max-width: 700px) {
+        .box{flex-direction: column; height: auto;}
+        .sideboxleft{width: 100%;}
+        .sideboxright{width: 100%; padding-bottom: 50px;}
+        .inputs{width: 80%;}
+    }
+    
+    @media screen and (max-width: 500px) {
+        .inputs{width: 85%;}
+        .passrem{margin-bottom: 10px;}
+    }
         

@@ -41,8 +41,17 @@ a{
                 background-color: ghostwhite;
                 height: 650px;
             }
+                @keyframes pro{
+                    from {opacity:0.1;}
+                    to{opacity: 1;}
+                }
 
-            #produkt-img{width: 100%; height: 500px;}
+            #produkt-img{
+                width: 100%; 
+                height: 500px;
+                animation-name: pro;
+                animation-duration: 1.3s;
+            }
     
             
             .slideshow-container {
@@ -65,6 +74,8 @@ a{
                 border-radius: 0 3px 3px 0;
                 user-select: none;
                 background-color: white;
+                animation-name: pro;
+                animation-duration: 1.3s;
             }
     
             
@@ -80,6 +91,8 @@ a{
             .kropki{
                 text-align:center; 
                 max-width:100%;
+                animation-name: pro;
+                animation-duration: 1.3s;
             }
 
             .dot {
@@ -168,30 +181,42 @@ a{
                             }
 
             #tytul{
+                position: relative;
                 font-size: 2.2rem;
                 text-align: left;
                 padding-left: 10%;
+                animation-name:ani;
+                animation-duration: 1s;
             }
                 #cena{
+                    position: relative;
                     font-family: 'Verdana';
                     font-size: 2rem;
                     text-align: left;
                     padding-left: 10%;
                     color: rgb(45, 98, 177);
                     height: 100px;
+                    animation-name:ani;
+                    animation-duration: 1s;
                 }
                     #rodzaj{
+                        position: relative;
                         font-size: 1.6rem;
                         text-align: left;
                         padding-left: 10%;
+                        animation-name:ani;
+                        animation-duration: 1s;
                     }
                         .kolor-rodzaj{ 
+                            position: relative;
                             display: flex; 
                             gap:5px; 
                             text-align: center; 
                             margin-left: 10%;
                             width: 100%;
                             margin-top: 1%;
+                            animation-name:ani;
+                            animation-duration: 1s;
                         }
                         .black{
                              background-color: black; 
@@ -296,26 +321,40 @@ a{
                             }
 
                     #ilosc{
+                        position: relative;
                         margin-top: 50px;
                         font-size: 1.6rem;
                         text-align: left;
                         padding-left: 10%;
+                        animation-name:ani;
+                        animation-duration: 1s;
                     }
                     #dostepnosc{
+                        position: relative;
                         font-size: 0.9rem;
                         font-weight: bold;
                         color: black;
                         text-align: left;
                         padding-left: 10%;
                         height: 100px;
+                        animation-name:ani;
+                        animation-duration: 1s;
                     }
                 #zakup{
+                    position: relative;
                     margin-left: auto;
                     margin-right: auto;
                     width: 70%;
                     font-size: 1.6rem;
                     text-align: left;
                     padding-left: 10%;
+                    animation-name:ani;
+                    animation-duration: 1s;
+
+                }
+                @keyframes ani{
+                    0%   { opacity: 0.4; left:500px;}
+                    100%  { opacity:1; left:0px;}
                 }
             .btkup{
                 width: 80%;
@@ -381,7 +420,7 @@ a{
         #ilosc{ margin-top: 1px;}
             #cena{height: 50px;}
         #dostepnosc{height: 80px;}
-    .produkt{height: 550px; padding-bottom: 0px;}
+    .produkt{height: 570px; padding-bottom: 0px;}
     
 }
 /* ----------------------------------------------------------------------------------------------------------------- */

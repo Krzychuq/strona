@@ -1,12 +1,13 @@
 <?php
     include_once 'dbh.inc.php';
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="css/menu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/footer.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
 <link rel="stylesheet" href="css/stronaProduktu.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
-<link rel="stylesheet" href="css/podobne-ryby.css?dat=<?php echo strtotime(date("H:i:s")) ?>">
+<link rel="stylesheet" href="css/x.css?dat=<?php echo strtotime(date("H:i:s")) ?>">     //wpisz css
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="UTF-8"/>
 <meta name="robotscontent=noindex,nofollow"/>
@@ -20,40 +21,47 @@
 </head>
 
 <body>
-
-
     <div class="contener">
     <div><?php include_once("html/menu.php"); ?></div>
-
 
         <div class="prodcon">
             <div class="produkt">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="photos/x.jpg" id="produkt-img">
+                <img src="photos/x.jpg" id="produkt-img">     //nazwe zdjecia wpisz
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="photos/x.jpg" id="produkt-img">
+                <img src="photos/x.jpg" id="produkt-img">     //nazwe zdjecia wpisz
+                </div>
+
+                <div class="mySlides fade">
+                <img src="photos/x.jpg" id="produkt-img">     //nazwe zdjecia wpisz
+                </div>
+
+                <div class="mySlides fade">
+                <img src="photos/x.jpg" id="produkt-img">    //nazwe zdjecia wpisz
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
-                </div>
-                
+
+            </div>
                 <br>
 
                 <div class="kropki">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>  
                 </div>
             </div>
 <?php
-$stmt = $conn->prepare(
-    "SELECT * FROM produkty WHERE id=");  // wpisz id
-$stmt->execute();
-$prod = $stmt->fetchAll();
-foreach($prod as $prod) {
+            $stmt = $conn->prepare(
+                    "SELECT * FROM produkty WHERE id=");   //id wpisz
+            $stmt->execute();
+            $prod = $stmt->fetchAll();
+            foreach($prod as $prod) {
 ?>
                 <div class="info">
                     <div id="tytul">
@@ -62,14 +70,16 @@ foreach($prod as $prod) {
                         <div id="cena">
                             <p><?php echo $prod['cena']; ?>zł</p>
                         </div>
-                          <!--  <div id="rodzaj"> 
+                            <div id="rodzaj">
                                 <p>Rodzaj</p>
                             </div>
                                     <div class="kolor-rodzaj">
-                                        <button class="" onclick="currentSlide(1)"></button>
-                                            <button class="" onclick="currentSlide(2)"></button>
+                                        <button class="black" onclick="currentSlide(1)"></button>
+                                            <button class="white" onclick="currentSlide(4)"></button>
+                                            <button class="yellow" onclick="currentSlide(3)"></button>
+                                        <button class="orange" onclick="currentSlide(2)"></button>
                                     </div>
-                                <br> -->
+                                <br>
                         <div id="ilosc">
                             <p>Ilosc</p>
                                 <button class="down" onclick="down()">-</button>
@@ -79,14 +89,15 @@ foreach($prod as $prod) {
                         </div>
                         <br>
                             <div id="dostepnosc">
-                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p>
+                                <p>Dostępność <?php echo $prod['ilosc']; ?>szt</p><?php } ?>  
                                 <br>
-                                <p style="font-size:15px;"><i class="bi bi-truck"></i>Odbiór w sklepie / Dostawa:11zł</p>
+                                <p style="font-size:15px;"><i class="bi bi-truck"></i>Odbiór w sklepie</p>
                             </div>
                     <div id="zakup">
-                        <button class="btkup"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
+                        <button class="btkup" onclick="kupno()"><i class="bi bi-bag-fill"></i> Dodaj 0,00zł</button>
                     </div>
                 </div>
+
                 <!-- Opis szczegółowy produktu -->
                 <div class="opis">
                     <ul class="opis-btn">
@@ -95,36 +106,36 @@ foreach($prod as $prod) {
                     </ul>
                     <div class="opis1">
                         <p>
-                        [wpisz opis]
+                            x
                         </p>
                     </div>
                     <div class="opis2">
                         <table class="tabelka">
                             <tr>
-                                <td style="font-weight: bold; width: 35%;">Dorasta do</td>
-                                <td>x cm</td>
+                                <td style="font-weight: bold; width: 35%;">x</td>
+                                <td>x</td>
                             </tr>
 
                             <tr>
-                                <td style="font-weight: bold;">Wielkość akwarium</td>
-                                <td>x litrów</td>
+                                <td style="font-weight: bold;">x</td>
+                                <td>x</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">pH wody</td>
-                                <td>x-x</td>
+                                <td style="font-weight: bold;">x</td>
+                                <td>x</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Temperatura wody</td>
-                                <td>x-x°C</td>
+                                <td style="font-weight: bold;">x</td>
+                                <td>x</td>
                             </tr>
                         </table>
                     </div>
             </div>
         </div>
-        
+            
         <div><?php include_once("html/podobne-ryby.html");?></div>
-        
-        <div><?php include_once("html/footer.html");?></div>
+    </div>
+    <div><?php include_once("html/footer.html");?></div>
     
 </div>
 </body>
@@ -181,9 +192,39 @@ foreach($prod as $prod) {
             document.getElementById("licznik").innerHTML = licznik;
         };
         function up() {
-            if(this.licznik < <?php echo $prod['ilosc']; ?> ){
-                licznik += 1;}
+            <?php
+            $stmt = $conn->prepare(
+            "SELECT * FROM produkty WHERE id=");    //id wpisz
+            $stmt->execute();
+            $prod = $stmt->fetchAll();
+            foreach($prod as $prod) {
+            ?>
+                if(this.licznik < <?php echo $prod['ilosc']; ?> ){
+                    licznik += 1;}
+            <?php } ?>        
             document.getElementById("licznik").innerHTML = licznik;
         };
-</script>
+
+
+// Kupno
+function kupno(){
+<?php
+    $stmt = $conn->prepare(
+            "SELECT * FROM produkty WHERE id=");    //id wpisz
+    $stmt->execute();
+    $prod = $stmt->fetchAll();
+    foreach($prod as $prod) {
+?>
+    var x = <?php echo $prod['cena']; ?>; 
 <?php } ?>
+
+    var y = licznik;
+    let price = x;
+    let amount = y;
+    let sum = "";
+//Obliczenie
+    sum= price*amount;
+    const a=document.getElementsByClassName("btkup");
+    a[0].innerHTML='<i class="bi bi-bag-fill"></i> Wynosi '+sum+'zł';
+};
+</script>

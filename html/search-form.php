@@ -1,10 +1,10 @@
 <?php
 // (A) DATABASE CONFIG - CHANGE TO YOUR OWN!
-define("DB_HOST", "sql213.epizy.com");
+define("DB_HOST", "localhost");
 define("DB_NAME", "epiz_32504605_strona");
 define("DB_CHARSET", "utf8");
-define("DB_USER", "epiz_32504605");
-define("DB_PASSWORD", "ihxSRJGYpeeCfP4");
+define("DB_USER", "root");
+define("DB_PASSWORD", "");
  
 // (B) CONNECT TO DATABASE
 try {
@@ -18,7 +18,7 @@ try {
 } catch (Exception $ex) { exit($ex->getMessage()); }
 
 // (C) SEARCH
-$stmt = $pdo->prepare("SELECT * FROM `produkty` WHERE `nazwa` LIKE ?");
+$stmt = $pdo->prepare("SELECT `nazwa` FROM `produkty` WHERE `nazwa` LIKE ?");
 $stmt->execute(["%".$_POST["search"]."%"]);
 $results = $stmt->fetchAll();
 if (isset($_POST["ajax"])) { echo json_encode($results); }
