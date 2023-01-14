@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="pilka.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball</title>
+    <style>
+        *{box-sizing: border-box; margin: 0;}
+body{background-color: rgb(40, 44, 52); font-family: "Arial";}
+.contener{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.box{
+    border: groove 1px white;
+    width: 531px;
+    height: 312px;
+}
+#ball{
+    background-color: rgb(25, 130, 216);
+    width: 31px;
+    height: 31px;
+    border-radius: 50px;
+    position: relative;
+    animation-name: lot;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    z-index: 4;
+}
+#dash1{
+    background-color: rgb(30, 101, 158);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    animation-name: dash1;
+    animation-duration: 6.03s;
+    animation-iteration-count: 2;
+    z-index: 3;
+}
+#dash2{
+    background-color: rgb(23, 74, 116);
+    width: 29.5px;
+    height: 29.5px;
+    border-radius: 50px;
+    position: relative;
+    animation-name: dash2;
+    animation-duration: 6.03s;
+    animation-iteration-count: 2;
+    z-index: 2;
+}
+#dash3{
+    background-color: rgb(27, 54, 78);
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    position: relative;
+    animation-name: dash3;
+    animation-duration: 6.03s;
+    animation-iteration-count: 2;
+    z-index: 1;
+}
+.title{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+@keyframes lot{
+    0%{top: 0px; left: 0px;} /*top 0 min top 280 max|left 498 max left 0 min */
+    9%{top: 280px; left: 408px;}
+    18%{top: 40px; left: 498px;}
+    27%{top: 0px; left: 450px;}
+    36%{top: 280px; left: 300px;}
+    45%{top: 140px; left: 0px;}
+    54%{top: 0px; left: 130px;}
+    63%{top: 280px; left: 320px;}
+    72%{top: 0px; left: 450px;}
+    81%{top: 40px; left: 498px;}
+    90%{top: 280px; left: 408px;}
+    100%{top: 0px; left: 0px;}
+}
+    @keyframes dash1{
+        0%{top: -30px; left: 0px;} /*top -30 min top 250 max|left 498 max left 0 min */
+        9%{top: 250px; left: 408px;}
+        18%{top: 10px; left: 498px;}
+        27%{top: -30px; left: 450px;}
+        36%{top: 250px; left: 300px;}
+        45%{top: 110px; left: 0px;}
+        54%{top: -30px; left: 130px;}
+        63%{top: 250px; left: 320px;}
+        72%{top: -30px; left: 450px;}
+        81%{top: 10px; left: 498px;}
+        90%{top: 250px; left: 408px;}
+        100%{top: -30px; left: 0px;}
+    }
+        @keyframes dash2{
+            0%{top: -60px; left: 0px;} /*top -60 min top 220 max|left 498 max left 0 min */
+            9%{top: 220px; left: 408px;}
+            18%{top: -20px; left: 498px;}
+            27%{top: -60px; left: 450px;}
+            36%{top: 220px; left: 300px;}
+            45%{top: 80px; left: 0px;}
+            54%{top: -60px; left: 130px;}
+            63%{top: 220px; left: 320px;}
+            72%{top: -60px; left: 450px;}
+            81%{top: -20px; left: 498px;}
+            90%{top: 220px; left: 408px;}
+            100%{top: -60px; left: 0px;}
+        }
+            @keyframes dash3{
+                0%{top: -90px; left: 0px;} /*top -90 min top 190 max|left 498 max left 0 min */
+                9%{top: 190px; left: 408px;}
+                18%{top: -50px; left: 498px;}
+                27%{top: -90px; left: 450px;}
+                36%{top: 190px; left: 300px;}
+                45%{top: 50px; left: 0px;}
+                54%{top: -90px; left: 130px;}
+                63%{top: 190px; left: 320px;}
+                72%{top: -90px; left: 450px;}
+                81%{top: -50px; left: 498px;}
+                90%{top: 190px; left: 408px;}
+                100%{top: -90px; left: 0px;}
+            }
+
+    </style>
+</head>
+<body>
+<header>
+    <p class='title'>Piłeczka</p>
+</header>
+
+<section class='contener'>
+    <div class='box'>
+        <div id='ball'></div>
+        <div id='dash1'></div>
+        <div id='dash2'></div>
+        <div id='dash3'></div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<script>
+const czas = setTimeout(ukryj,12000);
+const pilka1 = setTimeout(fade1,12500);
+const pilka2 = setTimeout(fade2,12700);
+const pilka3 = setTimeout(fade3,12900);
+const pilka4 = setTimeout(fade4,13000);
+function ukryj(){
+    document.getElementById('dash1').style.display = 'none';
+    document.getElementById('dash2').style.display = 'none';
+    document.getElementById('dash3').style.display = 'none';
+}
+function fade1(){
+            document.getElementById('ball').style.opacity = 0.8;
+}
+function fade2(){
+            document.getElementById('ball').style.opacity = 0.6;
+}
+function fade3(){
+            document.getElementById('ball').style.opacity = 0.3;
+}
+function fade4(){
+            document.getElementById('ball').style.opacity = 0;
+}
+</script>

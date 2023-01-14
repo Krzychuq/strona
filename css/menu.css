@@ -94,13 +94,21 @@ a{text-decoration: none;}
                 transform: scale(0.9);
             }
         .account a{
-            color: black;
+            color: yellow;
+            text-shadow:0 0 10px #ffee10;
             text-decoration: none;
+            transition: 1s;
         } 
     .cart a{
-        color: black;
+        color: yellow;
+        text-shadow:0 0 10px #ffee10;   
         text-decoration: none;
     }  
+    .account a:active, .cart a:active{
+        transform: scale(0.8);
+    }
+
+
 
 .lista{
     padding-left: 60px;

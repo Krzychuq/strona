@@ -15,7 +15,10 @@ a{text-decoration: none;}
     background: lightgray; 
     border-radius: 1px;
 }
-
+@keyframes intro{
+    from {opacity:0.1;}
+    to{opacity: 1;}
+}
 .contener{
     height: auto;
     margin: 0;
@@ -41,6 +44,8 @@ a{text-decoration: none;}
             height: 200px;
             padding: 2rem;
             padding-top: 7rem;
+            animation-name:intro;
+            animation-duration: 2s;
         }
 
         .block1{background: url("/photos/nowosc1.png");}

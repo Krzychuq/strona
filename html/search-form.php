@@ -1,10 +1,10 @@
 <?php
 // (A) DATABASE CONFIG - CHANGE TO YOUR OWN!
-define("DB_HOST", "localhost");
+define("DB_HOST", "sql213.epizy.com");
 define("DB_NAME", "epiz_32504605_strona");
 define("DB_CHARSET", "utf8");
-define("DB_USER", "root");
-define("DB_PASSWORD", "");
+define("DB_USER", "epiz_32504605");
+define("DB_PASSWORD", "ihxSRJGYpeeCfP4");
  
 // (B) CONNECT TO DATABASE
 try {
