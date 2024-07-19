@@ -1,5 +1,4 @@
-# 🛒Shopping website🛒
+#                       🛒Shopping website🛒
 Its my project to test if i can create a shopping website from scratch.
-![page](https://github.com/user-attachments/assets/b65b3337-4417-4930-a31c-00c82a4e4bcb)
 
-
+![page](https://github.com/user-attachments/assets/91ac4efe-ec44-44a0-854b-30163d00387b)

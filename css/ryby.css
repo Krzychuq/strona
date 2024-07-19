@@ -20,7 +20,7 @@ a{text-decoration: none;}
     height: auto;
     margin: 0;
     overflow-x: hidden;
-    background: url("/photos/tlo.jpg");
+    background: rgb(64, 224, 157);
 }
 
 .nnazwa{

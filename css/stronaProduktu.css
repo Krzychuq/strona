@@ -19,7 +19,7 @@ a{
 
 .contener{
     height: auto;
-    background: url("/photos/tlo.jpg");
+    background: rgb(64, 224, 157);
     overflow-x: hidden;
 }
 

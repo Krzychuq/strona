@@ -94,14 +94,14 @@ a{text-decoration: none;}
                 transform: scale(0.9);
             }
         .account a{
-            color: yellow;
-            text-shadow:0 0 10px #ffee10;
+            color: rgb(255, 255, 255);
+            text-shadow:0 0 10px #000000;
             text-decoration: none;
             transition: 1s;
         } 
     .cart a{
-        color: yellow;
-        text-shadow:0 0 10px #ffee10;   
+        color: rgb(255, 255, 255);
+        text-shadow:0 0 10px #000000;   
         text-decoration: none;
     }  
     .account a:active, .cart a:active{

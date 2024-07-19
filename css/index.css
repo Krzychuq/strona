@@ -23,7 +23,7 @@ a{text-decoration: none;}
     height: auto;
     margin: 0;
     overflow-x: hidden;
-    background: url("/photos/tlo.jpg");
+    background-color: rgb(64, 224, 157);
 }
 
 
@@ -48,8 +48,8 @@ a{text-decoration: none;}
             animation-duration: 2s;
         }
 
-        .block1{background: url("/photos/nowosc1.png");}
-        .block2{background: url("/photos/nowosc2.png");}
+        .block1{background: url("../photos/nowosc1.png");}
+        .block2{background: url("../photos/nowosc2.png");}
             .rekl{
                 background-color: black;
                 border-radius: 8px;
